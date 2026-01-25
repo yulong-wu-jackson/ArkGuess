@@ -4,6 +4,7 @@ import { GridSizeSelector } from '@/components/GridSizeSelector'
 import { ModeSelector } from '@/components/ModeSelector'
 import { CharacterPicker } from '@/components/CharacterPicker'
 import { GameBoard } from '@/components/GameBoard'
+import { MarkerTools } from '@/components/MarkerTools'
 import { AppProvider, useApp } from '@/contexts/AppContext'
 
 function HomePage() {
@@ -92,7 +93,7 @@ function CharacterSelectPage() {
 }
 
 function GamePage() {
-  const { selectedTheme, gridSize, gameCells, resetGame } = useApp()
+  const { selectedTheme, gridSize, gameCells, toggleCellMarker, resetGame } = useApp()
 
   const handleEndGame = () => {
     resetGame()
@@ -107,7 +108,7 @@ function GamePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground pb-24">
       <div className="container mx-auto px-4 py-4 sm:py-8">
         <div className="flex items-center justify-between mb-4 sm:mb-8">
           <h1 className="text-xl sm:text-2xl font-bold">
@@ -122,8 +123,11 @@ function GamePage() {
           cells={gameCells}
           theme={selectedTheme}
           gridSize={gridSize}
+          onCellClick={toggleCellMarker}
         />
       </div>
+
+      <MarkerTools />
     </div>
   )
 }

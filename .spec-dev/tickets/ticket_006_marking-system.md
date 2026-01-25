@@ -1,7 +1,7 @@
 # Marking System & Game Mechanics
 
 **Created:** 2026-01-24 21:30
-**Status:** Draft
+**Status:** Complete
 **Dependencies:** ticket_005_game-board
 
 ## Overview
@@ -17,35 +17,35 @@ Implement the core gameplay mechanics: marker tool selection (Red X / Blue O) an
 ## Requirements
 
 ### Marker Tools Component
-- [ ] Create `src/components/MarkerTools.tsx`
-- [ ] Display two tool buttons: Red (X) and Blue (O)
-- [ ] Clear visual indication of which tool is selected
-- [ ] Tool buttons should be large and touch-friendly
-- [ ] Position: fixed at bottom or top of game screen
-- [ ] Color coding:
+- [x] Create `src/components/MarkerTools.tsx`
+- [x] Display two tool buttons: Red (X) and Blue (O)
+- [x] Clear visual indication of which tool is selected
+- [x] Tool buttons should be large and touch-friendly
+- [x] Position: fixed at bottom or top of game screen
+- [x] Color coding:
   - Red tool: red/crimson color, X icon
   - Blue tool: blue color, O icon
 
 ### Marking Logic
-- [ ] Click on character card applies current marker
-- [ ] If card has no marker → add current marker
-- [ ] If card has same marker → remove marker
-- [ ] If card has different marker → replace with current marker (or add both?)
-- [ ] Visual feedback on click (brief animation or state change)
+- [x] Click on character card applies current marker
+- [x] If card has no marker → add current marker
+- [x] If card has same marker → remove marker
+- [x] If card has different marker → replace with current marker (or add both?)
+- [x] Visual feedback on click (brief animation or state change)
 
 ### Marker Display on Cards
-- [ ] Update CharacterCard to accept and display `marker` prop
-- [ ] X marker: semi-transparent red overlay with X symbol
-- [ ] O marker: semi-transparent blue overlay with O symbol
-- [ ] Markers should not fully obscure character image
-- [ ] Consider corner badge vs full overlay approaches
+- [x] Update CharacterCard to accept and display `marker` prop
+- [x] X marker: semi-transparent red overlay with X symbol
+- [x] O marker: semi-transparent blue overlay with O symbol
+- [x] Markers should not fully obscure character image
+- [x] Consider corner badge vs full overlay approaches
 
 ### Game State Hook
-- [ ] Create `src/hooks/useGameState.ts`
-- [ ] Manage: cells state, active marker, theme, gridSize
-- [ ] Functions: `setMarker(cellIndex)`, `setActiveMarker(type)`, `resetGame()`
-- [ ] Use React Context to provide state to components
-- [ ] Initial state: no markers, red tool selected by default
+- [x] Create `src/hooks/useGameState.ts` (integrated into AppContext)
+- [x] Manage: cells state, active marker, theme, gridSize
+- [x] Functions: `setMarker(cellIndex)`, `setActiveMarker(type)`, `resetGame()`
+- [x] Use React Context to provide state to components
+- [x] Initial state: no markers, red tool selected by default
 
 ### State Shape
 ```typescript
@@ -97,14 +97,14 @@ interface GameState {
 
 ## Acceptance Criteria
 
-- [ ] Marker tools display with red and blue buttons
-- [ ] Selected tool has clear visual distinction
-- [ ] Clicking tool button switches active marker
-- [ ] Clicking unmarked card adds current marker
-- [ ] Clicking card with same marker removes it
-- [ ] Clicking card with different marker replaces it
-- [ ] X marker shows red overlay with X symbol
-- [ ] O marker shows blue overlay with O symbol
-- [ ] Character image and name remain visible under marker
-- [ ] Game state updates correctly on each action
-- [ ] Default state: red (X) tool selected, no markers on board
+- [x] Marker tools display with red and blue buttons
+- [x] Selected tool has clear visual distinction
+- [x] Clicking tool button switches active marker
+- [x] Clicking unmarked card adds current marker
+- [x] Clicking card with same marker removes it
+- [x] Clicking card with different marker replaces it
+- [x] X marker shows red overlay with X symbol
+- [x] O marker shows blue overlay with O symbol
+- [x] Character image and name remain visible under marker
+- [x] Game state updates correctly on each action
+- [x] Default state: red (X) tool selected, no markers on board

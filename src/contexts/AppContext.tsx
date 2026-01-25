@@ -4,6 +4,8 @@ import { selectRandomCharacters } from '@/lib/theme-loader'
 
 type Screen = 'home' | 'character-select' | 'game'
 
+type ActiveMarker = 'x' | 'o'
+
 interface AppState {
   screen: Screen
   selectedTheme: Theme | null
@@ -11,6 +13,7 @@ interface AppState {
   gameMode: GameMode | null
   selectedCharacters: Character[]
   gameCells: CellState[]
+  activeMarker: ActiveMarker
 }
 
 interface AppContextValue extends AppState {
@@ -19,6 +22,8 @@ interface AppContextValue extends AppState {
   setGridSize: (size: number) => void
   setGameMode: (mode: GameMode | null) => void
   setSelectedCharacters: (characters: Character[]) => void
+  setActiveMarker: (marker: ActiveMarker) => void
+  toggleCellMarker: (cellIndex: number) => void
   startGame: () => void
   resetGame: () => void
   canStartGame: boolean
@@ -32,6 +37,7 @@ const initialState: AppState = {
   gameMode: null,
   selectedCharacters: [],
   gameCells: [],
+  activeMarker: 'x',
 }
 
 const AppContext = createContext<AppContextValue | null>(null)
@@ -57,6 +63,32 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const setSelectedCharacters = useCallback((selectedCharacters: Character[]) => {
     setState((prev) => ({ ...prev, selectedCharacters }))
+  }, [])
+
+  const setActiveMarker = useCallback((activeMarker: ActiveMarker) => {
+    setState((prev) => ({ ...prev, activeMarker }))
+  }, [])
+
+  const toggleCellMarker = useCallback((cellIndex: number) => {
+    setState((prev) => {
+      const newCells = [...prev.gameCells]
+      const cell = newCells[cellIndex]
+      if (!cell) return prev
+
+      // If cell has same marker, remove it
+      // If cell has different marker or no marker, set to active marker
+      const newMarker = cell.marker === prev.activeMarker ? null : prev.activeMarker
+
+      newCells[cellIndex] = {
+        ...cell,
+        marker: newMarker,
+      }
+
+      return {
+        ...prev,
+        gameCells: newCells,
+      }
+    })
   }, [])
 
   const startGame = useCallback(() => {
@@ -112,6 +144,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setGridSize,
         setGameMode,
         setSelectedCharacters,
+        setActiveMarker,
+        toggleCellMarker,
         startGame,
         resetGame,
         canStartGame,
