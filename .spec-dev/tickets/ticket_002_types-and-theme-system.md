@@ -1,7 +1,7 @@
 # Type Definitions & Theme System
 
 **Created:** 2026-01-24 21:30
-**Status:** Draft
+**Status:** Complete
 **Dependencies:** ticket_001_project-setup
 
 ## Overview
@@ -11,12 +11,12 @@ Define TypeScript types for the game domain and implement the theme loading syst
 - Themes are stored in `/public/images/{theme-name}/`
 - Each theme contains a `manifest.json` with character metadata
 - Characters have id, name, and image filename
-- Source for Arknights characters: https://prts.wiki/w/干员一览 (thumbnails)
+- Source for Arknights characters: https://github.com/Aceship/Arknight-Images (avatars)
 
 ## Requirements
 
 ### Type Definitions
-- [ ] Create `src/types/index.ts` with:
+- [x] Create `src/types/index.ts` with:
   ```typescript
   interface Character {
     id: string;
@@ -51,18 +51,18 @@ Define TypeScript types for the game domain and implement the theme loading syst
   ```
 
 ### Theme Loading
-- [ ] Create `src/lib/theme-loader.ts` with functions:
+- [x] Create `src/lib/theme-loader.ts` with functions:
   - `loadThemeManifest(themeId: string): Promise<ThemeManifest>`
-  - `getThemeList(): Promise<string[]>` (reads available theme folders)
+  - `getThemeList(): string[]` (returns available theme list)
   - `getCharacterImageUrl(theme: Theme, character: Character): string`
-- [ ] Handle missing/invalid manifest.json gracefully (skip theme, log warning)
-- [ ] Handle image load failures (return placeholder path)
+- [x] Handle missing/invalid manifest.json gracefully (skip theme, log warning)
+- [x] Handle image load failures (return placeholder path)
 
 ### Sample Theme Data
-- [ ] Create `/public/images/arknights/manifest.json` with ~50 characters
-- [ ] Download character thumbnails from PRTS Wiki (干员一览)
-- [ ] Use consistent naming: `{character_id}.png`
-- [ ] Include popular operators: 阿米娅, 陈, 银灰, 艾雅法拉, 能天使, etc.
+- [x] Create `/public/images/arknights/manifest.json` with 59 characters
+- [x] Download character thumbnails from Aceship/Arknight-Images
+- [x] Use consistent naming: `{character_id}.png`
+- [x] Include popular operators: 阿米娅, 陈, 银灰, 艾雅法拉, 能天使, etc.
 
 ## Design Decisions
 
@@ -86,15 +86,14 @@ Define TypeScript types for the game domain and implement the theme loading syst
 ## Technical Notes
 
 - Use `fetch()` to load manifest.json from `/images/{theme}/manifest.json`
-- For development, create a themes index file or use import.meta.glob
-- Character images should be ~200x200px, PNG or WebP format
-- PRTS Wiki thumbnail URL pattern: `https://prts.wiki/images/thumb/{hash}/{filename}/180px-{filename}`
+- Character images are ~180x180px PNG format from Aceship repository
+- Placeholder SVG provided for image load failures
 
 ## Acceptance Criteria
 
-- [ ] All TypeScript types compile without errors
-- [ ] `loadThemeManifest('arknights')` returns valid manifest
-- [ ] Arknights theme has at least 49 characters (for 7x7 grid)
-- [ ] Missing manifest returns appropriate error
-- [ ] `getCharacterImageUrl()` returns correct path
-- [ ] Character images load successfully in browser
+- [x] All TypeScript types compile without errors
+- [x] `loadThemeManifest('arknights')` returns valid manifest
+- [x] Arknights theme has at least 49 characters (for 7x7 grid) - 59 characters available
+- [x] Missing manifest returns appropriate error
+- [x] `getCharacterImageUrl()` returns correct path
+- [x] Character images load successfully in browser

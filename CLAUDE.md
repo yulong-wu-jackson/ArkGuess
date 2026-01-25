@@ -138,6 +138,7 @@ pnpm typecheck        # Type check (tsc --noEmit)
 - Keep components focused and single-responsibility
 - Use Tailwind utility classes, avoid custom CSS when possible
 - All text in UI should be in Chinese
+- Use Playwrite MCP to test out the real action of the game and ui/ux experiment
 
 ---
 
