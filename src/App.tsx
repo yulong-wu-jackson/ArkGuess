@@ -3,16 +3,17 @@ import { ThemeSelector } from '@/components/ThemeSelector'
 import { GridSizeSelector } from '@/components/GridSizeSelector'
 import { ModeSelector } from '@/components/ModeSelector'
 import { CharacterPicker } from '@/components/CharacterPicker'
+import { GameBoard } from '@/components/GameBoard'
 import { AppProvider, useApp } from '@/contexts/AppContext'
 
 function HomePage() {
-  const { selectedTheme, gameMode, setScreen } = useApp()
+  const { selectedTheme, gameMode, setScreen, startGame } = useApp()
 
   const handleStartGame = () => {
     if (gameMode === 'custom') {
       setScreen('character-select')
     } else {
-      setScreen('game')
+      startGame()
     }
   }
 
@@ -54,6 +55,7 @@ function CharacterSelectPage() {
     selectedCharacters,
     requiredCharacterCount,
     setSelectedCharacters,
+    startGame,
   } = useApp()
 
   const canStart = selectedCharacters.length === requiredCharacterCount
@@ -65,7 +67,7 @@ function CharacterSelectPage() {
 
   const handleStartGame = () => {
     if (canStart) {
-      setScreen('game')
+      startGame()
     }
   }
 
@@ -90,13 +92,38 @@ function CharacterSelectPage() {
 }
 
 function GamePage() {
-  const { setScreen } = useApp()
+  const { selectedTheme, gridSize, gameCells, resetGame } = useApp()
+
+  const handleEndGame = () => {
+    resetGame()
+  }
+
+  if (!selectedTheme || gameCells.length === 0) {
+    return (
+      <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
+        <p className="text-muted-foreground">请先选择主题</p>
+      </div>
+    )
+  }
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center p-4">
-      <h1 className="text-2xl font-bold mb-4">游戏界面</h1>
-      <p className="text-muted-foreground mb-4">此功能将在后续票据中实现</p>
-      <Button onClick={() => setScreen('home')}>返回</Button>
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="container mx-auto px-4 py-4 sm:py-8">
+        <div className="flex items-center justify-between mb-4 sm:mb-8">
+          <h1 className="text-xl sm:text-2xl font-bold">
+            {selectedTheme.manifest.name}
+          </h1>
+          <Button variant="outline" onClick={handleEndGame}>
+            结束游戏
+          </Button>
+        </div>
+
+        <GameBoard
+          cells={gameCells}
+          theme={selectedTheme}
+          gridSize={gridSize}
+        />
+      </div>
     </div>
   )
 }

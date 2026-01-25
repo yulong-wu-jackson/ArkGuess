@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
-import type { Theme, GameMode, Character } from '@/types'
+import type { Theme, GameMode, Character, CellState } from '@/types'
+import { selectRandomCharacters } from '@/lib/theme-loader'
 
 type Screen = 'home' | 'character-select' | 'game'
 
@@ -9,6 +10,7 @@ interface AppState {
   gridSize: number
   gameMode: GameMode | null
   selectedCharacters: Character[]
+  gameCells: CellState[]
 }
 
 interface AppContextValue extends AppState {
@@ -17,6 +19,7 @@ interface AppContextValue extends AppState {
   setGridSize: (size: number) => void
   setGameMode: (mode: GameMode | null) => void
   setSelectedCharacters: (characters: Character[]) => void
+  startGame: () => void
   resetGame: () => void
   canStartGame: boolean
   requiredCharacterCount: number
@@ -28,6 +31,7 @@ const initialState: AppState = {
   gridSize: 4,
   gameMode: null,
   selectedCharacters: [],
+  gameCells: [],
 }
 
 const AppContext = createContext<AppContextValue | null>(null)
@@ -55,6 +59,38 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setState((prev) => ({ ...prev, selectedCharacters }))
   }, [])
 
+  const startGame = useCallback(() => {
+    setState((prev) => {
+      if (!prev.selectedTheme) return prev
+
+      // Determine which characters to use
+      let characters: Character[]
+      if (prev.gameMode === 'random') {
+        // For random mode, select random characters now (only once)
+        const requiredCount = prev.gridSize * prev.gridSize
+        characters = selectRandomCharacters(
+          prev.selectedTheme.manifest.characters,
+          requiredCount
+        )
+      } else {
+        // For custom mode, use selected characters
+        characters = prev.selectedCharacters
+      }
+
+      // Create cells from characters
+      const gameCells: CellState[] = characters.map((character) => ({
+        character,
+        marker: null,
+      }))
+
+      return {
+        ...prev,
+        gameCells,
+        screen: 'game' as Screen,
+      }
+    })
+  }, [])
+
   const resetGame = useCallback(() => {
     setState(initialState)
   }, [])
@@ -76,6 +112,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setGridSize,
         setGameMode,
         setSelectedCharacters,
+        startGame,
         resetGame,
         canStartGame,
         requiredCharacterCount,
