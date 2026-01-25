@@ -1,7 +1,7 @@
 # Character Selection (Custom Mode)
 
 **Created:** 2026-01-24 21:30
-**Status:** Draft
+**Status:** Complete
 **Dependencies:** ticket_002_types-and-theme-system, ticket_003_theme-selection-page
 
 ## Overview
@@ -16,32 +16,32 @@ Implement the character selection screen for custom mode, where users manually p
 ## Requirements
 
 ### Character Grid Display
-- [ ] Create `src/components/CharacterPicker.tsx`
-- [ ] Display all characters from selected theme in a responsive grid
-- [ ] Each character shows: thumbnail image, name below
-- [ ] Grid adapts to screen width (3-6 columns depending on viewport)
+- [x] Create `src/components/CharacterPicker.tsx`
+- [x] Display all characters from selected theme in a responsive grid
+- [x] Each character shows: thumbnail image, name below
+- [x] Grid adapts to screen width (3-6 columns depending on viewport)
 
 ### Selection Mechanics
-- [ ] Click to select/deselect a character
-- [ ] Selected characters have visual indicator (border, overlay, checkmark)
-- [ ] Track selection count in real-time
-- [ ] Show "已选择 {n}/{required}" counter prominently
+- [x] Click to select/deselect a character
+- [x] Selected characters have visual indicator (border, overlay, checkmark)
+- [x] Track selection count in real-time
+- [x] Show "已选择 {n}/{required}" counter prominently
 
 ### Validation
-- [ ] Display required count based on grid size (e.g., "需要选择 25 个角色")
-- [ ] "开始游戏" button disabled until exact count selected
-- [ ] If user selects more than required, show warning and prevent further selection
-- [ ] If user tries to start with wrong count, show error message
+- [x] Display required count based on grid size (e.g., "需要选择 25 个角色")
+- [x] "开始游戏" button disabled until exact count selected
+- [x] If user selects more than required, show warning and prevent further selection
+- [x] If user tries to start with wrong count, show error message
 
 ### Quick Actions
-- [ ] "全选" (Select All) button - selects first N characters needed
-- [ ] "清除选择" (Clear Selection) button - deselects all
-- [ ] "随机选择" (Random Selection) button - randomly picks required count
+- [x] "全选" (Select All) button - selects first N characters needed
+- [x] "清除选择" (Clear Selection) button - deselects all
+- [x] "随机选择" (Random Selection) button - randomly picks required count
 
 ### Navigation
-- [ ] "返回" (Back) button to return to home page
-- [ ] "开始游戏" button to proceed to game board
-- [ ] Pass selected characters to game board
+- [x] "返回" (Back) button to return to home page
+- [x] "开始游戏" button to proceed to game board
+- [x] Pass selected characters to game board
 
 ## Design Decisions
 
@@ -87,14 +87,14 @@ Implement the character selection screen for custom mode, where users manually p
 
 ## Acceptance Criteria
 
-- [ ] All theme characters display in a responsive grid
-- [ ] Clicking a character toggles its selection state
-- [ ] Selected characters have clear visual indicator
-- [ ] Selection counter updates in real-time
-- [ ] Cannot select more characters than required
-- [ ] Start button disabled until exact count reached
-- [ ] "全选" selects first N required characters
-- [ ] "清除选择" deselects all characters
-- [ ] "随机选择" picks random characters up to required count
-- [ ] "返回" navigates back to home page
-- [ ] "开始游戏" proceeds to game board with selected characters
+- [x] All theme characters display in a responsive grid
+- [x] Clicking a character toggles its selection state
+- [x] Selected characters have clear visual indicator
+- [x] Selection counter updates in real-time
+- [x] Cannot select more characters than required
+- [x] Start button disabled until exact count reached
+- [x] "全选" selects first N required characters
+- [x] "清除选择" deselects all characters
+- [x] "随机选择" picks random characters up to required count
+- [x] "返回" navigates back to home page
+- [x] "开始游戏" proceeds to game board with selected characters
