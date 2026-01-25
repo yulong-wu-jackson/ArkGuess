@@ -1,7 +1,7 @@
 # Theme Selection Page
 
 **Created:** 2026-01-24 21:30
-**Status:** Draft
+**Status:** Complete
 **Dependencies:** ticket_002_types-and-theme-system
 
 ## Overview
@@ -17,35 +17,35 @@ Create the landing page where users select a theme, choose grid size, and pick b
 ## Requirements
 
 ### Theme Selector Component
-- [ ] Create `src/components/ThemeSelector.tsx`
-- [ ] Display all available themes as clickable cards
-- [ ] Show theme name from manifest
-- [ ] Show character count per theme
-- [ ] Visual indication of selected theme
+- [x] Create `src/components/ThemeSelector.tsx`
+- [x] Display all available themes as clickable cards
+- [x] Show theme name from manifest
+- [x] Show character count per theme
+- [x] Visual indication of selected theme
 
 ### Grid Size Selector
-- [ ] Create grid size selector (dropdown or slider)
-- [ ] Range: 2x2 to 7x7 (values 2-7)
-- [ ] Default: 4x4
-- [ ] Show total cells needed (e.g., "16 个角色")
-- [ ] Disable sizes that exceed theme's character count with tooltip explaining why
+- [x] Create grid size selector (dropdown or slider)
+- [x] Range: 2x2 to 7x7 (values 2-7)
+- [x] Default: 4x4
+- [x] Show total cells needed (e.g., "16 个角色")
+- [x] Disable sizes that exceed theme's character count with tooltip explaining why
 
 ### Mode Selection
-- [ ] Two buttons/cards: "随机模式" and "自选模式"
-- [ ] Brief description under each:
+- [x] Two buttons/cards: "随机模式" and "自选模式"
+- [x] Brief description under each:
   - 随机模式: "随机分配角色到网格"
   - 自选模式: "选择你想要的角色"
 
 ### Page Layout
-- [ ] Create `src/pages/HomePage.tsx` (or use App.tsx directly)
-- [ ] Title: "ArkGuess 猜猜我是谁"
-- [ ] Flow: Select Theme → Select Grid Size → Select Mode → Start
-- [ ] "开始游戏" button at bottom, disabled until all selections made
-- [ ] Clean, centered layout with proper spacing
+- [x] Create `src/pages/HomePage.tsx` (or use App.tsx directly)
+- [x] Title: "ArkGuess 猜猜我是谁"
+- [x] Flow: Select Theme → Select Grid Size → Select Mode → Start
+- [x] "开始游戏" button at bottom, disabled until all selections made
+- [x] Clean, centered layout with proper spacing
 
 ### State Management
-- [ ] Track selected theme, grid size, and mode
-- [ ] Pass selections to next screen via React Context or props
+- [x] Track selected theme, grid size, and mode
+- [x] Pass selections to next screen via React Context or props
 
 ## Design Decisions
 
@@ -90,11 +90,11 @@ Create the landing page where users select a theme, choose grid size, and pick b
 
 ## Acceptance Criteria
 
-- [ ] Theme cards display with name and character count
-- [ ] Clicking a theme card selects it visually
-- [ ] Grid size dropdown shows options 2-7
-- [ ] Grid sizes requiring more characters than available are disabled
-- [ ] Mode selection shows both options with descriptions
-- [ ] Start button is disabled until theme, grid, and mode are selected
-- [ ] Clicking start button triggers navigation/state change
-- [ ] All text displays in Chinese
+- [x] Theme cards display with name and character count
+- [x] Clicking a theme card selects it visually
+- [x] Grid size dropdown shows options 2-7
+- [x] Grid sizes requiring more characters than available are disabled
+- [x] Mode selection shows both options with descriptions
+- [x] Start button is disabled until theme, grid, and mode are selected
+- [x] Clicking start button triggers navigation/state change
+- [x] All text displays in Chinese
