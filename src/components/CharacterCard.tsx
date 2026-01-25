@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import { getCharacterImageUrl, getPlaceholderImageUrl } from '@/lib/theme-loader'
-import type { Character, Theme, MarkerType } from '@/types'
+import type { Character, Theme, CellMarkers } from '@/types'
 import { cn } from '@/lib/utils'
 
 interface CharacterCardProps {
   character: Character
   theme: Theme
-  marker?: MarkerType
+  markers?: CellMarkers
   onClick?: () => void
 }
 
 export function CharacterCard({
   character,
   theme,
-  marker,
+  markers,
   onClick,
 }: CharacterCardProps) {
   const [imageError, setImageError] = useState(false)
@@ -21,6 +21,10 @@ export function CharacterCard({
   const imageUrl = imageError
     ? getPlaceholderImageUrl()
     : getCharacterImageUrl(theme, character)
+
+  const hasX = markers?.x ?? false
+  const hasO = markers?.o ?? false
+  const hasAnyMarker = hasX || hasO
 
   return (
     <button
@@ -51,22 +55,24 @@ export function CharacterCard({
         </span>
       </div>
 
-      {/* Marker Overlay - will be used in ticket_006 */}
-      {marker && (
+      {/* Marker Overlay - supports both X and O on same card */}
+      {hasAnyMarker && (
         <div
           className={cn(
-            'absolute inset-0 flex items-center justify-center',
+            'absolute inset-0 flex items-center justify-center gap-1',
             'bg-black/30'
           )}
         >
-          <span
-            className={cn(
-              'text-4xl sm:text-5xl font-bold drop-shadow-lg',
-              marker === 'x' ? 'text-red-500' : 'text-blue-500'
-            )}
-          >
-            {marker === 'x' ? '✕' : '○'}
-          </span>
+          {hasX && (
+            <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-red-500">
+              ✕
+            </span>
+          )}
+          {hasO && (
+            <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-blue-500">
+              ○
+            </span>
+          )}
         </div>
       )}
     </button>

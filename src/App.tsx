@@ -1,4 +1,15 @@
 import { Button } from '@/components/ui/button'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { GridSizeSelector } from '@/components/GridSizeSelector'
 import { ModeSelector } from '@/components/ModeSelector'
@@ -95,10 +106,6 @@ function CharacterSelectPage() {
 function GamePage() {
   const { selectedTheme, gridSize, gameCells, toggleCellMarker, resetGame } = useApp()
 
-  const handleEndGame = () => {
-    resetGame()
-  }
-
   if (!selectedTheme || gameCells.length === 0) {
     return (
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
@@ -114,9 +121,23 @@ function GamePage() {
           <h1 className="text-xl sm:text-2xl font-bold">
             {selectedTheme.manifest.name}
           </h1>
-          <Button variant="outline" onClick={handleEndGame}>
-            结束游戏
-          </Button>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="outline">结束游戏</Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>结束游戏</AlertDialogTitle>
+                <AlertDialogDescription>
+                  确定要结束游戏吗？当前进度将丢失。
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>取消</AlertDialogCancel>
+                <AlertDialogAction onClick={resetGame}>确定</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
 
         <GameBoard

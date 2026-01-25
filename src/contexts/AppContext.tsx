@@ -75,13 +75,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
       const cell = newCells[cellIndex]
       if (!cell) return prev
 
-      // If cell has same marker, remove it
-      // If cell has different marker or no marker, set to active marker
-      const newMarker = cell.marker === prev.activeMarker ? null : prev.activeMarker
+      // Toggle the active marker on this cell (both X and O can coexist)
+      const newMarkers = {
+        ...cell.markers,
+        [prev.activeMarker]: !cell.markers[prev.activeMarker],
+      }
 
       newCells[cellIndex] = {
         ...cell,
-        marker: newMarker,
+        markers: newMarkers,
       }
 
       return {
@@ -112,7 +114,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       // Create cells from characters
       const gameCells: CellState[] = characters.map((character) => ({
         character,
-        marker: null,
+        markers: { x: false, o: false },
       }))
 
       return {

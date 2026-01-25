@@ -15,11 +15,16 @@ export interface Theme {
   basePath: string
 }
 
-export type MarkerType = 'x' | 'o' | null
+export type MarkerType = 'x' | 'o'
+
+export interface CellMarkers {
+  x: boolean
+  o: boolean
+}
 
 export interface CellState {
   character: Character
-  marker: MarkerType
+  markers: CellMarkers
 }
 
 export interface GameState {

@@ -60,7 +60,7 @@ interface GameState {
 ## Design Decisions
 
 - **Toggle behavior:** Clicking same marker removes it, enabling easy correction
-- **Different marker replacement:** Clicking different marker replaces existing one (simplifies state)
+- **Dual marker support:** Both X and O markers can coexist on the same character (updated per user requirement)
 - **Red default:** Red (X) is selected by default when game starts
 - **Markers are visual aids:** No win condition enforced; players manage game verbally
 

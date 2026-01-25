@@ -27,7 +27,7 @@ export function GameBoard({
             key={index}
             character={cell.character}
             theme={theme}
-            marker={cell.marker}
+            markers={cell.markers}
             onClick={onCellClick ? () => onCellClick(index) : undefined}
           />
         ))}

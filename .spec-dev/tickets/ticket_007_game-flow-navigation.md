@@ -1,7 +1,7 @@
 # Game Flow & Navigation
 
 **Created:** 2026-01-24 21:30
-**Status:** Draft
+**Status:** Complete
 **Dependencies:** ticket_003_theme-selection-page, ticket_004_character-selection, ticket_005_game-board, ticket_006_marking-system
 
 ## Overview
@@ -16,14 +16,14 @@ Integrate all screens into a cohesive application flow with proper navigation, e
 ## Requirements
 
 ### Application State
-- [ ] Create `src/contexts/AppContext.tsx`
-- [ ] Manage current screen: 'home' | 'character-select' | 'game'
-- [ ] Store game configuration: theme, gridSize, mode, selectedCharacters
-- [ ] Provide navigation functions: `goToHome()`, `startGame()`, `goToCharacterSelect()`
+- [x] Create `src/contexts/AppContext.tsx`
+- [x] Manage current screen: 'home' | 'character-select' | 'game'
+- [x] Store game configuration: theme, gridSize, mode, selectedCharacters
+- [x] Provide navigation functions: `goToHome()`, `startGame()`, `goToCharacterSelect()`
 
 ### Screen Routing
-- [ ] Update `App.tsx` to render screens based on current state
-- [ ] Conditional rendering:
+- [x] Update `App.tsx` to render screens based on current state
+- [x] Conditional rendering:
   - 'home' → HomePage / ThemeSelector
   - 'character-select' → CharacterPicker (only for custom mode)
   - 'game' → GameBoard with MarkerTools
@@ -42,22 +42,22 @@ Home → Select Theme → Select Grid → Select Custom Mode → Start
 ```
 
 ### End Game Feature
-- [ ] Create "结束游戏" button on game screen
-- [ ] Position: in toolbar area, clearly visible but not dominant
-- [ ] On click: show confirmation dialog
-- [ ] Confirmation dialog:
+- [x] Create "结束游戏" button on game screen
+- [x] Position: in toolbar area, clearly visible but not dominant
+- [x] On click: show confirmation dialog
+- [x] Confirmation dialog:
   - Title: "结束游戏"
   - Message: "确定要结束游戏吗？当前进度将丢失。"
   - Actions: "取消" (cancel), "确定" (confirm)
-- [ ] On confirm: reset game state, return to home
+- [x] On confirm: reset game state, return to home
 
 ### Screen Transitions
-- [ ] Basic fade transition between screens (optional, nice-to-have)
-- [ ] Preserve scroll position where relevant
-- [ ] Clear game state when returning to home
+- [x] Basic fade transition between screens (optional, nice-to-have)
+- [x] Preserve scroll position where relevant
+- [x] Clear game state when returning to home
 
 ### Game Screen Layout
-- [ ] Combine GameBoard and MarkerTools into single Game screen
+- [x] Combine GameBoard and MarkerTools into single Game screen
 - [ ] Layout structure:
   ```
   ┌─────────────────────────┐
@@ -114,14 +114,14 @@ Home → Select Theme → Select Grid → Select Custom Mode → Start
 
 ## Acceptance Criteria
 
-- [ ] Home screen renders on app load
-- [ ] Selecting random mode → immediate game start with shuffled characters
-- [ ] Selecting custom mode → character selection screen
-- [ ] Character selection complete → game screen with chosen characters
-- [ ] Game screen shows board, marker tools, and end game button
-- [ ] End game button opens confirmation dialog
-- [ ] Canceling dialog keeps game active
-- [ ] Confirming dialog returns to home screen
-- [ ] Game state resets when returning to home
-- [ ] All navigation transitions work smoothly
-- [ ] No console errors during navigation
+- [x] Home screen renders on app load
+- [x] Selecting random mode → immediate game start with shuffled characters
+- [x] Selecting custom mode → character selection screen
+- [x] Character selection complete → game screen with chosen characters
+- [x] Game screen shows board, marker tools, and end game button
+- [x] End game button opens confirmation dialog
+- [x] Canceling dialog keeps game active
+- [x] Confirming dialog returns to home screen
+- [x] Game state resets when returning to home
+- [x] All navigation transitions work smoothly
+- [x] No console errors during navigation
