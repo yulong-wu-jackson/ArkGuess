@@ -33,12 +33,13 @@ export function CharacterCard({
       className={cn(
         'relative aspect-square w-full overflow-hidden rounded-lg',
         'border-2 border-border bg-muted',
-        'transition-all hover:shadow-md hover:border-primary/50',
+        'transition-all duration-150 hover:shadow-md hover:border-primary/50',
         'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2',
+        'active:scale-95',
         onClick && 'cursor-pointer'
       )}
     >
-      {/* Character Image */}
+      {/* Character Image - NOT lazy loaded (game board) */}
       <img
         src={imageUrl}
         alt={character.name}
@@ -55,21 +56,21 @@ export function CharacterCard({
         </span>
       </div>
 
-      {/* Marker Overlay - supports both X and O on same card */}
+      {/* Marker Overlay - supports both X and O on same card with animations */}
       {hasAnyMarker && (
         <div
           className={cn(
             'absolute inset-0 flex items-center justify-center gap-1',
-            'bg-black/30'
+            'bg-black/30 animate-in fade-in duration-150'
           )}
         >
           {hasX && (
-            <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-red-500">
+            <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-red-500 animate-in zoom-in-75 duration-150">
               ✕
             </span>
           )}
           {hasO && (
-            <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-blue-500">
+            <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-blue-500 animate-in zoom-in-75 duration-150">
               ○
             </span>
           )}

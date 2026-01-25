@@ -127,11 +127,12 @@ export function CharacterPicker() {
                 </div>
               )}
 
-              {/* Character Image */}
+              {/* Character Image - lazy loaded */}
               <img
                 src={getCharacterImageUrl(selectedTheme, character)}
                 alt={character.name}
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover"
+                loading="lazy"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover bg-muted"
               />
 
               {/* Character Name */}
