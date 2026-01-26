@@ -70,11 +70,20 @@ export function ThemeSelector() {
           return (
             <Card
               key={theme.id}
+              role="button"
+              tabIndex={0}
               className={cn(
                 'cursor-pointer transition-all hover:shadow-md',
+                'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2',
                 isSelected && 'ring-2 ring-primary'
               )}
               onClick={() => setSelectedTheme(theme)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  setSelectedTheme(theme)
+                }
+              }}
             >
               <CardHeader className="pb-2">
                 <CardTitle className="text-base flex items-center gap-3">

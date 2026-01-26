@@ -120,4 +120,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  button,
+  [role="button"],
+  a,
+  [onclick],
+  .cursor-pointer {
+    touch-action: manipulation;
+  }
 }
