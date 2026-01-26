@@ -120,7 +120,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       return {
         ...prev,
         gameCells,
-        screen: 'game' as Screen,
+        screen: 'game',
       }
     })
   }, [])

@@ -12,16 +12,28 @@ export function ThemeSelector() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    let cancelled = false
+
     loadAllThemes()
       .then((loadedThemes) => {
+        if (cancelled) return
         setThemes(loadedThemes)
-        if (loadedThemes.length === 1 && !selectedTheme) {
+        // Auto-select if only one theme is available
+        if (loadedThemes.length === 1) {
           setSelectedTheme(loadedThemes[0])
         }
       })
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false))
-  }, [selectedTheme, setSelectedTheme])
+      .catch((err) => {
+        if (!cancelled) setError(err.message)
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [setSelectedTheme])
 
   if (loading) {
     return (

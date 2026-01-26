@@ -23,7 +23,7 @@ A web-based "Guess Who?" digital board game featuring Arknights characters. Play
 
 ---
 
-## Tech Stack (choose the latest stable version)
+## Tech Stack (make sure to choose the latest stable version)
 
 | Category | Technology |
 |----------|------------|
@@ -94,7 +94,7 @@ Each theme folder requires a `manifest.json`:
 1. Research    → Use DeepWiki MCP to understand the tool/library (if needed)
 2. Implement   → Write code following best practices
 3. Test        → Run automated tests (pnpm test)
-4. Verify      → Manually run and verify functionality works
+4. Verify      → Manually run and verify functionality works (use playwrite mcp if appliable)
 5. Review      → Invoke /spec-dev:code-reviewer
 6. Fix         → Address any issues from review
 7. Proceed     → Only move to next step after all checks pass
@@ -199,18 +199,6 @@ Address all issues before proceeding to next task.
 ## Implementation Tickets
 
 Tickets are located in `.spec-dev/tickets/` and should be implemented in order:
-
-| Order | Ticket | Description |
-|-------|--------|-------------|
-| 1 | ticket_001_project-setup.md | Vite + React + TS + Tailwind + shadcn/ui |
-| 2 | ticket_002_types-and-theme-system.md | TypeScript types, theme loader, sample data |
-| 3 | ticket_003_theme-selection-page.md | Home page with theme/grid/mode selection |
-| 4 | ticket_004_character-selection.md | Custom mode character picker |
-| 5 | ticket_005_game-board.md | Game grid and character cards |
-| 6 | ticket_006_marking-system.md | Red/Blue markers and game state |
-| 7 | ticket_007_game-flow-navigation.md | Screen navigation, end game |
-| 8 | ticket_008_p1-polish-features.md | Responsive, lazy loading, animations |
-| 9 | ticket_009_github-deployment.md | GitHub Actions workflow |
 
 To implement a ticket:
 ```

@@ -27,18 +27,4 @@ export interface CellState {
   markers: CellMarkers
 }
 
-export interface GameState {
-  theme: Theme
-  gridSize: number
-  cells: CellState[]
-  activeMarker: 'x' | 'o'
-}
-
 export type GameMode = 'random' | 'custom'
-
-export interface GameConfig {
-  theme: Theme
-  gridSize: number
-  mode: GameMode
-  selectedCharacters?: Character[]
-}
