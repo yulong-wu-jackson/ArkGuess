@@ -13,12 +13,14 @@ import {
 } from '@/components/ui/alert-dialog'
 import { GameBoard } from '@/components/GameBoard'
 import { FinalDecisionDialog } from '@/components/FinalDecisionDialog'
+import { EmotePicker } from '@/components/EmotePicker'
+import { EmoteDisplay } from '@/components/EmoteDisplay'
 import { useApp } from '@/contexts/AppContext'
 import { useMultiplayer } from '@/contexts/MultiplayerContext'
 import { getCharacterImageUrl } from '@/lib/theme-loader'
 import type { CellState } from '@/types'
 import { cn } from '@/lib/utils'
-import { Wifi, WifiOff, Eye, User, Target, Clock } from 'lucide-react'
+import { Wifi, WifiOff, Eye, User, Target, Clock, UserX } from 'lucide-react'
 
 export function MultiplayerGamePage() {
   const { selectedTheme, setScreen } = useApp()
@@ -30,6 +32,7 @@ export function MultiplayerGamePage() {
     currentView,
     activeMarker,
     isConnected,
+    opponentDisconnected,
     toggleCellMarker,
     setCurrentView,
     setActiveMarker,
@@ -85,6 +88,22 @@ export function MultiplayerGamePage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground pb-28">
+      {/* Opponent Disconnected Overlay */}
+      {opponentDisconnected && (
+        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center">
+          <div className="text-center p-8 max-w-md">
+            <div className="mx-auto h-16 w-16 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <UserX className="h-8 w-8 text-red-500" />
+            </div>
+            <h2 className="text-2xl font-bold mb-2">对方已断开连接</h2>
+            <p className="text-muted-foreground mb-6">
+              你的对手已离开游戏或网络连接中断。
+            </p>
+            <Button onClick={handleEndGame}>返回首页</Button>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 py-4 sm:py-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
@@ -256,6 +275,12 @@ export function MultiplayerGamePage() {
           <span className="text-sm font-medium hidden sm:inline">蓝方 (O)</span>
         </button>
       </div>
+
+      {/* Emote Picker - Fixed at bottom left */}
+      <EmotePicker />
+
+      {/* Emote Display - Fixed at top right */}
+      <EmoteDisplay />
 
       {/* Final Decision Dialog */}
       <FinalDecisionDialog

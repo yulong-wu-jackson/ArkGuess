@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { useApp } from '@/contexts/AppContext'
 import { useMultiplayer } from '@/contexts/MultiplayerContext'
-import { Copy, Check, Users, Grid3X3, Shuffle, Crown, User, LogOut } from 'lucide-react'
+import { Copy, Check, Users, Grid3X3, Shuffle, Crown, User, LogOut, UserX } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function LobbyPage() {
@@ -17,6 +17,7 @@ export function LobbyPage() {
     peerId,
     error,
     gamePhase,
+    opponentDisconnected,
   } = useMultiplayer()
 
   const [copied, setCopied] = useState(false)
@@ -135,6 +136,22 @@ export function LobbyPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Opponent Disconnected Overlay */}
+      {opponentDisconnected && (
+        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center">
+          <div className="text-center p-8 max-w-md">
+            <div className="mx-auto h-16 w-16 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <UserX className="h-8 w-8 text-red-500" />
+            </div>
+            <h2 className="text-2xl font-bold mb-2">对方已断开连接</h2>
+            <p className="text-muted-foreground mb-6">
+              你的对手已离开房间或网络连接中断。
+            </p>
+            <Button onClick={handleLeave}>返回首页</Button>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 py-8 max-w-lg">
         {/* Header */}
         <div className="text-center mb-6">

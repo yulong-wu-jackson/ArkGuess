@@ -1,6 +1,7 @@
 import Peer from 'peerjs'
 import type { DataConnection } from 'peerjs'
 import type { MultiplayerMessage } from '@/types/multiplayer'
+import { validateMultiplayerMessage } from '@/types/multiplayer'
 
 /**
  * Event handlers for PeerService.
@@ -127,7 +128,10 @@ export class PeerService {
     })
 
     conn.on('data', (data) => {
-      this.events.onData?.(data as MultiplayerMessage, conn)
+      const validatedMessage = validateMultiplayerMessage(data)
+      if (validatedMessage) {
+        this.events.onData?.(validatedMessage, conn)
+      }
     })
 
     conn.on('close', () => {

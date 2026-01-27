@@ -14,6 +14,7 @@ import type {
   GamePhase,
   MultiplayerGameState,
   MarkerView,
+  EmoteId,
 } from '@/types/multiplayer'
 import type { CellMarkers, MarkerType } from '@/types'
 
@@ -25,6 +26,7 @@ interface MultiplayerContextValue {
   connectionStatus: ConnectionStatus
   peerId: string | null
   error: string | null
+  opponentDisconnected: boolean
 
   // Room state
   roomState: RoomState | null
@@ -44,6 +46,11 @@ interface MultiplayerContextValue {
   opponentMarkers: CellMarkers[]
   currentView: MarkerView
   activeMarker: MarkerType
+
+  // Emote state
+  receivedEmote: MultiplayerGameState['receivedEmote']
+  sendEmote: (emoteId: EmoteId) => void
+  clearReceivedEmote: () => void
 
   // Actions
   createRoom: (gridSize: number, characters: Character[], themeId: string) => Promise<string>
@@ -78,15 +85,18 @@ const initialGameState: MultiplayerGameState = {
   mySecretCharacter: null,
   opponentHasSelectedCharacter: false,
   myFinalGuess: null,
+  myFinalGuessTimestamp: null,
   opponentFinalGuess: null,
   opponentSecretCharacter: null,
   gameResult: null,
   error: null,
+  opponentDisconnected: false,
   myMarkers: [],
   opponentMarkers: [],
   currentView: 'my',
   mustCounterGuess: false,
   initiatorId: null,
+  receivedEmote: null,
 }
 
 export function MultiplayerProvider({ children }: { children: ReactNode }) {
@@ -146,10 +156,17 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         break
 
       case 'character_selected':
-        setGameState((prev) => ({
-          ...prev,
-          opponentHasSelectedCharacter: true,
-        }))
+        setGameState((prev) => {
+          // Update the player's hasSelectedCharacter status in roomState
+          const updatedPlayers = prev.roomState?.players.map((p) =>
+            p.id === message.payload.playerId ? { ...p, hasSelectedCharacter: true } : p
+          )
+          return {
+            ...prev,
+            opponentHasSelectedCharacter: true,
+            roomState: prev.roomState ? { ...prev.roomState, players: updatedPlayers ?? [] } : null,
+          }
+        })
         break
 
       case 'final_guess':
@@ -165,8 +182,49 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
           ) ?? null
 
           const isCorrect = opponentGuess?.id === prev.mySecretCharacter?.id
+          const myPeerId = prev.roomState?.players.find(p =>
+            p.role === prev.myRole
+          )?.id ?? ''
 
-          // If this is the initiating guess (not a counter-guess)
+          // Handle race condition: both players submitted guesses simultaneously
+          // If we already submitted our guess (myFinalGuess is set), we need to determine
+          // who was truly first using timestamps, with peer ID as tiebreaker
+          if (prev.myFinalGuess && prev.myFinalGuessTimestamp) {
+            const opponentTimestamp = message.timestamp
+            const myTimestamp = prev.myFinalGuessTimestamp
+
+            // Determine who was truly the initiator
+            // Use timestamp first, then peer ID as tiebreaker if timestamps are equal
+            let opponentWasFirst = opponentTimestamp < myTimestamp
+            if (opponentTimestamp === myTimestamp) {
+              // Tiebreaker: lower peer ID is considered first (deterministic)
+              opponentWasFirst = message.payload.playerId < myPeerId
+            }
+
+            if (opponentWasFirst) {
+              // Opponent was actually the initiator - our guess becomes the counter-guess
+              // Check if opponent guessed correctly to determine if we need to counter-guess
+              // or if we already submitted and need to recalculate
+              return {
+                ...prev,
+                opponentFinalGuess: opponentGuess,
+                opponentSecretCharacter: opponentSecret,
+                initiatorId: message.payload.playerId,
+                // Both guesses are in - this was a simultaneous guess scenario
+                // The effect will calculate the result
+              }
+            } else {
+              // We were the initiator - opponent's guess is the counter-guess
+              return {
+                ...prev,
+                opponentFinalGuess: opponentGuess,
+                opponentSecretCharacter: opponentSecret,
+                // initiatorId stays as myPeerId (set when we submitted)
+              }
+            }
+          }
+
+          // Normal flow: no race condition (we haven't submitted our guess yet)
           if (!prev.initiatorId) {
             if (!isCorrect) {
               // Opponent guessed wrong - we win immediately
@@ -175,6 +233,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
                 ...prev,
                 opponentFinalGuess: opponentGuess,
                 opponentSecretCharacter: opponentSecret,
+                initiatorId: message.payload.playerId,
                 // Don't change phase yet - will be set when we send result
               }
             } else {
@@ -188,7 +247,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
               }
             }
           } else {
-            // This is a counter-guess response
+            // This is a counter-guess response (normal flow)
             return {
               ...prev,
               opponentFinalGuess: opponentGuess,
@@ -229,6 +288,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
           mySecretCharacter: null,
           opponentHasSelectedCharacter: false,
           myFinalGuess: null,
+          myFinalGuessTimestamp: null,
           opponentFinalGuess: null,
           opponentSecretCharacter: null,
           gameResult: null,
@@ -248,6 +308,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
           mySecretCharacter: null,
           opponentHasSelectedCharacter: false,
           myFinalGuess: null,
+          myFinalGuessTimestamp: null,
           opponentFinalGuess: null,
           opponentSecretCharacter: null,
           gameResult: null,
@@ -285,8 +346,19 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
             ...prev,
             roomState: { ...prev.roomState, players: updatedPlayers },
             error: '对方已离开房间',
+            opponentDisconnected: true,
           }
         })
+        break
+
+      case 'emote':
+        setGameState((prev) => ({
+          ...prev,
+          receivedEmote: {
+            emoteId: message.payload.emoteId,
+            timestamp: message.timestamp,
+          },
+        }))
         break
     }
   }, [setSelectedTheme])
@@ -426,6 +498,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         phase: 'lobby',
         connectionStatus: 'connected',
         myRole: 'guest',
+        error: null, // Clear any previous connection errors
       }))
     },
     [peer]
@@ -611,6 +684,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
   const submitFinalGuess = useCallback(
     (character: Character) => {
       const myPeerId = peer.peerId ?? ''
+      const timestamp = Date.now()
 
       setGameState((prev) => {
         const isCounterGuess = prev.mustCounterGuess
@@ -618,7 +692,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         // Send the guess to opponent, including our secret for result calculation
         const guessMessage: MultiplayerMessage = {
           type: 'final_guess',
-          timestamp: Date.now(),
+          timestamp,
           payload: {
             playerId: myPeerId,
             guessedCharacterId: character.id,
@@ -633,6 +707,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         return {
           ...prev,
           myFinalGuess: character,
+          myFinalGuessTimestamp: timestamp,
           phase: 'waiting_for_result',
           initiatorId: isCounterGuess ? prev.initiatorId : myPeerId,
         }
@@ -703,6 +778,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
       mySecretCharacter: null,
       opponentHasSelectedCharacter: false,
       myFinalGuess: null,
+      myFinalGuessTimestamp: null,
       opponentFinalGuess: null,
       opponentSecretCharacter: null,
       gameResult: null,
@@ -732,6 +808,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
       mySecretCharacter: null,
       opponentHasSelectedCharacter: false,
       myFinalGuess: null,
+      myFinalGuessTimestamp: null,
       opponentFinalGuess: null,
       opponentSecretCharacter: null,
       gameResult: null,
@@ -748,6 +825,34 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
     }))
   }, [peer.peerId, sendMessage])
 
+  /**
+   * Sends an emote to the opponent.
+   */
+  const sendEmote = useCallback(
+    (emoteId: EmoteId) => {
+      const message: MultiplayerMessage = {
+        type: 'emote',
+        timestamp: Date.now(),
+        payload: {
+          playerId: peer.peerId ?? '',
+          emoteId,
+        },
+      }
+      sendMessage(message)
+    },
+    [peer.peerId, sendMessage]
+  )
+
+  /**
+   * Clears the received emote (used after display timeout).
+   */
+  const clearReceivedEmote = useCallback(() => {
+    setGameState((prev) => ({
+      ...prev,
+      receivedEmote: null,
+    }))
+  }, [])
+
   // Effect to handle judgment when opponent's guess is received
   // This runs when we receive a final_guess and need to determine the result
   useEffect(() => {
@@ -758,12 +863,47 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
 
     const myPeerId = peer.peerId ?? ''
     const iAmInitiator = gameState.initiatorId === myPeerId
+    const opponentGuessedCorrectly = gameState.opponentFinalGuess.id === gameState.mySecretCharacter.id
+
+    // Handle simultaneous guess scenario:
+    // Both players submitted guesses before either could respond
+    // The initiator (determined by timestamp) calculates the result
+    if (gameState.myFinalGuess && gameState.opponentFinalGuess && !gameState.mustCounterGuess) {
+      // Both have guessed - only the initiator should calculate result
+      if (!iAmInitiator) {
+        // We're not the initiator, wait for opponent to send result
+        return
+      }
+
+      // We're the initiator - calculate and send result
+      // Check if our guess was correct
+      const myGuessCorrect = gameState.myFinalGuess.id === gameState.opponentSecretCharacter?.id
+
+      let winnerId: string | null
+      if (myGuessCorrect && opponentGuessedCorrectly) {
+        winnerId = null // Draw - both guessed correctly
+      } else if (myGuessCorrect) {
+        winnerId = myPeerId // We win
+      } else if (opponentGuessedCorrectly) {
+        winnerId = gameState.initiatorId !== myPeerId ? gameState.initiatorId : null // Opponent wins (get their ID)
+        // Actually need opponent's peer ID
+        const opponentPeerId = gameState.roomState?.players.find(p => p.id !== myPeerId)?.id ?? null
+        winnerId = opponentPeerId
+      } else {
+        // Neither guessed correctly - initiator loses (first to guess wrong)
+        const opponentPeerId = gameState.roomState?.players.find(p => p.id !== myPeerId)?.id ?? null
+        winnerId = opponentPeerId
+      }
+
+      setTimeout(() => {
+        sendGameResult(winnerId, myGuessCorrect, opponentGuessedCorrectly)
+      }, 0)
+      return
+    }
 
     // Don't process if we're the counter-guesser waiting for result
     // (initiator should still process to determine the result)
     if (gameState.phase === 'waiting_for_result' && !gameState.mustCounterGuess && !iAmInitiator) return
-
-    const opponentGuessedCorrectly = gameState.opponentFinalGuess.id === gameState.mySecretCharacter.id
 
     // If opponent was the initiator and hasn't received our counter-guess yet
     if (gameState.mustCounterGuess) {
@@ -782,12 +922,17 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
     }
 
     // If we were the initiator (we guessed first)
-    if (gameState.initiatorId === myPeerId) {
-      // This is opponent's counter-guess response
-      // We already know our guess was correct (that's why they're counter-guessing)
+    if (iAmInitiator && gameState.opponentFinalGuess && !gameState.myFinalGuess) {
+      // Opponent sent counter-guess (shouldn't happen without myFinalGuess, but be safe)
+      return
+    }
+
+    if (iAmInitiator && gameState.myFinalGuess) {
+      // We're the initiator and received opponent's counter-guess
+      // Our guess was correct (that's why opponent had to counter-guess)
       // Now check if their counter-guess is correct
       const counterGuessCorrect = opponentGuessedCorrectly
-      const initiatorCorrect = true // We know this because we're at counter-guess stage
+      const initiatorCorrect = true // We know this because opponent is counter-guessing
 
       // Determine winner
       let winnerId: string | null
@@ -804,8 +949,8 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
       return
     }
 
-    // If opponent was the initiator and guessed wrong
-    if (!opponentGuessedCorrectly && !gameState.mustCounterGuess && gameState.initiatorId !== myPeerId) {
+    // If opponent was the initiator and guessed wrong (and we haven't submitted our guess yet)
+    if (!opponentGuessedCorrectly && !gameState.mustCounterGuess && !iAmInitiator && !gameState.myFinalGuess) {
       // Opponent guessed wrong - we win
       // Schedule sendGameResult to avoid setState during render
       setTimeout(() => {
@@ -814,13 +959,14 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
     }
   }, [
     gameState.opponentFinalGuess,
+    gameState.opponentSecretCharacter,
     gameState.mySecretCharacter,
     gameState.phase,
     gameState.mustCounterGuess,
     gameState.initiatorId,
     gameState.myFinalGuess,
     gameState.myRole,
-    gameState.roomState?.selectedCharacters,
+    gameState.roomState?.players,
     peer.peerId,
     sendMessage,
     sendGameResult,
@@ -838,6 +984,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         connectionStatus,
         peerId: peer.peerId,
         error: gameState.error,
+        opponentDisconnected: gameState.opponentDisconnected,
         roomState: gameState.roomState,
         myRole: gameState.myRole,
         gamePhase: gameState.phase,
@@ -851,6 +998,9 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         opponentMarkers: gameState.opponentMarkers,
         currentView: gameState.currentView,
         activeMarker,
+        receivedEmote: gameState.receivedEmote,
+        sendEmote,
+        clearReceivedEmote,
         createRoom,
         joinRoom,
         leaveRoom,

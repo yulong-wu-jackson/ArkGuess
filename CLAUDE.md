@@ -36,56 +36,6 @@ A web-based "Guess Who?" digital board game featuring Arknights characters. Play
 
 ---
 
-
-## UI Text Reference (Chinese)
-
-| Element | Chinese |
-|---------|---------|
-| Page title | ArkGuess 猜猜我是谁 |
-| Theme section | 选择主题 |
-| Grid size | 网格大小 |
-| Random mode | 随机模式 |
-| Custom mode | 自选模式 |
-| Start game | 开始游戏 |
-| End game | 结束游戏 |
-| Red marker | 红方 (X) |
-| Blue marker | 蓝方 (O) |
-| Confirm end | 确定要结束游戏吗？ |
-| Cancel | 取消 |
-| Confirm | 确定 |
-| Back | 返回 |
-| Select all | 全选 |
-| Clear selection | 清除选择 |
-
----
-
-## Game Rules
-
-1. Grid sizes: 2x2 to 7x7
-2. Two modes: Random (auto-fill) and Custom (user picks characters)
-3. Two marker types: Red (X) and Blue (O)
-4. Click character to add current marker
-5. Click same marker again to remove it
-6. Click different marker to replace
-
----
-
-## Theme Manifest Format
-
-Each theme folder requires a `manifest.json`:
-
-```json
-{
-  "name": "明日方舟",
-  "characters": [
-    { "id": "amiya", "name": "阿米娅", "image": "amiya.png" },
-    { "id": "chen", "name": "陈", "image": "chen.png" }
-  ]
-}
-```
-
----
-
 ## Development Workflow
 
 ### Step-by-Step Process

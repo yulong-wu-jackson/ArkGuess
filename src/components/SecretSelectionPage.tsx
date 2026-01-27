@@ -6,7 +6,7 @@ import { useMultiplayer } from '@/contexts/MultiplayerContext'
 import { getCharacterImageUrl } from '@/lib/theme-loader'
 import type { Character } from '@/types'
 import { cn } from '@/lib/utils'
-import { Check, Clock, User } from 'lucide-react'
+import { Check, Clock, User, UserX } from 'lucide-react'
 
 export function SecretSelectionPage() {
   const { selectedTheme, setScreen } = useApp()
@@ -18,6 +18,8 @@ export function SecretSelectionPage() {
     gamePhase,
     peerId,
     error,
+    opponentDisconnected,
+    leaveRoom,
   } = useMultiplayer()
 
   // Use context value directly instead of local state when already confirmed
@@ -55,6 +57,11 @@ export function SecretSelectionPage() {
   const opponentPlayer = roomState?.players.find((p) => p.id !== peerId)
   const isHost = myPlayer?.role === 'host'
 
+  const handleLeaveRoom = () => {
+    leaveRoom()
+    setScreen('home')
+  }
+
   if (!selectedTheme || characters.length === 0) {
     return (
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
@@ -72,6 +79,22 @@ export function SecretSelectionPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Opponent Disconnected Overlay */}
+      {opponentDisconnected && (
+        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center">
+          <div className="text-center p-8 max-w-md">
+            <div className="mx-auto h-16 w-16 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <UserX className="h-8 w-8 text-red-500" />
+            </div>
+            <h2 className="text-2xl font-bold mb-2">对方已断开连接</h2>
+            <p className="text-muted-foreground mb-6">
+              你的对手已离开房间或网络连接中断。
+            </p>
+            <Button onClick={handleLeaveRoom}>返回首页</Button>
+          </div>
+        </div>
+      )}
+
       <div className="container mx-auto px-4 py-6 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-6">
