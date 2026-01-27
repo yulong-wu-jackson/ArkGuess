@@ -1,239 +1,201 @@
 # 添加角色指南
 
-本文档介绍如何从 PRTS Wiki 可靠地下载明日方舟角色头像，并将其添加到游戏中。
+自动从 PRTS Wiki 下载明日方舟角色头像并生成元数据。
 
 ---
 
-## 目录
+## ⚡ 快速开始
 
-1. [获取角色头像 URL](#获取角色头像-url)
-2. [下载角色头像](#下载角色头像)
-3. [更新 manifest.json](#更新-manifestjson)
-4. [验证图片](#验证图片)
-5. [常见问题](#常见问题)
-
----
-
-## 获取角色头像 URL
-
-### 方法一：使用 PRTS Wiki API（推荐）
-
-PRTS Wiki 提供 MediaWiki API 来查询图片 URL。使用以下格式：
-
-```
-https://prts.wiki/api.php?action=query&titles=文件:头像_[角色名].png&prop=imageinfo&iiprop=url&format=json
-```
-
-**示例：获取阿米娅的头像 URL**
+### 推荐命令（最快）
 
 ```bash
-curl "https://prts.wiki/api.php?action=query&titles=文件:头像_阿米娅.png&prop=imageinfo&iiprop=url&format=json"
+python scripts/sync-characters.py --all --workers 10
 ```
 
-响应示例：
-```json
-{
-  "query": {
-    "pages": {
-      "12345": {
-        "title": "文件:头像 阿米娅.png",
-        "imageinfo": [
-          {
-            "url": "https://media.prts.wiki/a/ab/%E5%A4%B4%E5%83%8F_%E9%98%BF%E7%B1%B3%E5%A8%85.png"
-          }
-        ]
-      }
-    }
-  }
-}
-```
-
-从响应中提取 `imageinfo[0].url` 字段即可获得图片直链。
-
-### 方法二：直接访问 PRTS Wiki 页面
-
-1. 访问 https://prts.wiki/w/干员一览
-2. 点击目标角色进入详情页
-3. 右键点击头像 → 复制图片地址
-
----
-
-## 下载角色头像
-
-### 使用 curl 下载
+### 其他选项
 
 ```bash
-# 单个角色
-curl -o "角色英文ID.png" "图片URL"
+# 仅下载 5-6 星
+python scripts/sync-characters.py
 
-# 示例：下载阿米娅
-curl -o "amiya.png" "https://media.prts.wiki/a/ab/%E5%A4%B4%E5%83%8F_%E9%98%BF%E7%B1%B3%E5%A8%85.png"
-```
+# 预览（不下载）
+python scripts/sync-characters.py --all --dry-run
 
-### 批量下载脚本
-
-创建一个 shell 脚本批量下载：
-
-```bash
-#!/bin/bash
-# download-characters.sh
-
-# 定义角色映射：英文ID|中文名
-characters=(
-  "amiya|阿米娅"
-  "chen|陈"
-  "silverash|银灰"
-)
-
-for char in "${characters[@]}"; do
-  id="${char%%|*}"
-  name="${char##*|}"
-
-  # 获取图片 URL
-  url=$(curl -s "https://prts.wiki/api.php?action=query&titles=文件:头像_${name}.png&prop=imageinfo&iiprop=url&format=json" | \
-    python3 -c "import sys,json; d=json.load(sys.stdin); pages=d['query']['pages']; print(list(pages.values())[0].get('imageinfo',[{}])[0].get('url',''))")
-
-  if [ -n "$url" ]; then
-    echo "下载 ${name} (${id})..."
-    curl -o "public/images/arknights/${id}.png" "$url"
-  else
-    echo "错误: 未找到 ${name} 的图片"
-  fi
-done
+# 网络不稳定时
+python scripts/sync-characters.py --all --workers 1
 ```
 
 ---
 
-## 更新 manifest.json
+## 📋 下载范围
 
-下载图片后，需要在 `public/images/arknights/manifest.json` 中添加角色信息：
+| 命令 | 稀有度 | 数量 |
+|------|--------|------|
+| `--all` 或 `--rarity 0` | 1-6★ | ~700+ |
+| `--rarity 1` | 2-6★ | ~600+ |
+| `--rarity 2` | 3-6★ | ~500+ |
+| `--rarity 3` | 4-6★ | ~300+ |
+| `--rarity 4` （默认） | 5-6★ | ~150+ |
+| `--rarity 5` | 6★ only | ~100+ |
+
+---
+
+## 🎯 常用选项
+
+```bash
+--all              下载所有角色（1-6星）
+--rarity N         最低稀有度（0-5）
+--filter "名字"     只下载匹配的角色
+--force            强制重新下载
+--workers N        并发数（默认3，推荐10，范围1-10）
+--dry-run          预览不下载
+```
+
+**💡 性能提示：**
+- 使用 `--workers 10` 可大幅加速元数据获取
+- 元数据用于验证有效干员（有稀有度+职业=保留）
+
+---
+
+## 📁 文件结构
+
+### 使用中文文件名
+
+```
+public/images/arknights/
+├── manifest.json       # 游戏用简单清单
+├── metadata.json       # 富元数据（稀有度、职业、标签等）
+├── 银灰.png
+├── 陈.png
+├── 阿米娅.png
+└── 阿米娅(近卫).png    # ✅ 职业转换异格保留
+```
+
+**智能过滤（基于 Wiki 元数据）：**
+- ✅ **有稀有度 + 职业** → 保留（包括 Mon3tr 等特殊单位）
+- ❌ 皮肤 (`_skin1`, `_epoque`)
+- ❌ 敌方单位 (`敌人_xxx`)
+- ❌ 活动特殊版本 (`阿米娅(于万千宇宙之中)`)
+- ❌ 无元数据单位 (`char_004_xxx`, 真正的召唤物)
+
+---
+
+## 📦 输出文件
+
+### `manifest.json` - 游戏清单
 
 ```json
 {
   "name": "明日方舟",
   "characters": [
-    {
-      "id": "amiya",
-      "name": "阿米娅",
-      "image": "amiya.png"
-    },
-    {
-      "id": "chen",
-      "name": "陈",
-      "image": "chen.png"
-    }
+    { "id": "银灰", "name": "银灰", "image": "银灰.png" }
   ]
 }
 ```
 
-### 字段说明
+### `metadata.json` - 富元数据
 
-| 字段 | 说明 | 示例 |
-|------|------|------|
-| `id` | 唯一标识符（英文小写，用连字符分隔） | `silverash`, `projekt-red` |
-| `name` | 中文显示名称 | `银灰`, `红` |
-| `image` | 图片文件名（与 id 对应） | `silverash.png` |
-
-### 命名规范
-
-- **id**: 使用英文小写，多词用连字符连接
-  - 正确: `silverash`, `projekt-red`, `ch-en`
-  - 错误: `SilverAsh`, `projekt_red`
-- **name**: 使用游戏内官方中文名
-- **image**: `{id}.png` 格式
-
----
-
-## 验证图片
-
-### 验证图片完整性
-
-确保下载的图片不是损坏或错误的：
-
-```bash
-# 检查图片是否为有效 PNG
-file public/images/arknights/*.png | grep -v "PNG image data"
-
-# 检查重复图片（相同 MD5 = 重复）
-cd public/images/arknights
-md5 *.png | sort -k4 | uniq -D -f3
-```
-
-### 在游戏中验证
-
-1. 启动开发服务器：`pnpm dev`
-2. 访问 http://localhost:5173
-3. 选择主题并进入角色选择
-4. 检查每个角色的头像是否与名称匹配
-
----
-
-## 常见问题
-
-### 角色名在 Wiki 上不同
-
-某些角色在 Wiki 上的名称与游戏内不同：
-
-| 游戏内名称 | Wiki 图片名称 |
-|-----------|--------------|
-| 和弦寂静 | 和弦 |
-| 红 | 红 |
-
-使用 Wiki 搜索功能确认正确名称：
-```bash
-curl "https://prts.wiki/api.php?action=query&list=search&srsearch=角色名&format=json"
-```
-
-### API 返回 missing
-
-如果 API 响应包含 `"missing": ""` 字段，说明图片文件不存在。请检查：
-1. 角色名是否正确
-2. 是否需要使用不同的名称变体
-
-### 图片太大
-
-PRTS Wiki 头像通常为 180x180 像素。如需调整大小：
-
-```bash
-# 使用 ImageMagick 调整大小
-convert input.png -resize 180x180 output.png
-
-# 或使用 sips (macOS)
-sips -z 180 180 input.png --out output.png
+```json
+{
+  "characters": {
+    "银灰": {
+      "name": "银灰",
+      "image": "银灰.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": ["输出", "支援"],
+      "position": "近战位",
+      "faction": "谢拉格"
+    }
+  },
+  "indexes": {
+    "byRarity": { "6星": ["银灰", ...] },
+    "byClass": { "近卫": ["银灰", ...] },
+    "byTag": { "输出": ["银灰", ...] },
+    "byFaction": { "谢拉格": ["银灰", ...] }
+  }
+}
 ```
 
 ---
 
-## 完整添加流程示例
+## 🎮 未来玩法创意
 
-以添加"银灰"为例：
+利用 `metadata.json` 可实现：
+
+| 玩法 | 使用索引 |
+|------|---------|
+| **稀有度挑战** "只用5星" | `byRarity` |
+| **职业限定** "医疗干员专场" | `byClass` |
+| **阵营战** "罗德岛 vs 谢拉格" | `byFaction` |
+| **标签模式** "输出型干员" | `byTag` |
+| **位置对抗** "近战位 vs 远程位" | `byPosition` |
+
+---
+
+## 🔧 手动添加单个角色
+
+### 1. 获取图片 URL
 
 ```bash
-# 1. 获取图片 URL
 curl -s "https://prts.wiki/api.php?action=query&titles=文件:头像_银灰.png&prop=imageinfo&iiprop=url&format=json"
+```
 
-# 2. 下载图片
-curl -o public/images/arknights/silverash.png "https://media.prts.wiki/..."
+### 2. 下载
 
-# 3. 验证图片
-file public/images/arknights/silverash.png
+```bash
+curl -o "public/images/arknights/银灰.png" "<图片URL>"
+```
 
-# 4. 更新 manifest.json
-# 添加:
-# {
-#   "id": "silverash",
-#   "name": "银灰",
-#   "image": "silverash.png"
-# }
+### 3. 重新生成清单
 
-# 5. 测试
-pnpm dev
+```bash
+# 手动添加后重新扫描生成清单
+python scripts/sync-characters.py --dry-run
+```
+
+或直接重新下载该角色：
+
+```bash
+python scripts/sync-characters.py --filter <角色名> --force
 ```
 
 ---
 
-## PRTS Wiki 资源链接
+## 📚 API 参考
 
-- 干员一览: https://prts.wiki/w/干员一览
-- Wiki API: https://prts.wiki/api.php
-- 图片服务器: https://media.prts.wiki/
+**列出所有头像：**
+```
+https://prts.wiki/api.php?action=query&list=allimages&aiprefix=头像_&ailimit=500&format=json
+```
+
+**获取角色页面：**
+```
+https://prts.wiki/api.php?action=parse&page=银灰&prop=wikitext&format=json
+```
+
+---
+
+## ❓ 常见问题
+
+**Q: 下载很慢？**
+A: 使用 `--no-metadata` 跳过元数据获取，或减少 `--workers` 数量
+
+**Q: 图片下载失败？**
+A: 检查网络，稍后重试，或使用 `--force` 重新下载
+
+**Q: 如何更新已有角色？**
+A: 使用 `--filter <角色名> --force`
+
+**Q: 如何删除特定角色？**
+A: 直接删除 `.png` 文件，然后重新生成清单
+
+---
+
+## 🔗 相关链接
+
+- [干员一览 - PRTS Wiki](https://prts.wiki/w/干员一览)
+- [PRTS Wiki API](https://prts.wiki/api.php)
+- [脚本 README](../scripts/README.md)
