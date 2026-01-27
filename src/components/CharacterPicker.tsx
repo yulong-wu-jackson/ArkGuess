@@ -1,5 +1,6 @@
 import { useCallback, useMemo } from 'react'
 import { Button } from '@/components/ui/button'
+import { CharacterFilterBar } from '@/components/CharacterFilterBar'
 import { useApp } from '@/contexts/AppContext'
 import { getCharacterImageUrl, shuffleArray } from '@/lib/theme-loader'
 import type { Character } from '@/types'
@@ -11,12 +12,9 @@ export function CharacterPicker() {
     selectedCharacters,
     setSelectedCharacters,
     requiredCharacterCount,
+    filteredCharacters,
   } = useApp()
 
-  const characters = useMemo(
-    () => selectedTheme?.manifest.characters ?? [],
-    [selectedTheme]
-  )
   const selectedIds = useMemo(
     () => new Set(selectedCharacters.map((c) => c.id)),
     [selectedCharacters]
@@ -41,8 +39,8 @@ export function CharacterPicker() {
 
   const handleSelectAll = useCallback(() => {
     // Select first N characters needed
-    setSelectedCharacters(characters.slice(0, requiredCharacterCount))
-  }, [characters, requiredCharacterCount, setSelectedCharacters])
+    setSelectedCharacters(filteredCharacters.slice(0, requiredCharacterCount))
+  }, [filteredCharacters, requiredCharacterCount, setSelectedCharacters])
 
   const handleClearSelection = useCallback(() => {
     setSelectedCharacters([])
@@ -50,9 +48,9 @@ export function CharacterPicker() {
 
   const handleRandomSelect = useCallback(() => {
     // Randomly pick required count
-    const shuffled = shuffleArray([...characters])
+    const shuffled = shuffleArray([...filteredCharacters])
     setSelectedCharacters(shuffled.slice(0, requiredCharacterCount))
-  }, [characters, requiredCharacterCount, setSelectedCharacters])
+  }, [filteredCharacters, requiredCharacterCount, setSelectedCharacters])
 
   if (!selectedTheme) {
     return (
@@ -66,6 +64,9 @@ export function CharacterPicker() {
 
   return (
     <div className="space-y-6">
+      {/* Filter Bar */}
+      <CharacterFilterBar />
+
       {/* Counter and Quick Actions */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-lg font-medium">
@@ -101,7 +102,7 @@ export function CharacterPicker() {
 
       {/* Character Grid */}
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
-        {characters.map((character) => {
+        {filteredCharacters.map((character) => {
           const isSelected = selectedIds.has(character.id)
           const isDisabled = !isSelected && isAtLimit
 

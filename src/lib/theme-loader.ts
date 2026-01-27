@@ -1,4 +1,4 @@
-import type { Character, Theme, ThemeManifest } from '@/types'
+import type { Character, Theme, ThemeManifest, ThemeMetadata } from '@/types'
 
 const BASE_PATH = import.meta.env.BASE_URL + 'images'
 const PLACEHOLDER_IMAGE = import.meta.env.BASE_URL + 'placeholder.svg'
@@ -21,11 +21,27 @@ export async function loadThemeManifest(themeId: string): Promise<ThemeManifest>
   }
 }
 
+export async function loadThemeMetadata(themeId: string): Promise<ThemeMetadata | null> {
+  const url = `${BASE_PATH}/${themeId}/metadata.json`
+
+  try {
+    const response = await fetch(url)
+    if (!response.ok) return null
+    return await response.json()
+  } catch (error) {
+    console.warn(`Failed to load metadata for "${themeId}":`, error)
+    return null
+  }
+}
+
 export async function loadTheme(themeId: string): Promise<Theme> {
   const manifest = await loadThemeManifest(themeId)
+  const metadata = await loadThemeMetadata(themeId)
+
   return {
     id: themeId,
     manifest,
+    metadata: metadata || undefined,
     basePath: `${BASE_PATH}/${themeId}`,
   }
 }

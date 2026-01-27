@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from 'react'
 import type { Theme, GameMode, Character, CellState } from '@/types'
 import { selectRandomCharacters } from '@/lib/theme-loader'
 
@@ -14,6 +14,11 @@ interface AppState {
   selectedCharacters: Character[]
   gameCells: CellState[]
   activeMarker: ActiveMarker
+  characterSearchQuery: string
+  selectedTagFilters: string[]
+  selectedRarityFilters: string[]
+  selectedFactionFilters: string[]
+  selectedClassFilters: string[]
 }
 
 interface AppContextValue extends AppState {
@@ -23,11 +28,17 @@ interface AppContextValue extends AppState {
   setGameMode: (mode: GameMode | null) => void
   setSelectedCharacters: (characters: Character[]) => void
   setActiveMarker: (marker: ActiveMarker) => void
+  setCharacterSearchQuery: (query: string) => void
+  setSelectedTagFilters: (tags: string[]) => void
+  setSelectedRarityFilters: (rarities: string[]) => void
+  setSelectedFactionFilters: (factions: string[]) => void
+  setSelectedClassFilters: (classes: string[]) => void
   toggleCellMarker: (cellIndex: number) => void
   startGame: () => void
   resetGame: () => void
   canStartGame: boolean
   requiredCharacterCount: number
+  filteredCharacters: Character[]
 }
 
 const initialState: AppState = {
@@ -38,6 +49,11 @@ const initialState: AppState = {
   selectedCharacters: [],
   gameCells: [],
   activeMarker: 'x',
+  characterSearchQuery: '',
+  selectedTagFilters: [],
+  selectedRarityFilters: [],
+  selectedFactionFilters: [],
+  selectedClassFilters: [],
 }
 
 const AppContext = createContext<AppContextValue | null>(null)
@@ -50,7 +66,16 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const setSelectedTheme = useCallback((theme: Theme | null) => {
-    setState((prev) => ({ ...prev, selectedTheme: theme }))
+    setState((prev) => ({
+      ...prev,
+      selectedTheme: theme,
+      // Clear all filters when theme changes to prevent invalid filter state
+      characterSearchQuery: '',
+      selectedTagFilters: [],
+      selectedRarityFilters: [],
+      selectedFactionFilters: [],
+      selectedClassFilters: [],
+    }))
   }, [])
 
   const setGridSize = useCallback((gridSize: number) => {
@@ -67,6 +92,26 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const setActiveMarker = useCallback((activeMarker: ActiveMarker) => {
     setState((prev) => ({ ...prev, activeMarker }))
+  }, [])
+
+  const setCharacterSearchQuery = useCallback((query: string) => {
+    setState((prev) => ({ ...prev, characterSearchQuery: query }))
+  }, [])
+
+  const setSelectedTagFilters = useCallback((tags: string[]) => {
+    setState((prev) => ({ ...prev, selectedTagFilters: tags }))
+  }, [])
+
+  const setSelectedRarityFilters = useCallback((rarities: string[]) => {
+    setState((prev) => ({ ...prev, selectedRarityFilters: rarities }))
+  }, [])
+
+  const setSelectedFactionFilters = useCallback((factions: string[]) => {
+    setState((prev) => ({ ...prev, selectedFactionFilters: factions }))
+  }, [])
+
+  const setSelectedClassFilters = useCallback((classes: string[]) => {
+    setState((prev) => ({ ...prev, selectedClassFilters: classes }))
   }, [])
 
   const toggleCellMarker = useCallback((cellIndex: number) => {
@@ -137,6 +182,79 @@ export function AppProvider({ children }: { children: ReactNode }) {
     (state.gameMode === 'random' ||
       state.selectedCharacters.length === requiredCharacterCount)
 
+  // Compute filtered characters based on search + tags
+  const filteredCharacters = useMemo(() => {
+    if (!state.selectedTheme?.metadata) {
+      return state.selectedTheme?.manifest.characters ?? []
+    }
+
+    let characters = state.selectedTheme.manifest.characters
+    const metadata = state.selectedTheme.metadata.characters
+
+    // Filter by search query (name, class, faction)
+    if (state.characterSearchQuery) {
+      const query = state.characterSearchQuery.toLowerCase()
+      characters = characters.filter(char => {
+        const meta = metadata[char.id]
+        // Characters without metadata are still searchable by name
+        if (!meta) {
+          return char.name.toLowerCase().includes(query)
+        }
+        return (
+          char.name.toLowerCase().includes(query) ||
+          meta.class?.toLowerCase().includes(query) ||
+          meta.faction?.toLowerCase().includes(query)
+        )
+      })
+    }
+
+    // Filter by tags (AND logic - character must have ALL selected tags)
+    if (state.selectedTagFilters.length > 0) {
+      characters = characters.filter(char => {
+        const meta = metadata[char.id]
+        if (!meta?.tags) return false
+        // Character must have ALL selected tags
+        return state.selectedTagFilters.every(tag => meta.tags?.includes(tag))
+      })
+    }
+
+    // Filter by rarity (OR logic - character can match ANY selected rarity)
+    if (state.selectedRarityFilters.length > 0) {
+      characters = characters.filter(char => {
+        const meta = metadata[char.id]
+        if (!meta?.rarityLabel) return false
+        return state.selectedRarityFilters.includes(meta.rarityLabel)
+      })
+    }
+
+    // Filter by faction (OR logic - character can match ANY selected faction)
+    if (state.selectedFactionFilters.length > 0) {
+      characters = characters.filter(char => {
+        const meta = metadata[char.id]
+        if (!meta?.faction) return false
+        return state.selectedFactionFilters.includes(meta.faction)
+      })
+    }
+
+    // Filter by class (OR logic - character can match ANY selected class)
+    if (state.selectedClassFilters.length > 0) {
+      characters = characters.filter(char => {
+        const meta = metadata[char.id]
+        if (!meta?.class) return false
+        return state.selectedClassFilters.includes(meta.class)
+      })
+    }
+
+    return characters
+  }, [
+    state.selectedTheme,
+    state.characterSearchQuery,
+    state.selectedTagFilters,
+    state.selectedRarityFilters,
+    state.selectedFactionFilters,
+    state.selectedClassFilters,
+  ])
+
   return (
     <AppContext.Provider
       value={{
@@ -147,11 +265,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setGameMode,
         setSelectedCharacters,
         setActiveMarker,
+        setCharacterSearchQuery,
+        setSelectedTagFilters,
+        setSelectedRarityFilters,
+        setSelectedFactionFilters,
+        setSelectedClassFilters,
         toggleCellMarker,
         startGame,
         resetGame,
         canStartGame,
         requiredCharacterCount,
+        filteredCharacters,
       }}
     >
       {children}
