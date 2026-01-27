@@ -1,0 +1,8756 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-26",
+  "characters": {
+    "12F": {
+      "name": "12F",
+      "image": "12F.png",
+      "rarity": 1,
+      "rarityLabel": "2星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "新手"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "CONFESS-47": {
+      "name": "CONFESS-47",
+      "image": "CONFESS-47.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "支援机械",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "拉特兰"
+    },
+    "Castle-3": {
+      "name": "Castle-3",
+      "image": "Castle-3.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "支援机械",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "Friston-3": {
+      "name": "Friston-3",
+      "image": "Friston-3.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "支援机械",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "Lancet-2": {
+      "name": "Lancet-2",
+      "image": "Lancet-2.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "支援机械",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "Miss.Christine": {
+      "name": "Miss.Christine",
+      "image": "Miss.Christine.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "本源术师",
+      "tags": [
+        "元素",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "Mon3tr": {
+      "name": "Mon3tr",
+      "image": "Mon3tr.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "链愈师",
+      "tags": [
+        "治疗",
+        "输出",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "PhonoR-0": {
+      "name": "PhonoR-0",
+      "image": "PhonoR-0.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "辅助",
+      "subclass": "巫役",
+      "tags": [
+        "支援机械",
+        "元素"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "Pith": {
+      "name": "Pith",
+      "image": "Pith.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "Sharp": {
+      "name": "Sharp",
+      "image": "Sharp.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "Stormeye": {
+      "name": "Stormeye",
+      "image": "Stormeye.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "THRM-EX": {
+      "name": "THRM-EX",
+      "image": "THRM-EX.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "支援机械",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "Touch": {
+      "name": "Touch",
+      "image": "Touch.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "U-Official": {
+      "name": "U-Official",
+      "image": "U-Official.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "辅助",
+      "subclass": "吟游者",
+      "tags": [
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "W": {
+      "name": "W",
+      "image": "W.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位"
+    },
+    "万顷": {
+      "name": "万顷",
+      "image": "万顷.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "执旗手",
+      "tags": [
+        "费用回复",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "三角初华": {
+      "name": "三角初华",
+      "image": "三角初华.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "吟游者",
+      "tags": [
+        "支援",
+        "治疗"
+      ],
+      "position": "远程位"
+    },
+    "丰川祥子": {
+      "name": "丰川祥子",
+      "image": "丰川祥子.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位"
+    },
+    "临光": {
+      "name": "临光",
+      "image": "临光.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗"
+      ],
+      "position": "近战位"
+    },
+    "乌尔比安": {
+      "name": "乌尔比安",
+      "image": "乌尔比安.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "重剑手",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "阿戈尔"
+    },
+    "乌有": {
+      "name": "乌有",
+      "image": "乌有.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "行商",
+      "tags": [
+        "快速复活",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "九色鹿": {
+      "name": "九色鹿",
+      "image": "九色鹿.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "云迹": {
+      "name": "云迹",
+      "image": "云迹.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "巡空者",
+      "tags": [
+        "高空",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "亚叶": {
+      "name": "亚叶",
+      "image": "亚叶.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "仇白": {
+      "name": "仇白",
+      "image": "仇白.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "令": {
+      "name": "令",
+      "image": "令.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "召唤",
+        "支援",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "伊内丝": {
+      "name": "伊内丝",
+      "image": "伊内丝.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "情报官",
+      "tags": [
+        "费用回复",
+        "快速复活"
+      ],
+      "position": "近战位"
+    },
+    "伊桑": {
+      "name": "伊桑",
+      "image": "伊桑.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "伏击客",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "伊芙利特": {
+      "name": "伊芙利特",
+      "image": "伊芙利特.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "轰击术师",
+      "tags": [
+        "群攻",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "休谟斯": {
+      "name": "休谟斯",
+      "image": "休谟斯.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "收割者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "伺夜": {
+      "name": "伺夜",
+      "image": "伺夜.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "战术家",
+      "tags": [
+        "费用回复",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "但书": {
+      "name": "但书",
+      "image": "但书.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "削弱",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "卡西米尔"
+    },
+    "余": {
+      "name": "余",
+      "image": "余.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "本源铁卫",
+      "tags": [
+        "元素",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "佩佩": {
+      "name": "佩佩",
+      "image": "佩佩.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "撼地者",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "信仰搅拌机": {
+      "name": "信仰搅拌机",
+      "image": "信仰搅拌机.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "哨戒铁卫",
+      "tags": [
+        "防护",
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "拉特兰"
+    },
+    "假日威龙陈": {
+      "name": "假日威龙陈",
+      "image": "假日威龙陈.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "散射手",
+      "tags": [
+        "输出",
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "傀影": {
+      "name": "傀影",
+      "image": "傀影.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "控场",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "克洛丝": {
+      "name": "克洛丝",
+      "image": "克洛丝.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "八幡海铃": {
+      "name": "八幡海铃",
+      "image": "八幡海铃.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "伏击客",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位"
+    },
+    "冬时": {
+      "name": "冬时",
+      "image": "冬时.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "先锋",
+      "subclass": "情报官",
+      "tags": [
+        "费用回复",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "冰酿": {
+      "name": "冰酿",
+      "image": "冰酿.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "猎手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "凛冬": {
+      "name": "凛冬",
+      "image": "凛冬.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "凛御银灰": {
+      "name": "凛御银灰",
+      "image": "凛御银灰.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "策士",
+      "tags": [
+        "费用回复",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "凛视": {
+      "name": "凛视",
+      "image": "凛视.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "巫役",
+      "tags": [
+        "元素"
+      ],
+      "position": "远程位",
+      "faction": "萨米"
+    },
+    "凯尔希": {
+      "name": "凯尔希",
+      "image": "凯尔希.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "召唤",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "凯瑟琳": {
+      "name": "凯瑟琳",
+      "image": "凯瑟琳.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "工匠",
+      "tags": [
+        "防护",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "初雪": {
+      "name": "初雪",
+      "image": "初雪.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "削弱者",
+      "tags": [
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "谢拉格"
+    },
+    "刺玫": {
+      "name": "刺玫",
+      "image": "刺玫.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "咒愈师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "刻俄柏": {
+      "name": "刻俄柏",
+      "image": "刻俄柏.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "刻刀": {
+      "name": "刻刀",
+      "image": "刻刀.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "剑豪",
+      "tags": [
+        "爆发",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "医生": {
+      "name": "医生",
+      "image": "医生.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "教官",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "近战位"
+    },
+    "华法琳": {
+      "name": "华法琳",
+      "image": "华法琳.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "协律": {
+      "name": "协律",
+      "image": "协律.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "轰击术师",
+      "tags": [
+        "群攻",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "卡夫卡": {
+      "name": "卡夫卡",
+      "image": "卡夫卡.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "卡涅利安": {
+      "name": "卡涅利安",
+      "image": "卡涅利安.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "阵法术师",
+      "tags": [
+        "群攻",
+        "防护"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "卡缇": {
+      "name": "卡缇",
+      "image": "卡缇.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "卡达": {
+      "name": "卡达",
+      "image": "卡达.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "驭械术师",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "历阵锐枪芬": {
+      "name": "历阵锐枪芬",
+      "image": "历阵锐枪芬.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "双月": {
+      "name": "双月",
+      "image": "双月.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "傀儡师",
+      "tags": [
+        "削弱",
+        "快速复活"
+      ],
+      "position": "近战位"
+    },
+    "古米": {
+      "name": "古米",
+      "image": "古米.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "可颂": {
+      "name": "可颂",
+      "image": "可颂.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护",
+        "位移"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "史尔特尔": {
+      "name": "史尔特尔",
+      "image": "史尔特尔.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "史都华德": {
+      "name": "史都华德",
+      "image": "史都华德.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "号角": {
+      "name": "号角",
+      "image": "号角.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "要塞",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "司霆惊蛰": {
+      "name": "司霆惊蛰",
+      "image": "司霆惊蛰.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "解放者",
+      "tags": [
+        "输出",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "吉星": {
+      "name": "吉星",
+      "image": "吉星.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "散射手",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "东"
+    },
+    "吽": {
+      "name": "吽",
+      "image": "吽.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "和弦": {
+      "name": "和弦",
+      "image": "和弦.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "秘术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "哈洛德": {
+      "name": "哈洛德",
+      "image": "哈洛德.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "行医",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "哈蒂娅": {
+      "name": "哈蒂娅",
+      "image": "哈蒂娅.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "佣兵",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "响石": {
+      "name": "响石",
+      "image": "响石.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "本源铁卫",
+      "tags": [
+        "元素",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "嘉维尔": {
+      "name": "嘉维尔",
+      "image": "嘉维尔.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "四月": {
+      "name": "四月",
+      "image": "四月.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "雷姆必拓"
+    },
+    "因陀罗": {
+      "name": "因陀罗",
+      "image": "因陀罗.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "图耶": {
+      "name": "图耶",
+      "image": "图耶.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "圣约送葬人": {
+      "name": "圣约送葬人",
+      "image": "圣约送葬人.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "收割者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "拉特兰"
+    },
+    "圣聆初雪": {
+      "name": "圣聆初雪",
+      "image": "圣聆初雪.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "阵法术师",
+      "tags": [
+        "群攻",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "谢拉格"
+    },
+    "地灵": {
+      "name": "地灵",
+      "image": "地灵.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "坚雷": {
+      "name": "坚雷",
+      "image": "坚雷.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "重装",
+      "subclass": "驭法铁卫",
+      "tags": [
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "埃拉托": {
+      "name": "埃拉托",
+      "image": "埃拉托.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "攻城手",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "米诺斯"
+    },
+    "埃拉托_": {
+      "name": "埃拉托_",
+      "image": "埃拉托_.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "攻城手",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "米诺斯"
+    },
+    "塑心": {
+      "name": "塑心",
+      "image": "塑心.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "巫役",
+      "tags": [
+        "元素",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "塞雷娅": {
+      "name": "塞雷娅",
+      "image": "塞雷娅.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "夏栎": {
+      "name": "夏栎",
+      "image": "夏栎.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "夕": {
+      "name": "夕",
+      "image": "夕.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "多萝西": {
+      "name": "多萝西",
+      "image": "多萝西.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "陷阱师",
+      "tags": [
+        "召唤",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "夜刀": {
+      "name": "夜刀",
+      "image": "夜刀.png",
+      "rarity": 1,
+      "rarityLabel": "2星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "新手"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "夜半": {
+      "name": "夜半",
+      "image": "夜半.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "战术家",
+      "tags": [
+        "费用回复",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "雷姆必拓"
+    },
+    "夜烟": {
+      "name": "夜烟",
+      "image": "夜烟.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "夜莺": {
+      "name": "夜莺",
+      "image": "夜莺.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "群愈师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位"
+    },
+    "夜魔": {
+      "name": "夜魔",
+      "image": "夜魔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "治疗",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "天火": {
+      "name": "天火",
+      "image": "天火.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "天空盒": {
+      "name": "天空盒",
+      "image": "天空盒.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "裂空炮手",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "奥斯塔": {
+      "name": "奥斯塔",
+      "image": "奥斯塔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "散射手",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "奥达": {
+      "name": "奥达",
+      "image": "奥达.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "撼地者",
+      "tags": [
+        "群攻",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "妮芙": {
+      "name": "妮芙",
+      "image": "妮芙.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "本源术师",
+      "tags": [
+        "元素",
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "娜仁图亚": {
+      "name": "娜仁图亚",
+      "image": "娜仁图亚.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "回环射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "娜斯提": {
+      "name": "娜斯提",
+      "image": "娜斯提.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "工匠",
+      "tags": [
+        "支援",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "子月": {
+      "name": "子月",
+      "image": "子月.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "神射手",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "孑": {
+      "name": "孑",
+      "image": "孑.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "行商",
+      "tags": [
+        "快速复活",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "守林人": {
+      "name": "守林人",
+      "image": "守林人.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "神射手",
+      "tags": [
+        "输出",
+        "爆发"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "安哲拉": {
+      "name": "安哲拉",
+      "image": "安哲拉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "神射手",
+      "tags": [
+        "输出",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "阿戈尔"
+    },
+    "安德切尔": {
+      "name": "安德切尔",
+      "image": "安德切尔.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "安比尔": {
+      "name": "安比尔",
+      "image": "安比尔.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "神射手",
+      "tags": [
+        "输出",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "安洁莉娜": {
+      "name": "安洁莉娜",
+      "image": "安洁莉娜.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "输出",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "安赛尔": {
+      "name": "安赛尔",
+      "image": "安赛尔.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "宴": {
+      "name": "宴",
+      "image": "宴.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "武者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "寒檀": {
+      "name": "寒檀",
+      "image": "寒檀.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "萨米"
+    },
+    "寒芒克洛丝": {
+      "name": "寒芒克洛丝",
+      "image": "寒芒克洛丝.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "寻澜": {
+      "name": "寻澜",
+      "image": "寻澜.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "情报官",
+      "tags": [
+        "费用回复",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "导火索": {
+      "name": "导火索",
+      "image": "导火索.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "生存"
+      ],
+      "position": "近战位"
+    },
+    "小满": {
+      "name": "小满",
+      "image": "小满.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "山": {
+      "name": "山",
+      "image": "山.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "崖心": {
+      "name": "崖心",
+      "image": "崖心.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "钩索师",
+      "tags": [
+        "位移",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "嵯峨": {
+      "name": "嵯峨",
+      "image": "嵯峨.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "巡林者": {
+      "name": "巡林者",
+      "image": "巡林者.png",
+      "rarity": 1,
+      "rarityLabel": "2星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "新手"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "左乐": {
+      "name": "左乐",
+      "image": "左乐.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "武者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "巫恋": {
+      "name": "巫恋",
+      "image": "巫恋.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "削弱者",
+      "tags": [
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "布丁": {
+      "name": "布丁",
+      "image": "布丁.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "链术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "布洛卡": {
+      "name": "布洛卡",
+      "image": "布洛卡.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "叙拉古"
+    },
+    "帕拉斯": {
+      "name": "帕拉斯",
+      "image": "帕拉斯.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "教官",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "米诺斯"
+    },
+    "年": {
+      "name": "年",
+      "image": "年.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "幽灵鲨": {
+      "name": "幽灵鲨",
+      "image": "幽灵鲨.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "阿戈尔"
+    },
+    "异客": {
+      "name": "异客",
+      "image": "异客.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "链术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "弑君者": {
+      "name": "弑君者",
+      "image": "弑君者.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "引星棘刺": {
+      "name": "引星棘刺",
+      "image": "引星棘刺.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "炼金师",
+      "tags": [
+        "输出",
+        "支援",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "归溟幽灵鲨": {
+      "name": "归溟幽灵鲨",
+      "image": "归溟幽灵鲨.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "傀儡师",
+      "tags": [
+        "输出",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "阿戈尔"
+    },
+    "录武官": {
+      "name": "录武官",
+      "image": "录武官.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "微风": {
+      "name": "微风",
+      "image": "微风.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "群愈师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "德克萨斯": {
+      "name": "德克萨斯",
+      "image": "德克萨斯.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "忍冬": {
+      "name": "忍冬",
+      "image": "忍冬.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "叙拉古"
+    },
+    "惊蛰": {
+      "name": "惊蛰",
+      "image": "惊蛰.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "链术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "慑砂": {
+      "name": "慑砂",
+      "image": "慑砂.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "群攻",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "慕斯": {
+      "name": "慕斯",
+      "image": "慕斯.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "战车": {
+      "name": "战车",
+      "image": "战车.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "剑豪",
+      "tags": [
+        "爆发",
+        "输出"
+      ],
+      "position": "近战位"
+    },
+    "截云": {
+      "name": "截云",
+      "image": "截云.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "群攻",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "戴菲恩": {
+      "name": "戴菲恩",
+      "image": "戴菲恩.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "秘术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "承曦格雷伊": {
+      "name": "承曦格雷伊",
+      "image": "承曦格雷伊.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "投掷手",
+      "tags": [
+        "输出",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "折光": {
+      "name": "折光",
+      "image": "折光.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "本源术师",
+      "tags": [
+        "元素",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "折桠": {
+      "name": "折桠",
+      "image": "折桠.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "不屈者",
+      "tags": [
+        "防护",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "拉普兰德": {
+      "name": "拉普兰德",
+      "image": "拉普兰德.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出",
+        "削弱"
+      ],
+      "position": "近战位",
+      "faction": "叙拉古"
+    },
+    "拜松": {
+      "name": "拜松",
+      "image": "拜松.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "掠风": {
+      "name": "掠风",
+      "image": "掠风.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "工匠",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "推进之王": {
+      "name": "推进之王",
+      "image": "推进之王.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "提丰": {
+      "name": "提丰",
+      "image": "提丰.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "攻城手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "萨米"
+    },
+    "摆渡人": {
+      "name": "摆渡人",
+      "image": "摆渡人.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "米诺斯"
+    },
+    "摩根": {
+      "name": "摩根",
+      "image": "摩根.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "撷英调香师": {
+      "name": "撷英调香师",
+      "image": "撷英调香师.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "斑点": {
+      "name": "斑点",
+      "image": "斑点.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "斥罪": {
+      "name": "斥罪",
+      "image": "斥罪.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "不屈者",
+      "tags": [
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "叙拉古"
+    },
+    "斩业星熊": {
+      "name": "斩业星熊",
+      "image": "斩业星熊.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "驭法铁卫",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "断崖": {
+      "name": "断崖",
+      "image": "断崖.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出",
+        "群攻"
+      ],
+      "position": "近战位",
+      "faction": "雷姆必拓"
+    },
+    "断罪者": {
+      "name": "断罪者",
+      "image": "断罪者.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "生存",
+        "控场",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "米诺斯"
+    },
+    "斯卡蒂": {
+      "name": "斯卡蒂",
+      "image": "斯卡蒂.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "阿戈尔"
+    },
+    "新约能天使": {
+      "name": "新约能天使",
+      "image": "新约能天使.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "怪杰",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "炎-龙门"
+    },
+    "早露": {
+      "name": "早露",
+      "image": "早露.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "攻城手",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "乌萨斯"
+    },
+    "明椒": {
+      "name": "明椒",
+      "image": "明椒.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "链愈师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "星极": {
+      "name": "星极",
+      "image": "星极.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "星源": {
+      "name": "星源",
+      "image": "星源.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "链术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "星熊": {
+      "name": "星熊",
+      "image": "星熊.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "晓歌": {
+      "name": "晓歌",
+      "image": "晓歌.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "情报官",
+      "tags": [
+        "费用回复",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "普罗旺斯": {
+      "name": "普罗旺斯",
+      "image": "普罗旺斯.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "重射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "暗索": {
+      "name": "暗索",
+      "image": "暗索.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "钩索师",
+      "tags": [
+        "位移"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "暮落": {
+      "name": "暮落",
+      "image": "暮落.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "驭法铁卫",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "暴行": {
+      "name": "暴行",
+      "image": "暴行.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "雷姆必拓"
+    },
+    "暴雨": {
+      "name": "暴雨",
+      "image": "暴雨.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "月禾": {
+      "name": "月禾",
+      "image": "月禾.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "东"
+    },
+    "月见夜": {
+      "name": "月见夜",
+      "image": "月见夜.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "末药": {
+      "name": "末药",
+      "image": "末药.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "杏仁": {
+      "name": "杏仁",
+      "image": "杏仁.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "钩索师",
+      "tags": [
+        "位移"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "杜宾": {
+      "name": "杜宾",
+      "image": "杜宾.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "教官",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "杜林": {
+      "name": "杜林",
+      "image": "杜林.png",
+      "rarity": 1,
+      "rarityLabel": "2星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "新手"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "杰克": {
+      "name": "杰克",
+      "image": "杰克.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "杰西卡": {
+      "name": "杰西卡",
+      "image": "杰西卡.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "松果": {
+      "name": "松果",
+      "image": "松果.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "散射手",
+      "tags": [
+        "群攻",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "松桐": {
+      "name": "松桐",
+      "image": "松桐.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "策士",
+      "tags": [
+        "费用回复",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "极光": {
+      "name": "极光",
+      "image": "极光.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "决战者",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "极境": {
+      "name": "极境",
+      "image": "极境.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "执旗手",
+      "tags": [
+        "费用回复",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "林": {
+      "name": "林",
+      "image": "林.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "阵法术师",
+      "tags": [
+        "群攻",
+        "防护"
+      ],
+      "position": "远程位",
+      "faction": "炎-龙门"
+    },
+    "柏喙": {
+      "name": "柏喙",
+      "image": "柏喙.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "剑豪",
+      "tags": [
+        "爆发",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "萨米"
+    },
+    "格劳克斯": {
+      "name": "格劳克斯",
+      "image": "格劳克斯.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "格拉尼": {
+      "name": "格拉尼",
+      "image": "格拉尼.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "费用回复",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "格雷伊": {
+      "name": "格雷伊",
+      "image": "格雷伊.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "玻利瓦尔"
+    },
+    "桃金娘": {
+      "name": "桃金娘",
+      "image": "桃金娘.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "先锋",
+      "subclass": "执旗手",
+      "tags": [
+        "费用回复",
+        "治疗"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "桑葚": {
+      "name": "桑葚",
+      "image": "桑葚.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "行医",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "梅": {
+      "name": "梅",
+      "image": "梅.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "梅尔": {
+      "name": "梅尔",
+      "image": "梅尔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "召唤",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "梓兰": {
+      "name": "梓兰",
+      "image": "梓兰.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "棘刺": {
+      "name": "棘刺",
+      "image": "棘刺.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "伊比利亚"
+    },
+    "森蚺": {
+      "name": "森蚺",
+      "image": "森蚺.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "决战者",
+      "tags": [
+        "输出",
+        "生存",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "森西": {
+      "name": "森西",
+      "image": "森西.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗"
+      ],
+      "position": "近战位"
+    },
+    "槐琥": {
+      "name": "槐琥",
+      "image": "槐琥.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "削弱"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "歌蕾蒂娅": {
+      "name": "歌蕾蒂娅",
+      "image": "歌蕾蒂娅.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "钩索师",
+      "tags": [
+        "位移",
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "阿戈尔"
+    },
+    "止颂": {
+      "name": "止颂",
+      "image": "止颂.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "莱塔尼亚"
+    },
+    "正义骑士号": {
+      "name": "正义骑士号",
+      "image": "正义骑士号.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "支援机械",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "卡西米尔"
+    },
+    "死芒": {
+      "name": "死芒",
+      "image": "死芒.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "塑灵术师",
+      "tags": [
+        "召唤",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "水月": {
+      "name": "水月",
+      "image": "水月.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "伏击客",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "水灯心": {
+      "name": "水灯心",
+      "image": "水灯心.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "回环射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "泡普卡": {
+      "name": "泡普卡",
+      "image": "泡普卡.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "泡泡": {
+      "name": "泡泡",
+      "image": "泡泡.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "波卜": {
+      "name": "波卜",
+      "image": "波卜.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "巫役",
+      "tags": [
+        "元素"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "波登可": {
+      "name": "波登可",
+      "image": "波登可.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "泥岩": {
+      "name": "泥岩",
+      "image": "泥岩.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "不屈者",
+      "tags": [
+        "生存",
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "泰拉大陆调查团": {
+      "name": "泰拉大陆调查团",
+      "image": "泰拉大陆调查团.png",
+      "rarity": 0,
+      "rarityLabel": "1星",
+      "class": "狙击",
+      "subclass": "投掷手",
+      "tags": [
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "洋灰": {
+      "name": "洋灰",
+      "image": "洋灰.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "决战者",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "雷姆必拓"
+    },
+    "洛洛": {
+      "name": "洛洛",
+      "image": "洛洛.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "驭械术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "流明": {
+      "name": "流明",
+      "image": "流明.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "疗养师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "流星": {
+      "name": "流星",
+      "image": "流星.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "卡西米尔"
+    },
+    "浊心斯卡蒂": {
+      "name": "浊心斯卡蒂",
+      "image": "浊心斯卡蒂.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "吟游者",
+      "tags": [
+        "支援",
+        "生存",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "阿戈尔"
+    },
+    "海沫": {
+      "name": "海沫",
+      "image": "海沫.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "收割者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "伊比利亚"
+    },
+    "海蒂": {
+      "name": "海蒂",
+      "image": "海蒂.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "吟游者",
+      "tags": [
+        "支援",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "海霓": {
+      "name": "海霓",
+      "image": "海霓.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "削弱者",
+      "tags": [
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "阿戈尔"
+    },
+    "涤火杰西卡": {
+      "name": "涤火杰西卡",
+      "image": "涤火杰西卡.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "哨戒铁卫",
+      "tags": [
+        "防护",
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "淬羽赫默": {
+      "name": "淬羽赫默",
+      "image": "淬羽赫默.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "深巡": {
+      "name": "深巡",
+      "image": "深巡.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "哨戒铁卫",
+      "tags": [
+        "防护",
+        "输出",
+        "减速"
+      ],
+      "position": "近战位",
+      "faction": "阿戈尔"
+    },
+    "深律": {
+      "name": "深律",
+      "image": "深律.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗"
+      ],
+      "position": "近战位",
+      "faction": "莱塔尼亚"
+    },
+    "深海色": {
+      "name": "深海色",
+      "image": "深海色.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "召唤"
+      ],
+      "position": "远程位",
+      "faction": "阿戈尔"
+    },
+    "深靛": {
+      "name": "深靛",
+      "image": "深靛.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "秘术师",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "清流": {
+      "name": "清流",
+      "image": "清流.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "医疗",
+      "subclass": "疗养师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "清道夫": {
+      "name": "清道夫",
+      "image": "清道夫.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "渡桥": {
+      "name": "渡桥",
+      "image": "渡桥.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "战术家",
+      "tags": [
+        "费用回复",
+        "爆发"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "温米": {
+      "name": "温米",
+      "image": "温米.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "本源术师",
+      "tags": [
+        "元素",
+        "爆发"
+      ],
+      "position": "远程位",
+      "faction": "雷姆必拓"
+    },
+    "温蒂": {
+      "name": "温蒂",
+      "image": "温蒂.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "推击手",
+      "tags": [
+        "位移",
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "溯光星源": {
+      "name": "溯光星源",
+      "image": "溯光星源.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "支援",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "澄闪": {
+      "name": "澄闪",
+      "image": "澄闪.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "驭械术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "濯尘芙蓉": {
+      "name": "濯尘芙蓉",
+      "image": "濯尘芙蓉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "咒愈师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "火哨": {
+      "name": "火哨",
+      "image": "火哨.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "要塞",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "雷姆必拓"
+    },
+    "火神": {
+      "name": "火神",
+      "image": "火神.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "不屈者",
+      "tags": [
+        "生存",
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "米诺斯"
+    },
+    "火龙S黑角": {
+      "name": "火龙S黑角",
+      "image": "火龙S黑角.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "武者",
+      "tags": [
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "灰喉": {
+      "name": "灰喉",
+      "image": "灰喉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "灰毫": {
+      "name": "灰毫",
+      "image": "灰毫.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "要塞",
+      "tags": [
+        "输出",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "灰烬": {
+      "name": "灰烬",
+      "image": "灰烬.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位"
+    },
+    "灵知": {
+      "name": "灵知",
+      "image": "灵知.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "削弱者",
+      "tags": [
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "谢拉格"
+    },
+    "炎客": {
+      "name": "炎客",
+      "image": "炎客.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "炎熔": {
+      "name": "炎熔",
+      "image": "炎熔.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "炎狱炎熔": {
+      "name": "炎狱炎熔",
+      "image": "炎狱炎熔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "烈夏": {
+      "name": "烈夏",
+      "image": "烈夏.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "烛煌": {
+      "name": "烛煌",
+      "image": "烛煌.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "本源术师",
+      "tags": [
+        "元素",
+        "输出",
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "焰尾": {
+      "name": "焰尾",
+      "image": "焰尾.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "焰影苇草": {
+      "name": "焰影苇草",
+      "image": "焰影苇草.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "咒愈师",
+      "tags": [
+        "治疗",
+        "输出",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "煌": {
+      "name": "煌",
+      "image": "煌.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "熔泉": {
+      "name": "熔泉",
+      "image": "熔泉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "攻城手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "燧石": {
+      "name": "燧石",
+      "image": "燧石.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "爱丽丝": {
+      "name": "爱丽丝",
+      "image": "爱丽丝.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "秘术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "特克诺": {
+      "name": "特克诺",
+      "image": "特克诺.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "塑灵术师",
+      "tags": [
+        "召唤"
+      ],
+      "position": "远程位",
+      "faction": "玻利瓦尔"
+    },
+    "特米米": {
+      "name": "特米米",
+      "image": "特米米.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "狮蝎": {
+      "name": "狮蝎",
+      "image": "狮蝎.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "伏击客",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "猎蜂": {
+      "name": "猎蜂",
+      "image": "猎蜂.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "玛恩纳": {
+      "name": "玛恩纳",
+      "image": "玛恩纳.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "解放者",
+      "tags": [
+        "输出",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "玛露西尔": {
+      "name": "玛露西尔",
+      "image": "玛露西尔.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "治疗",
+        "控场"
+      ],
+      "position": "远程位"
+    },
+    "玫兰莎": {
+      "name": "玫兰莎",
+      "image": "玫兰莎.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "玫拉": {
+      "name": "玫拉",
+      "image": "玫拉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "重射手",
+      "tags": [
+        "输出",
+        "爆发"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "琳琅诗怀雅": {
+      "name": "琳琅诗怀雅",
+      "image": "琳琅诗怀雅.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "行商",
+      "tags": [
+        "快速复活",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "琴柳": {
+      "name": "琴柳",
+      "image": "琴柳.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "执旗手",
+      "tags": [
+        "费用回复",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "瑕光": {
+      "name": "瑕光",
+      "image": "瑕光.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "瑰盐": {
+      "name": "瑰盐",
+      "image": "瑰盐.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "群愈师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "电弧": {
+      "name": "电弧",
+      "image": "电弧.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "召唤",
+        "输出",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "白金": {
+      "name": "白金",
+      "image": "白金.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "卡西米尔"
+    },
+    "白铁": {
+      "name": "白铁",
+      "image": "白铁.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "工匠",
+      "tags": [
+        "支援",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "白雪": {
+      "name": "白雪",
+      "image": "白雪.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "群攻",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "东"
+    },
+    "白面鸮": {
+      "name": "白面鸮",
+      "image": "白面鸮.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "群愈师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "百炼嘉维尔": {
+      "name": "百炼嘉维尔",
+      "image": "百炼嘉维尔.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "爆发",
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "盟约·辅助干员": {
+      "name": "盟约·辅助干员",
+      "image": "盟约·辅助干员.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "辅助",
+      "subclass": "巫役",
+      "tags": [
+        "元素"
+      ],
+      "position": "远程位"
+    },
+    "真理": {
+      "name": "真理",
+      "image": "真理.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "乌萨斯"
+    },
+    "真言": {
+      "name": "真言",
+      "image": "真言.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "本源术师",
+      "tags": [
+        "元素",
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "石棉": {
+      "name": "石棉",
+      "image": "石棉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "驭法铁卫",
+      "tags": [
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "雷姆必拓"
+    },
+    "石英": {
+      "name": "石英",
+      "image": "石英.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "重剑手",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "砾": {
+      "name": "砾",
+      "image": "砾.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "祐天寺若麦": {
+      "name": "祐天寺若麦",
+      "image": "祐天寺若麦.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "撼地者",
+      "tags": [
+        "群攻",
+        "输出",
+        "削弱"
+      ],
+      "position": "近战位"
+    },
+    "稀音": {
+      "name": "稀音",
+      "image": "稀音.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "召唤",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "空": {
+      "name": "空",
+      "image": "空.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "吟游者",
+      "tags": [
+        "支援",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "炎-龙门"
+    },
+    "空弦": {
+      "name": "空弦",
+      "image": "空弦.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "空构": {
+      "name": "空构",
+      "image": "空构.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "怪杰",
+      "tags": [
+        "支援",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "空爆": {
+      "name": "空爆",
+      "image": "空爆.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "米格鲁": {
+      "name": "米格鲁",
+      "image": "米格鲁.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "絮雨": {
+      "name": "絮雨",
+      "image": "絮雨.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "疗养师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "红": {
+      "name": "红",
+      "image": "红.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "红云": {
+      "name": "红云",
+      "image": "红云.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "红豆": {
+      "name": "红豆",
+      "image": "红豆.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "输出",
+        "费用回复"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "红隼": {
+      "name": "红隼",
+      "image": "红隼.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "纯烬艾雅法拉": {
+      "name": "纯烬艾雅法拉",
+      "image": "纯烬艾雅法拉.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "行医",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "绮良": {
+      "name": "绮良",
+      "image": "绮良.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "伏击客",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "维什戴尔": {
+      "name": "维什戴尔",
+      "image": "维什戴尔.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "投掷手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位"
+    },
+    "维娜·维多利亚": {
+      "name": "维娜·维多利亚",
+      "image": "维娜·维多利亚.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "维荻": {
+      "name": "维荻",
+      "image": "维荻.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "傀儡师",
+      "tags": [
+        "生存",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "缄默德克萨斯": {
+      "name": "缄默德克萨斯",
+      "image": "缄默德克萨斯.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "缇缇": {
+      "name": "缇缇",
+      "image": "缇缇.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "咒愈师",
+      "tags": [
+        "治疗",
+        "防护",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "缠丸": {
+      "name": "缠丸",
+      "image": "缠丸.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "缪尔赛思": {
+      "name": "缪尔赛思",
+      "image": "缪尔赛思.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "战术家",
+      "tags": [
+        "费用回复",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "罗宾": {
+      "name": "罗宾",
+      "image": "罗宾.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "陷阱师",
+      "tags": [
+        "召唤",
+        "位移"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "罗小黑": {
+      "name": "罗小黑",
+      "image": "罗小黑.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "罗比菈塔": {
+      "name": "罗比菈塔",
+      "image": "罗比菈塔.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "辅助",
+      "subclass": "工匠",
+      "tags": [
+        "防护",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "羽毛笔": {
+      "name": "羽毛笔",
+      "image": "羽毛笔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "收割者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "玻利瓦尔"
+    },
+    "翎羽": {
+      "name": "翎羽",
+      "image": "翎羽.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "输出",
+        "费用回复"
+      ],
+      "position": "近战位",
+      "faction": "拉特兰"
+    },
+    "耀骑士临光": {
+      "name": "耀骑士临光",
+      "image": "耀骑士临光.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "老鲤": {
+      "name": "老鲤",
+      "image": "老鲤.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "行商",
+      "tags": [
+        "快速复活",
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "耶拉": {
+      "name": "耶拉",
+      "image": "耶拉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "驭械术师",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "谢拉格"
+    },
+    "聆音": {
+      "name": "聆音",
+      "image": "聆音.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "本源近卫",
+      "tags": [
+        "爆发",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "玻利瓦尔"
+    },
+    "能天使": {
+      "name": "能天使",
+      "image": "能天使.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "炎-龙门"
+    },
+    "至简": {
+      "name": "至简",
+      "image": "至简.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "驭械术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "艾丝黛尔": {
+      "name": "艾丝黛尔",
+      "image": "艾丝黛尔.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "强攻手",
+      "tags": [
+        "群攻",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "艾丽妮": {
+      "name": "艾丽妮",
+      "image": "艾丽妮.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "剑豪",
+      "tags": [
+        "爆发",
+        "输出",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "伊比利亚"
+    },
+    "艾拉": {
+      "name": "艾拉",
+      "image": "艾拉.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "陷阱师",
+      "tags": [
+        "召唤",
+        "控场",
+        "输出"
+      ],
+      "position": "远程位"
+    },
+    "艾雅法拉": {
+      "name": "艾雅法拉",
+      "image": "艾雅法拉.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "芙兰卡": {
+      "name": "芙兰卡",
+      "image": "芙兰卡.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "芙蓉": {
+      "name": "芙蓉",
+      "image": "芙蓉.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "芬": {
+      "name": "芬",
+      "image": "芬.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "芳汀": {
+      "name": "芳汀",
+      "image": "芳汀.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "拉特兰"
+    },
+    "苇草": {
+      "name": "苇草",
+      "image": "苇草.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "苍苔": {
+      "name": "苍苔",
+      "image": "苍苔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "教官",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "苏苏洛": {
+      "name": "苏苏洛",
+      "image": "苏苏洛.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "若叶睦": {
+      "name": "若叶睦",
+      "image": "若叶睦.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "傀儡师",
+      "tags": [
+        "防护",
+        "快速复活"
+      ],
+      "position": "近战位"
+    },
+    "苦艾": {
+      "name": "苦艾",
+      "image": "苦艾.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "乌萨斯"
+    },
+    "荒芜拉普兰德": {
+      "name": "荒芜拉普兰德",
+      "image": "荒芜拉普兰德.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "驭械术师",
+      "tags": [
+        "输出",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "莎草": {
+      "name": "莎草",
+      "image": "莎草.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "链愈师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "莫斯提马": {
+      "name": "莫斯提马",
+      "image": "莫斯提马.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "支援",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "莱伊": {
+      "name": "莱伊",
+      "image": "莱伊.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "猎手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "雷姆必拓"
+    },
+    "莱恩哈特": {
+      "name": "莱恩哈特",
+      "image": "莱恩哈特.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻",
+        "爆发"
+      ],
+      "position": "远程位",
+      "faction": "雷姆必拓"
+    },
+    "莱欧斯": {
+      "name": "莱欧斯",
+      "image": "莱欧斯.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "无畏者",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "近战位"
+    },
+    "菲亚梅塔": {
+      "name": "菲亚梅塔",
+      "image": "菲亚梅塔.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "菲莱": {
+      "name": "菲莱",
+      "image": "菲莱.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "本源铁卫",
+      "tags": [
+        "元素",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "萨尔贡"
+    },
+    "蒂比": {
+      "name": "蒂比",
+      "image": "蒂比.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "巡空者",
+      "tags": [
+        "高空",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "蓝毒": {
+      "name": "蓝毒",
+      "image": "蓝毒.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "伊比利亚"
+    },
+    "蕾缪安": {
+      "name": "蕾缪安",
+      "image": "蕾缪安.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "神射手",
+      "tags": [
+        "输出",
+        "爆发"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "薄绿": {
+      "name": "薄绿",
+      "image": "薄绿.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "阵法术师",
+      "tags": [
+        "群攻",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "薇薇安娜": {
+      "name": "薇薇安娜",
+      "image": "薇薇安娜.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "莱塔尼亚"
+    },
+    "蚀清": {
+      "name": "蚀清",
+      "image": "蚀清.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "轰击术师",
+      "tags": [
+        "群攻",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "蛇屠箱": {
+      "name": "蛇屠箱",
+      "image": "蛇屠箱.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "蜜莓": {
+      "name": "蜜莓",
+      "image": "蜜莓.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "行医",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "雷姆必拓"
+    },
+    "蜜蜡": {
+      "name": "蜜蜡",
+      "image": "蜜蜡.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "阵法术师",
+      "tags": [
+        "群攻",
+        "防护"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "行箸": {
+      "name": "行箸",
+      "image": "行箸.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存"
+      ],
+      "position": "远程位",
+      "faction": "炎"
+    },
+    "衡沙": {
+      "name": "衡沙",
+      "image": "衡沙.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "召唤",
+        "减速"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "裁度": {
+      "name": "裁度",
+      "image": "裁度.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "行商",
+      "tags": [
+        "快速复活",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "叙拉古"
+    },
+    "褐果": {
+      "name": "褐果",
+      "image": "褐果.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "医疗",
+      "subclass": "行医",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "见行者": {
+      "name": "见行者",
+      "image": "见行者.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "推击手",
+      "tags": [
+        "位移",
+        "控场"
+      ],
+      "position": "近战位",
+      "faction": "拉特兰"
+    },
+    "角峰": {
+      "name": "角峰",
+      "image": "角峰.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "讯使": {
+      "name": "讯使",
+      "image": "讯使.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "诗怀雅": {
+      "name": "诗怀雅",
+      "image": "诗怀雅.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "教官",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "诺威尔": {
+      "name": "诺威尔",
+      "image": "诺威尔.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "疗养师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "调香师": {
+      "name": "调香师",
+      "image": "调香师.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "医疗",
+      "subclass": "群愈师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "谜图": {
+      "name": "谜图",
+      "image": "谜图.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "情报官",
+      "tags": [
+        "费用回复",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "豆苗": {
+      "name": "豆苗",
+      "image": "豆苗.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "先锋",
+      "subclass": "战术家",
+      "tags": [
+        "费用回复",
+        "召唤"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "贝娜": {
+      "name": "贝娜",
+      "image": "贝娜.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "傀儡师",
+      "tags": [
+        "输出",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "贾维": {
+      "name": "贾维",
+      "image": "贾维.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "叙拉古"
+    },
+    "赤冬": {
+      "name": "赤冬",
+      "image": "赤冬.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "武者",
+      "tags": [
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "赫德雷": {
+      "name": "赫德雷",
+      "image": "赫德雷.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "重剑手",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位"
+    },
+    "赫拉格": {
+      "name": "赫拉格",
+      "image": "赫拉格.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "武者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "乌萨斯"
+    },
+    "赫默": {
+      "name": "赫默",
+      "image": "赫默.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "跃跃": {
+      "name": "跃跃",
+      "image": "跃跃.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "回环射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "玻利瓦尔"
+    },
+    "车尔尼": {
+      "name": "车尔尼",
+      "image": "车尔尼.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "驭法铁卫",
+      "tags": [
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "莱塔尼亚"
+    },
+    "达格达": {
+      "name": "达格达",
+      "image": "达格达.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "远山": {
+      "name": "远山",
+      "image": "远山.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "术师",
+      "subclass": "扩散术师",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "萨米"
+    },
+    "远牙": {
+      "name": "远牙",
+      "image": "远牙.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "神射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "卡西米尔"
+    },
+    "迷迭香": {
+      "name": "迷迭香",
+      "image": "迷迭香.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "投掷手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "送葬人": {
+      "name": "送葬人",
+      "image": "送葬人.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "散射手",
+      "tags": [
+        "群攻"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "逻各斯": {
+      "name": "逻各斯",
+      "image": "逻各斯.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "遥": {
+      "name": "遥",
+      "image": "遥.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "护佑者",
+      "tags": [
+        "支援",
+        "生存",
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "东"
+    },
+    "郁金香": {
+      "name": "郁金香",
+      "image": "郁金香.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "酒神": {
+      "name": "酒神",
+      "image": "酒神.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "巫役",
+      "tags": [
+        "元素",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "维多利亚"
+    },
+    "酸糖": {
+      "name": "酸糖",
+      "image": "酸糖.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "重射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "重岳": {
+      "name": "重岳",
+      "image": "重岳.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "斗士",
+      "tags": [
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "野鬃": {
+      "name": "野鬃",
+      "image": "野鬃.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "钼铅": {
+      "name": "钼铅",
+      "image": "钼铅.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "陷阱师",
+      "tags": [
+        "召唤",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "铃兰": {
+      "name": "铃兰",
+      "image": "铃兰.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "凝滞师",
+      "tags": [
+        "减速",
+        "支援",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "铅踝": {
+      "name": "铅踝",
+      "image": "铅踝.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "狙击",
+      "subclass": "攻城手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "萨尔贡"
+    },
+    "铎铃": {
+      "name": "铎铃",
+      "image": "铎铃.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "重剑手",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "银灰": {
+      "name": "银灰",
+      "image": "银灰.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "铸铁": {
+      "name": "铸铁",
+      "image": "铸铁.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "生存",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "米诺斯"
+    },
+    "锏": {
+      "name": "锏",
+      "image": "锏.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "剑豪",
+      "tags": [
+        "爆发",
+        "输出",
+        "削弱"
+      ],
+      "position": "近战位",
+      "faction": "谢拉格"
+    },
+    "锡人": {
+      "name": "锡人",
+      "image": "锡人.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "炼金师",
+      "tags": [
+        "削弱",
+        "支援"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "锡兰": {
+      "name": "锡兰",
+      "image": "锡兰.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "疗养师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "闪击": {
+      "name": "闪击",
+      "image": "闪击.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "哨戒铁卫",
+      "tags": [
+        "防护",
+        "输出"
+      ],
+      "position": "近战位"
+    },
+    "闪灵": {
+      "name": "闪灵",
+      "image": "闪灵.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗",
+        "支援"
+      ],
+      "position": "远程位"
+    },
+    "阿": {
+      "name": "阿",
+      "image": "阿.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "怪杰",
+      "tags": [
+        "支援",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "炎-龙门"
+    },
+    "阿兰娜": {
+      "name": "阿兰娜",
+      "image": "阿兰娜.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "辅助",
+      "subclass": "工匠",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "雷姆必拓"
+    },
+    "阿斯卡纶": {
+      "name": "阿斯卡纶",
+      "image": "阿斯卡纶.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "伏击客",
+      "tags": [
+        "减速",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "阿消": {
+      "name": "阿消",
+      "image": "阿消.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "特种",
+      "subclass": "推击手",
+      "tags": [
+        "位移"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "阿米娅": {
+      "name": "阿米娅",
+      "image": "阿米娅.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "阿米娅(医疗)": {
+      "name": "阿米娅(医疗)",
+      "image": "阿米娅(医疗).png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "医疗",
+      "subclass": "咒愈师",
+      "tags": [
+        "治疗",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "阿米娅(近卫)": {
+      "name": "阿米娅(近卫)",
+      "image": "阿米娅(近卫).png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "术战者",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "阿罗玛": {
+      "name": "阿罗玛",
+      "image": "阿罗玛.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "轰击术师",
+      "tags": [
+        "群攻",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "叙拉古"
+    },
+    "陈": {
+      "name": "陈",
+      "image": "陈.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "剑豪",
+      "tags": [
+        "爆发",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "陨星": {
+      "name": "陨星",
+      "image": "陨星.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "炮手",
+      "tags": [
+        "群攻",
+        "削弱"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "隐德来希": {
+      "name": "隐德来希",
+      "image": "隐德来希.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "收割者",
+      "tags": [
+        "输出",
+        "生存"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "隐现": {
+      "name": "隐现",
+      "image": "隐现.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "拉特兰"
+    },
+    "雪猎": {
+      "name": "雪猎",
+      "image": "雪猎.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "狙击",
+      "subclass": "猎手",
+      "tags": [
+        "爆发",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "谢拉格"
+    },
+    "雪绒": {
+      "name": "雪绒",
+      "image": "雪绒.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "萨米"
+    },
+    "雪雉": {
+      "name": "雪雉",
+      "image": "雪雉.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "钩索师",
+      "tags": [
+        "位移",
+        "减速"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "雷蛇": {
+      "name": "雷蛇",
+      "image": "雷蛇.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "重装",
+      "subclass": "哨戒铁卫",
+      "tags": [
+        "防护",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "霍尔海雅": {
+      "name": "霍尔海雅",
+      "image": "霍尔海雅.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出",
+        "控场"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "霜华": {
+      "name": "霜华",
+      "image": "霜华.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "陷阱师",
+      "tags": [
+        "召唤",
+        "控场"
+      ],
+      "position": "远程位"
+    },
+    "霜叶": {
+      "name": "霜叶",
+      "image": "霜叶.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "减速",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "露托": {
+      "name": "露托",
+      "image": "露托.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "重装",
+      "subclass": "不屈者",
+      "tags": [
+        "生存",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "玻利瓦尔"
+    },
+    "青枳": {
+      "name": "青枳",
+      "image": "青枳.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复",
+        "防护"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "鞭刃": {
+      "name": "鞭刃",
+      "image": "鞭刃.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "教官",
+      "tags": [
+        "输出",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "卡西米尔"
+    },
+    "预备干员-后勤": {
+      "name": "预备干员-后勤",
+      "image": "预备干员-后勤.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "医疗",
+      "subclass": "医师",
+      "tags": [
+        "治疗"
+      ],
+      "position": "远程位"
+    },
+    "预备干员-术师": {
+      "name": "预备干员-术师",
+      "image": "预备干员-术师.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "术师",
+      "subclass": "中坚术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位"
+    },
+    "预备干员-狙击": {
+      "name": "预备干员-狙击",
+      "image": "预备干员-狙击.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "狙击",
+      "subclass": "速射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位"
+    },
+    "预备干员-近战": {
+      "name": "预备干员-近战",
+      "image": "预备干员-近战.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位"
+    },
+    "预备干员-重装": {
+      "name": "预备干员-重装",
+      "image": "预备干员-重装.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "防护"
+      ],
+      "position": "近战位"
+    },
+    "领主·Sharp": {
+      "name": "领主·Sharp",
+      "image": "领主·Sharp.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "近卫",
+      "subclass": "领主",
+      "tags": [
+        "输出"
+      ],
+      "position": "近战位"
+    },
+    "风丸": {
+      "name": "风丸",
+      "image": "风丸.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "傀儡师",
+      "tags": [
+        "输出",
+        "快速复活"
+      ],
+      "position": "近战位",
+      "faction": "东"
+    },
+    "风笛": {
+      "name": "风笛",
+      "image": "风笛.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "先锋",
+      "subclass": "冲锋手",
+      "tags": [
+        "费用回复",
+        "输出"
+      ],
+      "position": "近战位",
+      "faction": "维多利亚"
+    },
+    "食铁兽": {
+      "name": "食铁兽",
+      "image": "食铁兽.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "特种",
+      "subclass": "推击手",
+      "tags": [
+        "位移",
+        "减速"
+      ],
+      "position": "近战位",
+      "faction": "炎-龙门"
+    },
+    "香草": {
+      "name": "香草",
+      "image": "香草.png",
+      "rarity": 2,
+      "rarityLabel": "3星",
+      "class": "先锋",
+      "subclass": "尖兵",
+      "tags": [
+        "费用回复"
+      ],
+      "position": "近战位",
+      "faction": "哥伦比亚"
+    },
+    "骋风": {
+      "name": "骋风",
+      "image": "骋风.png",
+      "rarity": 3,
+      "rarityLabel": "4星",
+      "class": "近卫",
+      "subclass": "解放者",
+      "tags": [
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "魔王": {
+      "name": "魔王",
+      "image": "魔王.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "吟游者",
+      "tags": [
+        "支援",
+        "生存",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "鸿雪": {
+      "name": "鸿雪",
+      "image": "鸿雪.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "重射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "罗德岛"
+    },
+    "麒麟R夜刀": {
+      "name": "麒麟R夜刀",
+      "image": "麒麟R夜刀.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "特种",
+      "subclass": "处决者",
+      "tags": [
+        "快速复活",
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "麦哲伦": {
+      "name": "麦哲伦",
+      "image": "麦哲伦.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "辅助",
+      "subclass": "召唤师",
+      "tags": [
+        "支援",
+        "减速",
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "黍": {
+      "name": "黍",
+      "image": "黍.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "重装",
+      "subclass": "守护者",
+      "tags": [
+        "防护",
+        "治疗",
+        "支援"
+      ],
+      "position": "近战位",
+      "faction": "炎"
+    },
+    "黑": {
+      "name": "黑",
+      "image": "黑.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "狙击",
+      "subclass": "重射手",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "哥伦比亚"
+    },
+    "黑角": {
+      "name": "黑角",
+      "image": "黑角.png",
+      "rarity": 1,
+      "rarityLabel": "2星",
+      "class": "重装",
+      "subclass": "铁卫",
+      "tags": [
+        "新手"
+      ],
+      "position": "近战位",
+      "faction": "罗德岛"
+    },
+    "黑键": {
+      "name": "黑键",
+      "image": "黑键.png",
+      "rarity": 5,
+      "rarityLabel": "6星",
+      "class": "术师",
+      "subclass": "秘术师",
+      "tags": [
+        "输出"
+      ],
+      "position": "远程位",
+      "faction": "莱塔尼亚"
+    },
+    "齐尔查克": {
+      "name": "齐尔查克",
+      "image": "齐尔查克.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "先锋",
+      "subclass": "情报官",
+      "tags": [
+        "费用回复",
+        "快速复活"
+      ],
+      "position": "近战位"
+    },
+    "龙舌兰": {
+      "name": "龙舌兰",
+      "image": "龙舌兰.png",
+      "rarity": 4,
+      "rarityLabel": "5星",
+      "class": "近卫",
+      "subclass": "解放者",
+      "tags": [
+        "爆发"
+      ],
+      "position": "近战位",
+      "faction": "玻利瓦尔"
+    }
+  },
+  "indexes": {
+    "byRarity": {
+      "2星": [
+        "12F",
+        "夜刀",
+        "巡林者",
+        "杜林",
+        "黑角"
+      ],
+      "1星": [
+        "CONFESS-47",
+        "Castle-3",
+        "Friston-3",
+        "Lancet-2",
+        "PhonoR-0",
+        "THRM-EX",
+        "U-Official",
+        "正义骑士号",
+        "泰拉大陆调查团"
+      ],
+      "5星": [
+        "Miss.Christine",
+        "Pith",
+        "Sharp",
+        "Stormeye",
+        "Touch",
+        "万顷",
+        "三角初华",
+        "临光",
+        "乌有",
+        "九色鹿",
+        "亚叶",
+        "但书",
+        "八幡海铃",
+        "冰酿",
+        "凛冬",
+        "凛视",
+        "凯瑟琳",
+        "初雪",
+        "刺玫",
+        "医生",
+        "华法琳",
+        "卡夫卡",
+        "历阵锐枪芬",
+        "双月",
+        "可颂",
+        "吉星",
+        "吽",
+        "和弦",
+        "哈洛德",
+        "哈蒂娅",
+        "响石",
+        "四月",
+        "因陀罗",
+        "图耶",
+        "埃拉托",
+        "埃拉托_",
+        "夏栎",
+        "夜半",
+        "夜魔",
+        "天火",
+        "天空盒",
+        "奥斯塔",
+        "奥达",
+        "子月",
+        "守林人",
+        "安哲拉",
+        "寒檀",
+        "寒芒克洛丝",
+        "寻澜",
+        "导火索",
+        "小满",
+        "崖心",
+        "巫恋",
+        "布洛卡",
+        "幽灵鲨",
+        "录武官",
+        "微风",
+        "德克萨斯",
+        "惊蛰",
+        "慑砂",
+        "战车",
+        "截云",
+        "戴菲恩",
+        "承曦格雷伊",
+        "折光",
+        "折桠",
+        "拉普兰德",
+        "拜松",
+        "掠风",
+        "摆渡人",
+        "摩根",
+        "撷英调香师",
+        "断崖",
+        "明椒",
+        "星极",
+        "星源",
+        "晓歌",
+        "普罗旺斯",
+        "暮落",
+        "暴行",
+        "暴雨",
+        "月禾",
+        "杏仁",
+        "松桐",
+        "极光",
+        "极境",
+        "柏喙",
+        "格劳克斯",
+        "格拉尼",
+        "桑葚",
+        "梅尔",
+        "森西",
+        "槐琥",
+        "水灯心",
+        "波卜",
+        "洋灰",
+        "洛洛",
+        "海沫",
+        "海蒂",
+        "海霓",
+        "深巡",
+        "深律",
+        "渡桥",
+        "温米",
+        "濯尘芙蓉",
+        "火哨",
+        "火神",
+        "火龙S黑角",
+        "灰喉",
+        "灰毫",
+        "炎客",
+        "炎狱炎熔",
+        "烈夏",
+        "熔泉",
+        "燧石",
+        "爱丽丝",
+        "特克诺",
+        "特米米",
+        "狮蝎",
+        "玫拉",
+        "瑰盐",
+        "白金",
+        "白面鸮",
+        "真理",
+        "石棉",
+        "祐天寺若麦",
+        "稀音",
+        "空",
+        "空构",
+        "絮雨",
+        "红",
+        "红隼",
+        "绮良",
+        "罗宾",
+        "羽毛笔",
+        "耶拉",
+        "聆音",
+        "至简",
+        "芙兰卡",
+        "苇草",
+        "苍苔",
+        "若叶睦",
+        "苦艾",
+        "莎草",
+        "莱恩哈特",
+        "莱欧斯",
+        "菲莱",
+        "蒂比",
+        "蓝毒",
+        "薄绿",
+        "蚀清",
+        "蜜莓",
+        "蜜蜡",
+        "行箸",
+        "衡沙",
+        "裁度",
+        "见行者",
+        "诗怀雅",
+        "诺威尔",
+        "谜图",
+        "贝娜",
+        "贾维",
+        "赤冬",
+        "赫默",
+        "车尔尼",
+        "达格达",
+        "送葬人",
+        "郁金香",
+        "野鬃",
+        "钼铅",
+        "铎铃",
+        "铸铁",
+        "锡人",
+        "锡兰",
+        "闪击",
+        "阿兰娜",
+        "阿米娅",
+        "阿米娅(医疗)",
+        "阿米娅(近卫)",
+        "阿罗玛",
+        "陨星",
+        "隐现",
+        "雪猎",
+        "雪绒",
+        "雪雉",
+        "雷蛇",
+        "霜华",
+        "青枳",
+        "鞭刃",
+        "风丸",
+        "食铁兽",
+        "齐尔查克",
+        "龙舌兰"
+      ],
+      "6星": [
+        "Mon3tr",
+        "W",
+        "丰川祥子",
+        "乌尔比安",
+        "仇白",
+        "令",
+        "伊内丝",
+        "伊芙利特",
+        "伺夜",
+        "余",
+        "佩佩",
+        "信仰搅拌机",
+        "假日威龙陈",
+        "傀影",
+        "凛御银灰",
+        "凯尔希",
+        "刻俄柏",
+        "卡涅利安",
+        "史尔特尔",
+        "号角",
+        "司霆惊蛰",
+        "圣约送葬人",
+        "圣聆初雪",
+        "塑心",
+        "塞雷娅",
+        "夕",
+        "多萝西",
+        "夜莺",
+        "妮芙",
+        "娜仁图亚",
+        "娜斯提",
+        "安洁莉娜",
+        "山",
+        "嵯峨",
+        "左乐",
+        "帕拉斯",
+        "年",
+        "异客",
+        "弑君者",
+        "引星棘刺",
+        "归溟幽灵鲨",
+        "忍冬",
+        "推进之王",
+        "提丰",
+        "斥罪",
+        "斩业星熊",
+        "斯卡蒂",
+        "新约能天使",
+        "早露",
+        "星熊",
+        "林",
+        "棘刺",
+        "森蚺",
+        "歌蕾蒂娅",
+        "止颂",
+        "死芒",
+        "水月",
+        "泥岩",
+        "流明",
+        "浊心斯卡蒂",
+        "涤火杰西卡",
+        "淬羽赫默",
+        "温蒂",
+        "溯光星源",
+        "澄闪",
+        "灰烬",
+        "灵知",
+        "烛煌",
+        "焰尾",
+        "焰影苇草",
+        "煌",
+        "玛恩纳",
+        "玛露西尔",
+        "琳琅诗怀雅",
+        "琴柳",
+        "瑕光",
+        "电弧",
+        "白铁",
+        "百炼嘉维尔",
+        "真言",
+        "空弦",
+        "纯烬艾雅法拉",
+        "维什戴尔",
+        "维娜·维多利亚",
+        "缄默德克萨斯",
+        "缇缇",
+        "缪尔赛思",
+        "耀骑士临光",
+        "老鲤",
+        "能天使",
+        "艾丽妮",
+        "艾拉",
+        "艾雅法拉",
+        "荒芜拉普兰德",
+        "莫斯提马",
+        "莱伊",
+        "菲亚梅塔",
+        "蕾缪安",
+        "薇薇安娜",
+        "赫德雷",
+        "赫拉格",
+        "远牙",
+        "迷迭香",
+        "逻各斯",
+        "遥",
+        "酒神",
+        "重岳",
+        "铃兰",
+        "银灰",
+        "锏",
+        "闪灵",
+        "阿",
+        "阿斯卡纶",
+        "陈",
+        "隐德来希",
+        "霍尔海雅",
+        "领主·Sharp",
+        "风笛",
+        "魔王",
+        "鸿雪",
+        "麒麟R夜刀",
+        "麦哲伦",
+        "黍",
+        "黑",
+        "黑键"
+      ],
+      "4星": [
+        "云迹",
+        "伊桑",
+        "休谟斯",
+        "冬时",
+        "刻刀",
+        "协律",
+        "卡达",
+        "古米",
+        "嘉维尔",
+        "地灵",
+        "坚雷",
+        "夜烟",
+        "孑",
+        "安比尔",
+        "宴",
+        "布丁",
+        "慕斯",
+        "断罪者",
+        "暗索",
+        "末药",
+        "杜宾",
+        "杰克",
+        "杰西卡",
+        "松果",
+        "格雷伊",
+        "桃金娘",
+        "梅",
+        "泡泡",
+        "波登可",
+        "流星",
+        "深海色",
+        "深靛",
+        "清流",
+        "清道夫",
+        "猎蜂",
+        "白雪",
+        "盟约·辅助干员",
+        "石英",
+        "砾",
+        "红云",
+        "红豆",
+        "维荻",
+        "缠丸",
+        "罗小黑",
+        "罗比菈塔",
+        "艾丝黛尔",
+        "芳汀",
+        "苏苏洛",
+        "蛇屠箱",
+        "褐果",
+        "角峰",
+        "讯使",
+        "调香师",
+        "豆苗",
+        "跃跃",
+        "远山",
+        "酸糖",
+        "铅踝",
+        "阿消",
+        "霜叶",
+        "露托",
+        "骋风"
+      ],
+      "3星": [
+        "克洛丝",
+        "卡缇",
+        "史都华德",
+        "安德切尔",
+        "安赛尔",
+        "斑点",
+        "月见夜",
+        "梓兰",
+        "泡普卡",
+        "炎熔",
+        "玫兰莎",
+        "空爆",
+        "米格鲁",
+        "翎羽",
+        "芙蓉",
+        "芬",
+        "预备干员-后勤",
+        "预备干员-术师",
+        "预备干员-狙击",
+        "预备干员-近战",
+        "预备干员-重装",
+        "香草"
+      ]
+    },
+    "byClass": {
+      "术师": [
+        "12F",
+        "Miss.Christine",
+        "Pith",
+        "伊芙利特",
+        "刻俄柏",
+        "协律",
+        "卡涅利安",
+        "卡达",
+        "史都华德",
+        "和弦",
+        "圣聆初雪",
+        "夕",
+        "夜烟",
+        "夜魔",
+        "天火",
+        "妮芙",
+        "寒檀",
+        "布丁",
+        "异客",
+        "惊蛰",
+        "戴菲恩",
+        "折光",
+        "星源",
+        "杜林",
+        "林",
+        "格雷伊",
+        "死芒",
+        "洛洛",
+        "深靛",
+        "温米",
+        "澄闪",
+        "炎熔",
+        "炎狱炎熔",
+        "烛煌",
+        "爱丽丝",
+        "特克诺",
+        "特米米",
+        "玛露西尔",
+        "真言",
+        "耶拉",
+        "至简",
+        "艾雅法拉",
+        "苦艾",
+        "荒芜拉普兰德",
+        "莫斯提马",
+        "莱恩哈特",
+        "薄绿",
+        "蚀清",
+        "蜜蜡",
+        "远山",
+        "逻各斯",
+        "阿米娅",
+        "阿罗玛",
+        "雪绒",
+        "霍尔海雅",
+        "预备干员-术师",
+        "黑键"
+      ],
+      "先锋": [
+        "CONFESS-47",
+        "万顷",
+        "伊内丝",
+        "伺夜",
+        "冬时",
+        "凛冬",
+        "凛御银灰",
+        "历阵锐枪芬",
+        "夜刀",
+        "夜半",
+        "寻澜",
+        "嵯峨",
+        "德克萨斯",
+        "忍冬",
+        "推进之王",
+        "晓歌",
+        "松桐",
+        "极境",
+        "格拉尼",
+        "桃金娘",
+        "清道夫",
+        "渡桥",
+        "焰尾",
+        "琴柳",
+        "红豆",
+        "红隼",
+        "缪尔赛思",
+        "翎羽",
+        "芬",
+        "苇草",
+        "讯使",
+        "谜图",
+        "豆苗",
+        "贾维",
+        "郁金香",
+        "野鬃",
+        "青枳",
+        "预备干员-近战",
+        "风笛",
+        "香草",
+        "齐尔查克"
+      ],
+      "近卫": [
+        "Castle-3",
+        "Sharp",
+        "丰川祥子",
+        "乌尔比安",
+        "仇白",
+        "休谟斯",
+        "佩佩",
+        "刻刀",
+        "医生",
+        "史尔特尔",
+        "司霆惊蛰",
+        "哈蒂娅",
+        "因陀罗",
+        "圣约送葬人",
+        "奥达",
+        "宴",
+        "导火索",
+        "山",
+        "左乐",
+        "布洛卡",
+        "帕拉斯",
+        "幽灵鲨",
+        "慕斯",
+        "战车",
+        "拉普兰德",
+        "摆渡人",
+        "摩根",
+        "断崖",
+        "断罪者",
+        "斯卡蒂",
+        "星极",
+        "暴行",
+        "月见夜",
+        "杜宾",
+        "杰克",
+        "柏喙",
+        "棘刺",
+        "止颂",
+        "泡普卡",
+        "海沫",
+        "火龙S黑角",
+        "炎客",
+        "烈夏",
+        "煌",
+        "燧石",
+        "猎蜂",
+        "玛恩纳",
+        "玫兰莎",
+        "百炼嘉维尔",
+        "石英",
+        "祐天寺若麦",
+        "维娜·维多利亚",
+        "缠丸",
+        "罗小黑",
+        "羽毛笔",
+        "耀骑士临光",
+        "聆音",
+        "艾丝黛尔",
+        "艾丽妮",
+        "芙兰卡",
+        "芳汀",
+        "苍苔",
+        "莱欧斯",
+        "薇薇安娜",
+        "诗怀雅",
+        "赤冬",
+        "赫德雷",
+        "赫拉格",
+        "达格达",
+        "重岳",
+        "铎铃",
+        "银灰",
+        "铸铁",
+        "锏",
+        "阿米娅(近卫)",
+        "陈",
+        "隐德来希",
+        "霜叶",
+        "鞭刃",
+        "领主·Sharp",
+        "骋风",
+        "龙舌兰"
+      ],
+      "重装": [
+        "Friston-3",
+        "临光",
+        "余",
+        "信仰搅拌机",
+        "卡缇",
+        "古米",
+        "可颂",
+        "号角",
+        "吽",
+        "响石",
+        "坚雷",
+        "塞雷娅",
+        "年",
+        "折桠",
+        "拜松",
+        "斑点",
+        "斥罪",
+        "斩业星熊",
+        "星熊",
+        "暮落",
+        "暴雨",
+        "极光",
+        "森蚺",
+        "森西",
+        "泡泡",
+        "泥岩",
+        "洋灰",
+        "涤火杰西卡",
+        "深巡",
+        "深律",
+        "火哨",
+        "火神",
+        "灰毫",
+        "瑕光",
+        "石棉",
+        "米格鲁",
+        "菲莱",
+        "蛇屠箱",
+        "角峰",
+        "车尔尼",
+        "闪击",
+        "雷蛇",
+        "露托",
+        "预备干员-重装",
+        "黍",
+        "黑角"
+      ],
+      "医疗": [
+        "Lancet-2",
+        "Mon3tr",
+        "Touch",
+        "亚叶",
+        "凯尔希",
+        "刺玫",
+        "华法琳",
+        "哈洛德",
+        "嘉维尔",
+        "图耶",
+        "夜莺",
+        "安赛尔",
+        "录武官",
+        "微风",
+        "明椒",
+        "末药",
+        "桑葚",
+        "流明",
+        "清流",
+        "濯尘芙蓉",
+        "焰影苇草",
+        "瑰盐",
+        "白面鸮",
+        "絮雨",
+        "纯烬艾雅法拉",
+        "缇缇",
+        "芙蓉",
+        "苏苏洛",
+        "莎草",
+        "蜜莓",
+        "褐果",
+        "诺威尔",
+        "调香师",
+        "赫默",
+        "锡兰",
+        "闪灵",
+        "阿米娅(医疗)",
+        "预备干员-后勤"
+      ],
+      "辅助": [
+        "PhonoR-0",
+        "U-Official",
+        "三角初华",
+        "九色鹿",
+        "令",
+        "但书",
+        "凛视",
+        "凯瑟琳",
+        "初雪",
+        "地灵",
+        "塑心",
+        "夏栎",
+        "娜斯提",
+        "安洁莉娜",
+        "小满",
+        "巫恋",
+        "掠风",
+        "撷英调香师",
+        "月禾",
+        "格劳克斯",
+        "梅尔",
+        "梓兰",
+        "波卜",
+        "波登可",
+        "浊心斯卡蒂",
+        "海蒂",
+        "海霓",
+        "淬羽赫默",
+        "深海色",
+        "溯光星源",
+        "灵知",
+        "电弧",
+        "白铁",
+        "盟约·辅助干员",
+        "真理",
+        "稀音",
+        "空",
+        "罗比菈塔",
+        "行箸",
+        "衡沙",
+        "遥",
+        "酒神",
+        "铃兰",
+        "阿兰娜",
+        "魔王",
+        "麦哲伦"
+      ],
+      "狙击": [
+        "Stormeye",
+        "W",
+        "假日威龙陈",
+        "克洛丝",
+        "冰酿",
+        "吉星",
+        "四月",
+        "埃拉托",
+        "埃拉托_",
+        "天空盒",
+        "奥斯塔",
+        "娜仁图亚",
+        "子月",
+        "守林人",
+        "安哲拉",
+        "安德切尔",
+        "安比尔",
+        "寒芒克洛丝",
+        "巡林者",
+        "慑砂",
+        "截云",
+        "承曦格雷伊",
+        "提丰",
+        "早露",
+        "普罗旺斯",
+        "杰西卡",
+        "松果",
+        "梅",
+        "正义骑士号",
+        "水灯心",
+        "泰拉大陆调查团",
+        "流星",
+        "灰喉",
+        "灰烬",
+        "熔泉",
+        "玫拉",
+        "白金",
+        "白雪",
+        "空弦",
+        "空爆",
+        "红云",
+        "维什戴尔",
+        "能天使",
+        "莱伊",
+        "菲亚梅塔",
+        "蓝毒",
+        "蕾缪安",
+        "跃跃",
+        "远牙",
+        "迷迭香",
+        "送葬人",
+        "酸糖",
+        "铅踝",
+        "陨星",
+        "隐现",
+        "雪猎",
+        "预备干员-狙击",
+        "鸿雪",
+        "黑"
+      ],
+      "特种": [
+        "THRM-EX",
+        "乌有",
+        "云迹",
+        "伊桑",
+        "傀影",
+        "八幡海铃",
+        "卡夫卡",
+        "双月",
+        "多萝西",
+        "孑",
+        "崖心",
+        "弑君者",
+        "引星棘刺",
+        "归溟幽灵鲨",
+        "新约能天使",
+        "暗索",
+        "杏仁",
+        "槐琥",
+        "歌蕾蒂娅",
+        "水月",
+        "温蒂",
+        "狮蝎",
+        "琳琅诗怀雅",
+        "砾",
+        "空构",
+        "红",
+        "绮良",
+        "维荻",
+        "缄默德克萨斯",
+        "罗宾",
+        "老鲤",
+        "艾拉",
+        "若叶睦",
+        "蒂比",
+        "裁度",
+        "见行者",
+        "贝娜",
+        "钼铅",
+        "锡人",
+        "阿",
+        "阿斯卡纶",
+        "阿消",
+        "雪雉",
+        "霜华",
+        "风丸",
+        "食铁兽",
+        "麒麟R夜刀"
+      ]
+    },
+    "bySubclass": {
+      "扩散术师": [
+        "12F",
+        "Pith",
+        "夕",
+        "天火",
+        "寒檀",
+        "格雷伊",
+        "炎熔",
+        "炎狱炎熔",
+        "玛露西尔",
+        "莫斯提马",
+        "莱恩哈特",
+        "远山"
+      ],
+      "尖兵": [
+        "CONFESS-47",
+        "凛冬",
+        "夜刀",
+        "嵯峨",
+        "德克萨斯",
+        "忍冬",
+        "推进之王",
+        "清道夫",
+        "焰尾",
+        "红隼",
+        "芬",
+        "讯使",
+        "贾维",
+        "郁金香",
+        "青枳",
+        "预备干员-近战",
+        "香草"
+      ],
+      "无畏者": [
+        "Castle-3",
+        "Sharp",
+        "摩根",
+        "断罪者",
+        "斯卡蒂",
+        "止颂",
+        "炎客",
+        "玫兰莎",
+        "缠丸",
+        "耀骑士临光",
+        "芙兰卡",
+        "莱欧斯"
+      ],
+      "铁卫": [
+        "Friston-3",
+        "卡缇",
+        "可颂",
+        "年",
+        "拜松",
+        "星熊",
+        "暴雨",
+        "泡泡",
+        "米格鲁",
+        "蛇屠箱",
+        "角峰",
+        "预备干员-重装",
+        "黑角"
+      ],
+      "医师": [
+        "Lancet-2",
+        "Touch",
+        "亚叶",
+        "凯尔希",
+        "华法琳",
+        "嘉维尔",
+        "图耶",
+        "安赛尔",
+        "录武官",
+        "末药",
+        "芙蓉",
+        "苏苏洛",
+        "赫默",
+        "闪灵",
+        "预备干员-后勤"
+      ],
+      "本源术师": [
+        "Miss.Christine",
+        "妮芙",
+        "折光",
+        "温米",
+        "烛煌",
+        "真言"
+      ],
+      "链愈师": [
+        "Mon3tr",
+        "明椒",
+        "莎草"
+      ],
+      "巫役": [
+        "PhonoR-0",
+        "凛视",
+        "塑心",
+        "波卜",
+        "盟约·辅助干员",
+        "酒神"
+      ],
+      "速射手": [
+        "Stormeye",
+        "克洛丝",
+        "四月",
+        "安德切尔",
+        "寒芒克洛丝",
+        "巡林者",
+        "杰西卡",
+        "梅",
+        "正义骑士号",
+        "流星",
+        "灰喉",
+        "灰烬",
+        "白金",
+        "空弦",
+        "红云",
+        "能天使",
+        "蓝毒",
+        "隐现",
+        "预备干员-狙击"
+      ],
+      "处决者": [
+        "THRM-EX",
+        "傀影",
+        "卡夫卡",
+        "弑君者",
+        "槐琥",
+        "砾",
+        "红",
+        "缄默德克萨斯",
+        "麒麟R夜刀"
+      ],
+      "吟游者": [
+        "U-Official",
+        "三角初华",
+        "浊心斯卡蒂",
+        "海蒂",
+        "空",
+        "魔王"
+      ],
+      "炮手": [
+        "W",
+        "慑砂",
+        "截云",
+        "白雪",
+        "空爆",
+        "菲亚梅塔",
+        "陨星"
+      ],
+      "执旗手": [
+        "万顷",
+        "极境",
+        "桃金娘",
+        "琴柳"
+      ],
+      "领主": [
+        "丰川祥子",
+        "仇白",
+        "拉普兰德",
+        "断崖",
+        "月见夜",
+        "棘刺",
+        "烈夏",
+        "罗小黑",
+        "芳汀",
+        "银灰",
+        "霜叶",
+        "领主·Sharp"
+      ],
+      "守护者": [
+        "临光",
+        "古米",
+        "吽",
+        "塞雷娅",
+        "斑点",
+        "森西",
+        "深律",
+        "瑕光",
+        "黍"
+      ],
+      "重剑手": [
+        "乌尔比安",
+        "石英",
+        "赫德雷",
+        "铎铃"
+      ],
+      "行商": [
+        "乌有",
+        "孑",
+        "琳琅诗怀雅",
+        "老鲤",
+        "裁度"
+      ],
+      "护佑者": [
+        "九色鹿",
+        "夏栎",
+        "撷英调香师",
+        "月禾",
+        "淬羽赫默",
+        "行箸",
+        "遥"
+      ],
+      "巡空者": [
+        "云迹",
+        "蒂比"
+      ],
+      "召唤师": [
+        "令",
+        "梅尔",
+        "深海色",
+        "电弧",
+        "稀音",
+        "衡沙",
+        "麦哲伦"
+      ],
+      "情报官": [
+        "伊内丝",
+        "冬时",
+        "寻澜",
+        "晓歌",
+        "谜图",
+        "齐尔查克"
+      ],
+      "伏击客": [
+        "伊桑",
+        "八幡海铃",
+        "水月",
+        "狮蝎",
+        "绮良",
+        "阿斯卡纶"
+      ],
+      "轰击术师": [
+        "伊芙利特",
+        "协律",
+        "蚀清",
+        "阿罗玛"
+      ],
+      "收割者": [
+        "休谟斯",
+        "圣约送葬人",
+        "海沫",
+        "羽毛笔",
+        "隐德来希"
+      ],
+      "战术家": [
+        "伺夜",
+        "夜半",
+        "渡桥",
+        "缪尔赛思",
+        "豆苗"
+      ],
+      "凝滞师": [
+        "但书",
+        "地灵",
+        "安洁莉娜",
+        "小满",
+        "格劳克斯",
+        "梓兰",
+        "波登可",
+        "溯光星源",
+        "真理",
+        "铃兰"
+      ],
+      "本源铁卫": [
+        "余",
+        "响石",
+        "菲莱"
+      ],
+      "撼地者": [
+        "佩佩",
+        "奥达",
+        "祐天寺若麦"
+      ],
+      "哨戒铁卫": [
+        "信仰搅拌机",
+        "涤火杰西卡",
+        "深巡",
+        "闪击",
+        "雷蛇"
+      ],
+      "散射手": [
+        "假日威龙陈",
+        "吉星",
+        "奥斯塔",
+        "松果",
+        "送葬人"
+      ],
+      "猎手": [
+        "冰酿",
+        "莱伊",
+        "雪猎"
+      ],
+      "策士": [
+        "凛御银灰",
+        "松桐"
+      ],
+      "工匠": [
+        "凯瑟琳",
+        "娜斯提",
+        "掠风",
+        "白铁",
+        "罗比菈塔",
+        "阿兰娜"
+      ],
+      "削弱者": [
+        "初雪",
+        "巫恋",
+        "海霓",
+        "灵知"
+      ],
+      "咒愈师": [
+        "刺玫",
+        "濯尘芙蓉",
+        "焰影苇草",
+        "缇缇",
+        "阿米娅(医疗)"
+      ],
+      "中坚术师": [
+        "刻俄柏",
+        "史都华德",
+        "夜烟",
+        "夜魔",
+        "杜林",
+        "特米米",
+        "艾雅法拉",
+        "苦艾",
+        "逻各斯",
+        "阿米娅",
+        "雪绒",
+        "霍尔海雅",
+        "预备干员-术师"
+      ],
+      "剑豪": [
+        "刻刀",
+        "战车",
+        "柏喙",
+        "艾丽妮",
+        "锏",
+        "陈"
+      ],
+      "教官": [
+        "医生",
+        "帕拉斯",
+        "杜宾",
+        "苍苔",
+        "诗怀雅",
+        "鞭刃"
+      ],
+      "阵法术师": [
+        "卡涅利安",
+        "圣聆初雪",
+        "林",
+        "薄绿",
+        "蜜蜡"
+      ],
+      "驭械术师": [
+        "卡达",
+        "洛洛",
+        "澄闪",
+        "耶拉",
+        "至简",
+        "荒芜拉普兰德"
+      ],
+      "冲锋手": [
+        "历阵锐枪芬",
+        "格拉尼",
+        "红豆",
+        "翎羽",
+        "苇草",
+        "野鬃",
+        "风笛"
+      ],
+      "傀儡师": [
+        "双月",
+        "归溟幽灵鲨",
+        "维荻",
+        "若叶睦",
+        "贝娜",
+        "风丸"
+      ],
+      "术战者": [
+        "史尔特尔",
+        "慕斯",
+        "星极",
+        "维娜·维多利亚",
+        "薇薇安娜",
+        "铸铁",
+        "阿米娅(近卫)"
+      ],
+      "要塞": [
+        "号角",
+        "火哨",
+        "灰毫"
+      ],
+      "解放者": [
+        "司霆惊蛰",
+        "玛恩纳",
+        "骋风",
+        "龙舌兰"
+      ],
+      "秘术师": [
+        "和弦",
+        "戴菲恩",
+        "深靛",
+        "爱丽丝",
+        "黑键"
+      ],
+      "行医": [
+        "哈洛德",
+        "桑葚",
+        "纯烬艾雅法拉",
+        "蜜莓",
+        "褐果"
+      ],
+      "佣兵": [
+        "哈蒂娅"
+      ],
+      "斗士": [
+        "因陀罗",
+        "山",
+        "杰克",
+        "燧石",
+        "猎蜂",
+        "达格达",
+        "重岳"
+      ],
+      "驭法铁卫": [
+        "坚雷",
+        "斩业星熊",
+        "暮落",
+        "石棉",
+        "车尔尼"
+      ],
+      "攻城手": [
+        "埃拉托",
+        "埃拉托_",
+        "提丰",
+        "早露",
+        "熔泉",
+        "铅踝"
+      ],
+      "陷阱师": [
+        "多萝西",
+        "罗宾",
+        "艾拉",
+        "钼铅",
+        "霜华"
+      ],
+      "群愈师": [
+        "夜莺",
+        "微风",
+        "瑰盐",
+        "白面鸮",
+        "调香师"
+      ],
+      "裂空炮手": [
+        "天空盒"
+      ],
+      "回环射手": [
+        "娜仁图亚",
+        "水灯心",
+        "跃跃"
+      ],
+      "神射手": [
+        "子月",
+        "守林人",
+        "安哲拉",
+        "安比尔",
+        "蕾缪安",
+        "远牙"
+      ],
+      "武者": [
+        "宴",
+        "左乐",
+        "火龙S黑角",
+        "赤冬",
+        "赫拉格"
+      ],
+      "强攻手": [
+        "导火索",
+        "布洛卡",
+        "幽灵鲨",
+        "摆渡人",
+        "暴行",
+        "泡普卡",
+        "煌",
+        "百炼嘉维尔",
+        "艾丝黛尔"
+      ],
+      "钩索师": [
+        "崖心",
+        "暗索",
+        "杏仁",
+        "歌蕾蒂娅",
+        "雪雉"
+      ],
+      "链术师": [
+        "布丁",
+        "异客",
+        "惊蛰",
+        "星源"
+      ],
+      "炼金师": [
+        "引星棘刺",
+        "锡人"
+      ],
+      "投掷手": [
+        "承曦格雷伊",
+        "泰拉大陆调查团",
+        "维什戴尔",
+        "迷迭香"
+      ],
+      "不屈者": [
+        "折桠",
+        "斥罪",
+        "泥岩",
+        "火神",
+        "露托"
+      ],
+      "怪杰": [
+        "新约能天使",
+        "空构",
+        "阿"
+      ],
+      "重射手": [
+        "普罗旺斯",
+        "玫拉",
+        "酸糖",
+        "鸿雪",
+        "黑"
+      ],
+      "决战者": [
+        "极光",
+        "森蚺",
+        "洋灰"
+      ],
+      "塑灵术师": [
+        "死芒",
+        "特克诺"
+      ],
+      "疗养师": [
+        "流明",
+        "清流",
+        "絮雨",
+        "诺威尔",
+        "锡兰"
+      ],
+      "推击手": [
+        "温蒂",
+        "见行者",
+        "阿消",
+        "食铁兽"
+      ],
+      "本源近卫": [
+        "聆音"
+      ]
+    },
+    "byTag": {
+      "新手": [
+        "12F",
+        "夜刀",
+        "巡林者",
+        "杜林",
+        "黑角"
+      ],
+      "支援机械": [
+        "CONFESS-47",
+        "Castle-3",
+        "Friston-3",
+        "Lancet-2",
+        "PhonoR-0",
+        "THRM-EX",
+        "正义骑士号"
+      ],
+      "控场": [
+        "CONFESS-47",
+        "U-Official",
+        "W",
+        "云迹",
+        "仇白",
+        "令",
+        "伊桑",
+        "伺夜",
+        "佩佩",
+        "傀影",
+        "八幡海铃",
+        "刻俄柏",
+        "卡夫卡",
+        "卡达",
+        "哈蒂娅",
+        "圣聆初雪",
+        "埃拉托",
+        "埃拉托_",
+        "夕",
+        "多萝西",
+        "夜半",
+        "天火",
+        "奥达",
+        "妮芙",
+        "寒檀",
+        "小满",
+        "德克萨斯",
+        "断罪者",
+        "早露",
+        "格劳克斯",
+        "梅尔",
+        "歌蕾蒂娅",
+        "水月",
+        "泰拉大陆调查团",
+        "深靛",
+        "温蒂",
+        "玛露西尔",
+        "真言",
+        "红",
+        "缇缇",
+        "缪尔赛思",
+        "耶拉",
+        "艾丽妮",
+        "艾拉",
+        "莫斯提马",
+        "莱欧斯",
+        "薄绿",
+        "裁度",
+        "见行者",
+        "酒神",
+        "阿罗玛",
+        "雪猎",
+        "雪绒",
+        "霍尔海雅",
+        "霜华"
+      ],
+      "支援": [
+        "Castle-3",
+        "Mon3tr",
+        "万顷",
+        "三角初华",
+        "九色鹿",
+        "令",
+        "信仰搅拌机",
+        "凛冬",
+        "凛御银灰",
+        "凯瑟琳",
+        "医生",
+        "华法琳",
+        "塑心",
+        "塞雷娅",
+        "夏栎",
+        "夜莺",
+        "娜斯提",
+        "安洁莉娜",
+        "帕拉斯",
+        "年",
+        "引星棘刺",
+        "微风",
+        "掠风",
+        "撷英调香师",
+        "新约能天使",
+        "暴雨",
+        "月禾",
+        "杜宾",
+        "松桐",
+        "极境",
+        "正义骑士号",
+        "流明",
+        "浊心斯卡蒂",
+        "海蒂",
+        "淬羽赫默",
+        "清流",
+        "溯光星源",
+        "烈夏",
+        "琴柳",
+        "瑰盐",
+        "电弧",
+        "白铁",
+        "白面鸮",
+        "稀音",
+        "空",
+        "空构",
+        "罗比菈塔",
+        "苍苔",
+        "莫斯提马",
+        "行箸",
+        "诗怀雅",
+        "遥",
+        "铃兰",
+        "银灰",
+        "锡人",
+        "闪灵",
+        "阿",
+        "阿兰娜",
+        "阿米娅(近卫)",
+        "鞭刃",
+        "魔王",
+        "麦哲伦",
+        "黍"
+      ],
+      "防护": [
+        "Friston-3",
+        "临光",
+        "余",
+        "信仰搅拌机",
+        "凯瑟琳",
+        "卡涅利安",
+        "卡缇",
+        "古米",
+        "可颂",
+        "号角",
+        "吽",
+        "响石",
+        "坚雷",
+        "塞雷娅",
+        "娜斯提",
+        "年",
+        "折桠",
+        "拜松",
+        "斑点",
+        "星极",
+        "星熊",
+        "暮落",
+        "暴雨",
+        "极光",
+        "林",
+        "格拉尼",
+        "棘刺",
+        "森蚺",
+        "森西",
+        "泡泡",
+        "泥岩",
+        "洋灰",
+        "涤火杰西卡",
+        "深巡",
+        "深律",
+        "火哨",
+        "火神",
+        "灰毫",
+        "瑕光",
+        "石棉",
+        "砾",
+        "米格鲁",
+        "缇缇",
+        "罗比菈塔",
+        "若叶睦",
+        "菲莱",
+        "蛇屠箱",
+        "蜜蜡",
+        "角峰",
+        "讯使",
+        "车尔尼",
+        "闪击",
+        "雷蛇",
+        "露托",
+        "青枳",
+        "预备干员-近战",
+        "预备干员-重装",
+        "黍"
+      ],
+      "治疗": [
+        "Lancet-2",
+        "Mon3tr",
+        "Touch",
+        "三角初华",
+        "临光",
+        "亚叶",
+        "凯尔希",
+        "刺玫",
+        "医生",
+        "华法琳",
+        "古米",
+        "吽",
+        "哈洛德",
+        "嘉维尔",
+        "图耶",
+        "塞雷娅",
+        "夜莺",
+        "夜魔",
+        "安赛尔",
+        "录武官",
+        "微风",
+        "斑点",
+        "明椒",
+        "末药",
+        "桃金娘",
+        "桑葚",
+        "森西",
+        "波登可",
+        "流明",
+        "海蒂",
+        "淬羽赫默",
+        "深律",
+        "清流",
+        "濯尘芙蓉",
+        "焰影苇草",
+        "玛露西尔",
+        "瑕光",
+        "瑰盐",
+        "白面鸮",
+        "空",
+        "絮雨",
+        "纯烬艾雅法拉",
+        "缇缇",
+        "芙蓉",
+        "苏苏洛",
+        "莎草",
+        "蜜莓",
+        "褐果",
+        "诺威尔",
+        "调香师",
+        "赫默",
+        "遥",
+        "锡兰",
+        "闪灵",
+        "阿米娅(医疗)",
+        "预备干员-后勤",
+        "黍"
+      ],
+      "元素": [
+        "Miss.Christine",
+        "PhonoR-0",
+        "余",
+        "凛视",
+        "响石",
+        "塑心",
+        "妮芙",
+        "折光",
+        "波卜",
+        "温米",
+        "烛煌",
+        "盟约·辅助干员",
+        "真言",
+        "菲莱",
+        "酒神"
+      ],
+      "输出": [
+        "Miss.Christine",
+        "Mon3tr",
+        "Sharp",
+        "Stormeye",
+        "W",
+        "丰川祥子",
+        "乌尔比安",
+        "乌有",
+        "亚叶",
+        "仇白",
+        "伊桑",
+        "休谟斯",
+        "佩佩",
+        "信仰搅拌机",
+        "假日威龙陈",
+        "傀影",
+        "克洛丝",
+        "八幡海铃",
+        "冰酿",
+        "刻俄柏",
+        "刻刀",
+        "协律",
+        "卡达",
+        "历阵锐枪芬",
+        "史尔特尔",
+        "史都华德",
+        "号角",
+        "司霆惊蛰",
+        "和弦",
+        "哈蒂娅",
+        "四月",
+        "因陀罗",
+        "圣约送葬人",
+        "坚雷",
+        "埃拉托",
+        "埃拉托_",
+        "夕",
+        "夜烟",
+        "夜魔",
+        "妮芙",
+        "娜仁图亚",
+        "子月",
+        "孑",
+        "守林人",
+        "安哲拉",
+        "安德切尔",
+        "安比尔",
+        "安洁莉娜",
+        "宴",
+        "寒芒克洛丝",
+        "山",
+        "崖心",
+        "嵯峨",
+        "左乐",
+        "布丁",
+        "帕拉斯",
+        "异客",
+        "引星棘刺",
+        "归溟幽灵鲨",
+        "忍冬",
+        "惊蛰",
+        "慕斯",
+        "战车",
+        "戴菲恩",
+        "承曦格雷伊",
+        "折光",
+        "拉普兰德",
+        "掠风",
+        "推进之王",
+        "提丰",
+        "摩根",
+        "斥罪",
+        "斩业星熊",
+        "断崖",
+        "断罪者",
+        "斯卡蒂",
+        "新约能天使",
+        "早露",
+        "星极",
+        "星源",
+        "星熊",
+        "普罗旺斯",
+        "暮落",
+        "月见夜",
+        "杜宾",
+        "杰克",
+        "杰西卡",
+        "松果",
+        "极光",
+        "柏喙",
+        "梅",
+        "棘刺",
+        "森蚺",
+        "歌蕾蒂娅",
+        "止颂",
+        "死芒",
+        "水月",
+        "水灯心",
+        "泥岩",
+        "洛洛",
+        "流星",
+        "浊心斯卡蒂",
+        "海沫",
+        "涤火杰西卡",
+        "深巡",
+        "深靛",
+        "清道夫",
+        "温蒂",
+        "溯光星源",
+        "澄闪",
+        "火哨",
+        "火神",
+        "火龙S黑角",
+        "灰喉",
+        "灰毫",
+        "灰烬",
+        "炎客",
+        "炎狱炎熔",
+        "烈夏",
+        "烛煌",
+        "焰影苇草",
+        "煌",
+        "熔泉",
+        "燧石",
+        "爱丽丝",
+        "特米米",
+        "狮蝎",
+        "猎蜂",
+        "玛恩纳",
+        "玫兰莎",
+        "玫拉",
+        "瑕光",
+        "电弧",
+        "白金",
+        "白铁",
+        "百炼嘉维尔",
+        "真理",
+        "真言",
+        "石棉",
+        "石英",
+        "祐天寺若麦",
+        "空弦",
+        "空构",
+        "红云",
+        "红豆",
+        "红隼",
+        "绮良",
+        "维什戴尔",
+        "维娜·维多利亚",
+        "缄默德克萨斯",
+        "缠丸",
+        "罗小黑",
+        "羽毛笔",
+        "翎羽",
+        "耀骑士临光",
+        "老鲤",
+        "耶拉",
+        "聆音",
+        "能天使",
+        "至简",
+        "艾丽妮",
+        "艾拉",
+        "艾雅法拉",
+        "芙兰卡",
+        "芳汀",
+        "苇草",
+        "苍苔",
+        "苦艾",
+        "荒芜拉普兰德",
+        "莱伊",
+        "莱欧斯",
+        "菲亚梅塔",
+        "蓝毒",
+        "蕾缪安",
+        "薇薇安娜",
+        "诗怀雅",
+        "贝娜",
+        "贾维",
+        "赤冬",
+        "赫德雷",
+        "赫拉格",
+        "跃跃",
+        "车尔尼",
+        "达格达",
+        "远牙",
+        "迷迭香",
+        "逻各斯",
+        "郁金香",
+        "酸糖",
+        "野鬃",
+        "铃兰",
+        "铅踝",
+        "铎铃",
+        "银灰",
+        "铸铁",
+        "锏",
+        "闪击",
+        "阿",
+        "阿兰娜",
+        "阿斯卡纶",
+        "阿米娅",
+        "阿米娅(医疗)",
+        "阿米娅(近卫)",
+        "陈",
+        "隐德来希",
+        "隐现",
+        "雪绒",
+        "雷蛇",
+        "霍尔海雅",
+        "霜叶",
+        "鞭刃",
+        "预备干员-术师",
+        "预备干员-狙击",
+        "领主·Sharp",
+        "风丸",
+        "风笛",
+        "魔王",
+        "鸿雪",
+        "麦哲伦",
+        "黑",
+        "黑键"
+      ],
+      "群攻": [
+        "Pith",
+        "伊芙利特",
+        "假日威龙陈",
+        "协律",
+        "卡涅利安",
+        "吉星",
+        "圣聆初雪",
+        "夕",
+        "天火",
+        "天空盒",
+        "奥斯塔",
+        "奥达",
+        "寒檀",
+        "导火索",
+        "布洛卡",
+        "幽灵鲨",
+        "慑砂",
+        "截云",
+        "摆渡人",
+        "断崖",
+        "暴行",
+        "松果",
+        "林",
+        "格雷伊",
+        "泡普卡",
+        "炎熔",
+        "烛煌",
+        "玛露西尔",
+        "白雪",
+        "祐天寺若麦",
+        "空爆",
+        "艾丝黛尔",
+        "莫斯提马",
+        "莱恩哈特",
+        "薄绿",
+        "蚀清",
+        "蜜蜡",
+        "远山",
+        "送葬人",
+        "阿罗玛",
+        "陨星"
+      ],
+      "生存": [
+        "Sharp",
+        "乌尔比安",
+        "九色鹿",
+        "休谟斯",
+        "因陀罗",
+        "夏栎",
+        "子月",
+        "宴",
+        "导火索",
+        "山",
+        "左乐",
+        "布洛卡",
+        "幽灵鲨",
+        "折桠",
+        "摆渡人",
+        "撷英调香师",
+        "斥罪",
+        "斩业星熊",
+        "断罪者",
+        "斯卡蒂",
+        "月禾",
+        "杰西卡",
+        "森蚺",
+        "泡普卡",
+        "泥岩",
+        "浊心斯卡蒂",
+        "涤火杰西卡",
+        "淬羽赫默",
+        "火神",
+        "火龙S黑角",
+        "炎客",
+        "焰尾",
+        "煌",
+        "特米米",
+        "狮蝎",
+        "玫兰莎",
+        "百炼嘉维尔",
+        "绮良",
+        "维娜·维多利亚",
+        "维荻",
+        "缠丸",
+        "老鲤",
+        "艾丝黛尔",
+        "芙兰卡",
+        "蒂比",
+        "薇薇安娜",
+        "行箸",
+        "赤冬",
+        "赫拉格",
+        "达格达",
+        "遥",
+        "铸铁",
+        "隐德来希",
+        "露托",
+        "魔王"
+      ],
+      "爆发": [
+        "THRM-EX",
+        "刻刀",
+        "司霆惊蛰",
+        "守林人",
+        "战车",
+        "断罪者",
+        "暴行",
+        "柏喙",
+        "渡桥",
+        "温米",
+        "玛恩纳",
+        "玫拉",
+        "琳琅诗怀雅",
+        "百炼嘉维尔",
+        "聆音",
+        "艾丽妮",
+        "莱恩哈特",
+        "蕾缪安",
+        "重岳",
+        "锏",
+        "陈",
+        "雪猎",
+        "骋风",
+        "麒麟R夜刀",
+        "龙舌兰"
+      ],
+      "费用回复": [
+        "万顷",
+        "伊内丝",
+        "伺夜",
+        "冬时",
+        "凛冬",
+        "凛御银灰",
+        "历阵锐枪芬",
+        "夜半",
+        "寻澜",
+        "嵯峨",
+        "德克萨斯",
+        "忍冬",
+        "推进之王",
+        "晓歌",
+        "松桐",
+        "极境",
+        "格拉尼",
+        "桃金娘",
+        "清道夫",
+        "渡桥",
+        "焰尾",
+        "琴柳",
+        "红豆",
+        "红隼",
+        "缪尔赛思",
+        "翎羽",
+        "芬",
+        "苇草",
+        "讯使",
+        "谜图",
+        "豆苗",
+        "贾维",
+        "郁金香",
+        "野鬃",
+        "青枳",
+        "风笛",
+        "香草",
+        "齐尔查克"
+      ],
+      "快速复活": [
+        "乌有",
+        "伊内丝",
+        "傀影",
+        "冬时",
+        "卡夫卡",
+        "双月",
+        "孑",
+        "寻澜",
+        "弑君者",
+        "归溟幽灵鲨",
+        "晓歌",
+        "槐琥",
+        "琳琅诗怀雅",
+        "砾",
+        "红",
+        "维荻",
+        "缄默德克萨斯",
+        "老鲤",
+        "若叶睦",
+        "裁度",
+        "谜图",
+        "贝娜",
+        "风丸",
+        "麒麟R夜刀",
+        "齐尔查克"
+      ],
+      "高空": [
+        "云迹",
+        "蒂比"
+      ],
+      "召唤": [
+        "令",
+        "凯尔希",
+        "多萝西",
+        "梅尔",
+        "死芒",
+        "深海色",
+        "特克诺",
+        "电弧",
+        "稀音",
+        "罗宾",
+        "艾拉",
+        "衡沙",
+        "豆苗",
+        "钼铅",
+        "霜华"
+      ],
+      "削弱": [
+        "伊芙利特",
+        "但书",
+        "初雪",
+        "双月",
+        "夜烟",
+        "巫恋",
+        "引星棘刺",
+        "慑砂",
+        "拉普兰德",
+        "槐琥",
+        "流星",
+        "海霓",
+        "灵知",
+        "焰影苇草",
+        "祐天寺若麦",
+        "艾雅法拉",
+        "荒芜拉普兰德",
+        "蚀清",
+        "钼铅",
+        "锏",
+        "锡人",
+        "陨星"
+      ],
+      "减速": [
+        "但书",
+        "地灵",
+        "夜魔",
+        "安哲拉",
+        "安比尔",
+        "安洁莉娜",
+        "小满",
+        "截云",
+        "承曦格雷伊",
+        "格劳克斯",
+        "格雷伊",
+        "梅",
+        "梓兰",
+        "波登可",
+        "深巡",
+        "溯光星源",
+        "白雪",
+        "真理",
+        "衡沙",
+        "铃兰",
+        "阿斯卡纶",
+        "雪雉",
+        "霜叶",
+        "食铁兽",
+        "麦哲伦"
+      ],
+      "位移": [
+        "可颂",
+        "崖心",
+        "暗索",
+        "杏仁",
+        "歌蕾蒂娅",
+        "温蒂",
+        "罗宾",
+        "见行者",
+        "阿消",
+        "雪雉",
+        "食铁兽"
+      ]
+    },
+    "byFaction": {
+      "罗德岛": [
+        "12F",
+        "Castle-3",
+        "Friston-3",
+        "Lancet-2",
+        "Mon3tr",
+        "PhonoR-0",
+        "Pith",
+        "Sharp",
+        "Stormeye",
+        "THRM-EX",
+        "Touch",
+        "U-Official",
+        "亚叶",
+        "伊桑",
+        "休谟斯",
+        "假日威龙陈",
+        "克洛丝",
+        "凯尔希",
+        "刻俄柏",
+        "华法琳",
+        "卡缇",
+        "卡达",
+        "历阵锐枪芬",
+        "史尔特尔",
+        "史都华德",
+        "嘉维尔",
+        "坚雷",
+        "夏栎",
+        "夜刀",
+        "奥达",
+        "妮芙",
+        "守林人",
+        "安德切尔",
+        "安赛尔",
+        "寒芒克洛丝",
+        "巡林者",
+        "弑君者",
+        "承曦格雷伊",
+        "撷英调香师",
+        "斑点",
+        "明椒",
+        "晓歌",
+        "暴雨",
+        "月见夜",
+        "末药",
+        "杜宾",
+        "杜林",
+        "极境",
+        "桃金娘",
+        "梓兰",
+        "泡普卡",
+        "波登可",
+        "泥岩",
+        "泰拉大陆调查团",
+        "清道夫",
+        "渡桥",
+        "温蒂",
+        "濯尘芙蓉",
+        "火龙S黑角",
+        "灰喉",
+        "炎客",
+        "炎熔",
+        "炎狱炎熔",
+        "烛煌",
+        "煌",
+        "玫兰莎",
+        "电弧",
+        "百炼嘉维尔",
+        "真言",
+        "空爆",
+        "米格鲁",
+        "红",
+        "芙蓉",
+        "芬",
+        "苏苏洛",
+        "褐果",
+        "调香师",
+        "迷迭香",
+        "逻各斯",
+        "郁金香",
+        "阿斯卡纶",
+        "阿米娅",
+        "阿米娅(医疗)",
+        "阿米娅(近卫)",
+        "陨星",
+        "隐德来希",
+        "霜叶",
+        "魔王",
+        "鸿雪",
+        "麒麟R夜刀",
+        "黑角"
+      ],
+      "拉特兰": [
+        "CONFESS-47",
+        "信仰搅拌机",
+        "圣约送葬人",
+        "塑心",
+        "安比尔",
+        "空弦",
+        "空构",
+        "翎羽",
+        "芳汀",
+        "莫斯提马",
+        "菲亚梅塔",
+        "蕾缪安",
+        "见行者",
+        "送葬人",
+        "隐现"
+      ],
+      "维多利亚": [
+        "Miss.Christine",
+        "傀影",
+        "凯瑟琳",
+        "刺玫",
+        "号角",
+        "和弦",
+        "哈洛德",
+        "因陀罗",
+        "夜烟",
+        "夜魔",
+        "天火",
+        "微风",
+        "慕斯",
+        "戴菲恩",
+        "推进之王",
+        "摩根",
+        "暮落",
+        "格拉尼",
+        "梅",
+        "死芒",
+        "水灯心",
+        "洛洛",
+        "海蒂",
+        "澄闪",
+        "焰影苇草",
+        "熔泉",
+        "爱丽丝",
+        "琴柳",
+        "白铁",
+        "维娜·维多利亚",
+        "维荻",
+        "苇草",
+        "薄绿",
+        "诺威尔",
+        "谜图",
+        "贝娜",
+        "达格达",
+        "酒神",
+        "风笛"
+      ],
+      "炎": [
+        "万顷",
+        "乌有",
+        "九色鹿",
+        "仇白",
+        "令",
+        "余",
+        "司霆惊蛰",
+        "夕",
+        "小满",
+        "左乐",
+        "年",
+        "录武官",
+        "惊蛰",
+        "截云",
+        "桑葚",
+        "清流",
+        "罗小黑",
+        "行箸",
+        "重岳",
+        "铎铃",
+        "骋风",
+        "黍"
+      ],
+      "阿戈尔": [
+        "乌尔比安",
+        "安哲拉",
+        "幽灵鲨",
+        "归溟幽灵鲨",
+        "斯卡蒂",
+        "歌蕾蒂娅",
+        "浊心斯卡蒂",
+        "海霓",
+        "深巡",
+        "深海色"
+      ],
+      "哥伦比亚": [
+        "云迹",
+        "伊芙利特",
+        "冰酿",
+        "刻刀",
+        "卡夫卡",
+        "响石",
+        "塞雷娅",
+        "多萝西",
+        "天空盒",
+        "娜斯提",
+        "寻澜",
+        "山",
+        "布丁",
+        "掠风",
+        "星极",
+        "星源",
+        "杏仁",
+        "杰克",
+        "杰西卡",
+        "松果",
+        "梅尔",
+        "波卜",
+        "涤火杰西卡",
+        "淬羽赫默",
+        "溯光星源",
+        "玫拉",
+        "白面鸮",
+        "石英",
+        "红豆",
+        "缪尔赛思",
+        "罗宾",
+        "罗比菈塔",
+        "芙兰卡",
+        "苍苔",
+        "蒂比",
+        "蚀清",
+        "蛇屠箱",
+        "豆苗",
+        "赫默",
+        "酸糖",
+        "锡人",
+        "锡兰",
+        "雷蛇",
+        "霍尔海雅",
+        "青枳",
+        "香草",
+        "麦哲伦",
+        "黑"
+      ],
+      "叙拉古": [
+        "伺夜",
+        "奥斯塔",
+        "子月",
+        "安洁莉娜",
+        "巫恋",
+        "布洛卡",
+        "忍冬",
+        "拉普兰德",
+        "斥罪",
+        "普罗旺斯",
+        "红云",
+        "荒芜拉普兰德",
+        "裁度",
+        "贾维",
+        "铃兰",
+        "阿罗玛"
+      ],
+      "卡西米尔": [
+        "但书",
+        "正义骑士号",
+        "流星",
+        "灰毫",
+        "焰尾",
+        "玛恩纳",
+        "瑕光",
+        "白金",
+        "砾",
+        "耀骑士临光",
+        "远牙",
+        "野鬃",
+        "鞭刃"
+      ],
+      "萨尔贡": [
+        "佩佩",
+        "哈蒂娅",
+        "图耶",
+        "娜仁图亚",
+        "异客",
+        "慑砂",
+        "森蚺",
+        "泡泡",
+        "燧石",
+        "特米米",
+        "狮蝎",
+        "稀音",
+        "红隼",
+        "缇缇",
+        "至简",
+        "艾丝黛尔",
+        "莎草",
+        "菲莱",
+        "蜜蜡",
+        "衡沙",
+        "钼铅",
+        "铅踝"
+      ],
+      "乌萨斯": [
+        "冬时",
+        "凛冬",
+        "古米",
+        "折桠",
+        "早露",
+        "烈夏",
+        "猎蜂",
+        "真理",
+        "苦艾",
+        "赫拉格"
+      ],
+      "谢拉格": [
+        "凛御银灰",
+        "初雪",
+        "圣聆初雪",
+        "崖心",
+        "极光",
+        "灵知",
+        "耶拉",
+        "角峰",
+        "讯使",
+        "银灰",
+        "锏",
+        "雪猎"
+      ],
+      "萨米": [
+        "凛视",
+        "寒檀",
+        "提丰",
+        "柏喙",
+        "远山",
+        "雪绒"
+      ],
+      "莱塔尼亚": [
+        "协律",
+        "卡涅利安",
+        "地灵",
+        "折光",
+        "止颂",
+        "深律",
+        "纯烬艾雅法拉",
+        "艾雅法拉",
+        "薇薇安娜",
+        "车尔尼",
+        "黑键"
+      ],
+      "炎-龙门": [
+        "可颂",
+        "吽",
+        "孑",
+        "德克萨斯",
+        "拜松",
+        "斩业星熊",
+        "新约能天使",
+        "星熊",
+        "暗索",
+        "林",
+        "槐琥",
+        "琳琅诗怀雅",
+        "空",
+        "缄默德克萨斯",
+        "老鲤",
+        "能天使",
+        "诗怀雅",
+        "阿",
+        "阿消",
+        "陈",
+        "雪雉",
+        "食铁兽"
+      ],
+      "东": [
+        "吉星",
+        "宴",
+        "嵯峨",
+        "月禾",
+        "松桐",
+        "水月",
+        "白雪",
+        "绮良",
+        "缠丸",
+        "赤冬",
+        "遥",
+        "风丸"
+      ],
+      "雷姆必拓": [
+        "四月",
+        "夜半",
+        "断崖",
+        "暴行",
+        "洋灰",
+        "温米",
+        "火哨",
+        "石棉",
+        "莱伊",
+        "莱恩哈特",
+        "蜜莓",
+        "阿兰娜"
+      ],
+      "米诺斯": [
+        "埃拉托",
+        "埃拉托_",
+        "帕拉斯",
+        "摆渡人",
+        "断罪者",
+        "火神",
+        "铸铁"
+      ],
+      "伊比利亚": [
+        "引星棘刺",
+        "格劳克斯",
+        "棘刺",
+        "流明",
+        "海沫",
+        "深靛",
+        "瑰盐",
+        "絮雨",
+        "艾丽妮",
+        "蓝毒"
+      ],
+      "玻利瓦尔": [
+        "格雷伊",
+        "特克诺",
+        "羽毛笔",
+        "聆音",
+        "跃跃",
+        "露托",
+        "龙舌兰"
+      ]
+    },
+    "byPosition": {
+      "远程位": [
+        "12F",
+        "Lancet-2",
+        "Miss.Christine",
+        "Mon3tr",
+        "PhonoR-0",
+        "Pith",
+        "Stormeye",
+        "Touch",
+        "U-Official",
+        "W",
+        "三角初华",
+        "九色鹿",
+        "亚叶",
+        "令",
+        "伊芙利特",
+        "伺夜",
+        "但书",
+        "假日威龙陈",
+        "克洛丝",
+        "冰酿",
+        "凛视",
+        "凯尔希",
+        "初雪",
+        "刺玫",
+        "刻俄柏",
+        "华法琳",
+        "协律",
+        "卡涅利安",
+        "卡达",
+        "史都华德",
+        "吉星",
+        "和弦",
+        "哈洛德",
+        "嘉维尔",
+        "四月",
+        "图耶",
+        "圣聆初雪",
+        "地灵",
+        "埃拉托",
+        "埃拉托_",
+        "塑心",
+        "夏栎",
+        "夕",
+        "多萝西",
+        "夜半",
+        "夜烟",
+        "夜莺",
+        "夜魔",
+        "天火",
+        "天空盒",
+        "奥斯塔",
+        "妮芙",
+        "娜仁图亚",
+        "子月",
+        "守林人",
+        "安哲拉",
+        "安德切尔",
+        "安比尔",
+        "安洁莉娜",
+        "安赛尔",
+        "寒檀",
+        "寒芒克洛丝",
+        "小满",
+        "巡林者",
+        "巫恋",
+        "布丁",
+        "异客",
+        "引星棘刺",
+        "录武官",
+        "微风",
+        "惊蛰",
+        "慑砂",
+        "截云",
+        "戴菲恩",
+        "承曦格雷伊",
+        "折光",
+        "提丰",
+        "撷英调香师",
+        "新约能天使",
+        "早露",
+        "明椒",
+        "星源",
+        "普罗旺斯",
+        "月禾",
+        "末药",
+        "杜林",
+        "杰西卡",
+        "松果",
+        "林",
+        "格劳克斯",
+        "格雷伊",
+        "桑葚",
+        "梅",
+        "梅尔",
+        "梓兰",
+        "正义骑士号",
+        "死芒",
+        "水灯心",
+        "波卜",
+        "波登可",
+        "泰拉大陆调查团",
+        "洛洛",
+        "流明",
+        "流星",
+        "浊心斯卡蒂",
+        "海蒂",
+        "海霓",
+        "淬羽赫默",
+        "深海色",
+        "深靛",
+        "清流",
+        "渡桥",
+        "温米",
+        "溯光星源",
+        "澄闪",
+        "濯尘芙蓉",
+        "灰喉",
+        "灰烬",
+        "灵知",
+        "炎熔",
+        "炎狱炎熔",
+        "烛煌",
+        "焰影苇草",
+        "熔泉",
+        "爱丽丝",
+        "特克诺",
+        "特米米",
+        "玛露西尔",
+        "玫拉",
+        "瑰盐",
+        "电弧",
+        "白金",
+        "白雪",
+        "白面鸮",
+        "盟约·辅助干员",
+        "真理",
+        "真言",
+        "稀音",
+        "空",
+        "空弦",
+        "空构",
+        "空爆",
+        "絮雨",
+        "红云",
+        "纯烬艾雅法拉",
+        "维什戴尔",
+        "缇缇",
+        "缪尔赛思",
+        "罗宾",
+        "耶拉",
+        "能天使",
+        "至简",
+        "艾拉",
+        "艾雅法拉",
+        "芙蓉",
+        "苏苏洛",
+        "苦艾",
+        "荒芜拉普兰德",
+        "莎草",
+        "莫斯提马",
+        "莱伊",
+        "莱恩哈特",
+        "菲亚梅塔",
+        "蓝毒",
+        "蕾缪安",
+        "薄绿",
+        "蚀清",
+        "蜜莓",
+        "蜜蜡",
+        "行箸",
+        "衡沙",
+        "褐果",
+        "诺威尔",
+        "调香师",
+        "豆苗",
+        "赫默",
+        "跃跃",
+        "远山",
+        "远牙",
+        "迷迭香",
+        "送葬人",
+        "逻各斯",
+        "遥",
+        "酒神",
+        "酸糖",
+        "钼铅",
+        "铃兰",
+        "铅踝",
+        "锡人",
+        "锡兰",
+        "闪灵",
+        "阿",
+        "阿米娅",
+        "阿米娅(医疗)",
+        "阿罗玛",
+        "陨星",
+        "隐现",
+        "雪猎",
+        "雪绒",
+        "霍尔海雅",
+        "霜华",
+        "预备干员-后勤",
+        "预备干员-术师",
+        "预备干员-狙击",
+        "魔王",
+        "鸿雪",
+        "麦哲伦",
+        "黑",
+        "黑键"
+      ],
+      "近战位": [
+        "CONFESS-47",
+        "Castle-3",
+        "Friston-3",
+        "Sharp",
+        "THRM-EX",
+        "万顷",
+        "丰川祥子",
+        "临光",
+        "乌尔比安",
+        "乌有",
+        "云迹",
+        "仇白",
+        "伊内丝",
+        "伊桑",
+        "休谟斯",
+        "余",
+        "佩佩",
+        "信仰搅拌机",
+        "傀影",
+        "八幡海铃",
+        "冬时",
+        "凛冬",
+        "凛御银灰",
+        "凯瑟琳",
+        "刻刀",
+        "医生",
+        "卡夫卡",
+        "卡缇",
+        "历阵锐枪芬",
+        "双月",
+        "古米",
+        "可颂",
+        "史尔特尔",
+        "号角",
+        "司霆惊蛰",
+        "吽",
+        "哈蒂娅",
+        "响石",
+        "因陀罗",
+        "圣约送葬人",
+        "坚雷",
+        "塞雷娅",
+        "夜刀",
+        "奥达",
+        "娜斯提",
+        "孑",
+        "宴",
+        "寻澜",
+        "导火索",
+        "山",
+        "崖心",
+        "嵯峨",
+        "左乐",
+        "布洛卡",
+        "帕拉斯",
+        "年",
+        "幽灵鲨",
+        "弑君者",
+        "归溟幽灵鲨",
+        "德克萨斯",
+        "忍冬",
+        "慕斯",
+        "战车",
+        "折桠",
+        "拉普兰德",
+        "拜松",
+        "掠风",
+        "推进之王",
+        "摆渡人",
+        "摩根",
+        "斑点",
+        "斥罪",
+        "斩业星熊",
+        "断崖",
+        "断罪者",
+        "斯卡蒂",
+        "星极",
+        "星熊",
+        "晓歌",
+        "暗索",
+        "暮落",
+        "暴行",
+        "暴雨",
+        "月见夜",
+        "杏仁",
+        "杜宾",
+        "杰克",
+        "松桐",
+        "极光",
+        "极境",
+        "柏喙",
+        "格拉尼",
+        "桃金娘",
+        "棘刺",
+        "森蚺",
+        "森西",
+        "槐琥",
+        "歌蕾蒂娅",
+        "止颂",
+        "水月",
+        "泡普卡",
+        "泡泡",
+        "泥岩",
+        "洋灰",
+        "海沫",
+        "涤火杰西卡",
+        "深巡",
+        "深律",
+        "清道夫",
+        "温蒂",
+        "火哨",
+        "火神",
+        "火龙S黑角",
+        "灰毫",
+        "炎客",
+        "烈夏",
+        "焰尾",
+        "煌",
+        "燧石",
+        "狮蝎",
+        "猎蜂",
+        "玛恩纳",
+        "玫兰莎",
+        "琳琅诗怀雅",
+        "琴柳",
+        "瑕光",
+        "白铁",
+        "百炼嘉维尔",
+        "石棉",
+        "石英",
+        "砾",
+        "祐天寺若麦",
+        "米格鲁",
+        "红",
+        "红豆",
+        "红隼",
+        "绮良",
+        "维娜·维多利亚",
+        "维荻",
+        "缄默德克萨斯",
+        "缠丸",
+        "罗小黑",
+        "罗比菈塔",
+        "羽毛笔",
+        "翎羽",
+        "耀骑士临光",
+        "老鲤",
+        "聆音",
+        "艾丝黛尔",
+        "艾丽妮",
+        "芙兰卡",
+        "芬",
+        "芳汀",
+        "苇草",
+        "苍苔",
+        "若叶睦",
+        "莱欧斯",
+        "菲莱",
+        "蒂比",
+        "薇薇安娜",
+        "蛇屠箱",
+        "裁度",
+        "见行者",
+        "角峰",
+        "讯使",
+        "诗怀雅",
+        "谜图",
+        "贝娜",
+        "贾维",
+        "赤冬",
+        "赫德雷",
+        "赫拉格",
+        "车尔尼",
+        "达格达",
+        "郁金香",
+        "重岳",
+        "野鬃",
+        "铎铃",
+        "银灰",
+        "铸铁",
+        "锏",
+        "闪击",
+        "阿兰娜",
+        "阿斯卡纶",
+        "阿消",
+        "阿米娅(近卫)",
+        "陈",
+        "隐德来希",
+        "雪雉",
+        "雷蛇",
+        "霜叶",
+        "露托",
+        "青枳",
+        "鞭刃",
+        "预备干员-近战",
+        "预备干员-重装",
+        "领主·Sharp",
+        "风丸",
+        "风笛",
+        "食铁兽",
+        "香草",
+        "骋风",
+        "麒麟R夜刀",
+        "黍",
+        "黑角",
+        "齐尔查克",
+        "龙舌兰"
+      ]
+    }
+  }
+}
