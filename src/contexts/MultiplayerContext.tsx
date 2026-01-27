@@ -2,6 +2,8 @@ import { createContext, useContext, useState, useCallback, useRef, useEffect, ty
 import type { DataConnection } from 'peerjs'
 import { usePeer } from '@/hooks/usePeer'
 import { generateRoomCode, roomCodeToPeerId } from '@/lib/peer-service'
+import { loadTheme } from '@/lib/theme-loader'
+import { useApp } from '@/contexts/AppContext'
 import type { Character } from '@/types'
 import type {
   MultiplayerMessage,
@@ -44,7 +46,7 @@ interface MultiplayerContextValue {
   activeMarker: MarkerType
 
   // Actions
-  createRoom: (gridSize: number, characters: Character[]) => Promise<string>
+  createRoom: (gridSize: number, characters: Character[], themeId: string) => Promise<string>
   joinRoom: (roomCode: string) => Promise<void>
   leaveRoom: () => void
   setReady: (isReady: boolean) => void
@@ -88,6 +90,7 @@ const initialGameState: MultiplayerGameState = {
 }
 
 export function MultiplayerProvider({ children }: { children: ReactNode }) {
+  const { setSelectedTheme } = useApp()
   const [gameState, setGameState] = useState<MultiplayerGameState>(initialGameState)
   const [activeMarker, setActiveMarkerState] = useState<MarkerType>('x')
   const hostConnectionRef = useRef<DataConnection | null>(null)
@@ -106,8 +109,19 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
             gameStarted: false,
             selectedCharacters: message.payload.selectedCharacters,
             gridSize: message.payload.gridSize,
+            themeId: message.payload.themeId,
           },
         }))
+        // Load and set theme for guest
+        if (message.payload.themeId) {
+          loadTheme(message.payload.themeId)
+            .then((theme) => {
+              setSelectedTheme(theme)
+            })
+            .catch((err) => {
+              console.error('Failed to load theme:', err)
+            })
+        }
         break
 
       case 'player_ready':
@@ -275,7 +289,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         })
         break
     }
-  }, [])
+  }, [setSelectedTheme])
 
   // Connection handlers
   const handleConnection = useCallback(
@@ -306,6 +320,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
               players: updatedPlayers,
               selectedCharacters: updatedRoomState.selectedCharacters,
               gridSize: updatedRoomState.gridSize,
+              themeId: updatedRoomState.themeId,
             },
           }
 
@@ -356,7 +371,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
    * Creates a new room as host.
    */
   const createRoom = useCallback(
-    async (gridSize: number, characters: Character[]): Promise<string> => {
+    async (gridSize: number, characters: Character[], themeId: string): Promise<string> => {
       const roomCode = generateRoomCode()
       const peerId = roomCodeToPeerId(roomCode)
 
@@ -381,6 +396,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
           gameStarted: false,
           selectedCharacters: characters,
           gridSize,
+          themeId,
         },
       })
 

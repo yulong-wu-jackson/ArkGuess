@@ -43,7 +43,7 @@ export function CreateRoomPage() {
         allCharacters.splice(randomIndex, 1)
       }
 
-      await createRoom(gridSize, selectedCharacters)
+      await createRoom(gridSize, selectedCharacters, selectedTheme.id)
       setScreen('waiting-room')
     } catch (err) {
       setError(err instanceof Error ? err.message : '创建房间失败')

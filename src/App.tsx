@@ -172,6 +172,7 @@ function SinglePlayerSetupPage() {
 function CharacterSelectPage() {
   const {
     setScreen,
+    selectedTheme,
     selectedCharacters,
     requiredCharacterCount,
     setSelectedCharacters,
@@ -197,16 +198,16 @@ function CharacterSelectPage() {
   const handleStartGame = async () => {
     if (!canStart) return
 
-    if (isMultiplayerSetup) {
+    if (isMultiplayerSetup && selectedTheme) {
       // Create multiplayer room with selected characters
       try {
-        await createRoom(gridSize, selectedCharacters)
+        await createRoom(gridSize, selectedCharacters, selectedTheme.id)
         setIsMultiplayerSetup(false)
         setScreen('waiting-room')
       } catch (err) {
         console.error('Failed to create room:', err)
       }
-    } else {
+    } else if (!isMultiplayerSetup) {
       // Start single-player game
       startGame()
     }

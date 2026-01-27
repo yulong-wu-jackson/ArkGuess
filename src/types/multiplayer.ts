@@ -47,6 +47,7 @@ export interface RoomState {
   gameStarted: boolean
   selectedCharacters: Character[]
   gridSize: number
+  themeId: string
 }
 
 /**
@@ -68,6 +69,7 @@ export interface RoomInfoMessage extends BaseMessage {
     players: Player[]
     selectedCharacters: Character[]
     gridSize: number
+    themeId: string
   }
 }
 
