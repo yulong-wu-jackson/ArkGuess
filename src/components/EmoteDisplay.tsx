@@ -5,15 +5,6 @@ import type { EmoteId } from '@/types/multiplayer'
 
 const DISPLAY_DURATION_MS = 2500
 
-const EMOTE_LABELS: Record<EmoteId, string> = {
-  cooperate: '合作',
-  happy: '开心',
-  scared: '害怕',
-  sorry: '抱歉',
-  thanks: '感谢',
-  thinking: '思考',
-}
-
 export function EmoteDisplay() {
   const { receivedEmote, clearReceivedEmote } = useMultiplayer()
   const [visible, setVisible] = useState(false)
@@ -71,12 +62,12 @@ export function EmoteDisplay() {
     <div className="fixed inset-0 z-50 pointer-events-none flex items-center justify-center">
       <div
         className={cn(
-          'relative p-5 rounded-2xl',
-          // Frosted glass effect (毛玻璃)
-          'bg-white/20 dark:bg-black/20',
-          'backdrop-blur-xl',
-          'border border-white/30 dark:border-white/10',
-          'shadow-2xl shadow-black/10',
+          'relative p-4 rounded-3xl',
+          // Frosted glass effect (毛玻璃) - more transparent
+          'bg-white/10 dark:bg-white/5',
+          'backdrop-blur-md',
+          'border border-white/20 dark:border-white/10',
+          'shadow-xl shadow-black/5',
           // Base transition
           'transition-all duration-300 ease-out',
           // Animation phases
@@ -86,12 +77,9 @@ export function EmoteDisplay() {
           !visible && 'opacity-0 scale-0'
         )}
       >
-        {/* Glow effect behind emote */}
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent" />
-
         <img
           src={`${import.meta.env.BASE_URL}images/emotes/${displayedEmote}.png`}
-          alt={EMOTE_LABELS[displayedEmote]}
+          alt=""
           className={cn(
             'relative w-24 h-24 sm:w-28 sm:h-28 object-contain',
             'drop-shadow-lg',
