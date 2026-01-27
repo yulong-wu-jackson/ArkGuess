@@ -3,7 +3,7 @@ import { useMultiplayer } from '@/contexts/MultiplayerContext'
 import { cn } from '@/lib/utils'
 import type { EmoteId } from '@/types/multiplayer'
 
-const DISPLAY_DURATION_MS = 3000
+const DISPLAY_DURATION_MS = 2500
 
 const EMOTE_LABELS: Record<EmoteId, string> = {
   cooperate: '合作',
@@ -18,6 +18,7 @@ export function EmoteDisplay() {
   const { receivedEmote, clearReceivedEmote } = useMultiplayer()
   const [visible, setVisible] = useState(false)
   const [displayedEmote, setDisplayedEmote] = useState<EmoteId | null>(null)
+  const [animationPhase, setAnimationPhase] = useState<'enter' | 'idle' | 'exit'>('enter')
   const lastTimestampRef = useRef<number | null>(null)
 
   useEffect(() => {
@@ -31,13 +32,24 @@ export function EmoteDisplay() {
     // Schedule the state updates in a microtask to avoid synchronous setState in effect
     queueMicrotask(() => {
       setDisplayedEmote(receivedEmote.emoteId)
+      setAnimationPhase('enter')
       setVisible(true)
     })
+
+    // Transition to idle after entrance animation
+    const idleTimer = setTimeout(() => {
+      setAnimationPhase('idle')
+    }, 400)
+
+    // Start exit animation
+    const exitTimer = setTimeout(() => {
+      setAnimationPhase('exit')
+    }, DISPLAY_DURATION_MS - 400)
 
     // Set up timer to hide and clear
     const hideTimer = setTimeout(() => {
       setVisible(false)
-    }, DISPLAY_DURATION_MS - 200) // Start fade-out slightly before clearing
+    }, DISPLAY_DURATION_MS - 100)
 
     const clearTimer = setTimeout(() => {
       clearReceivedEmote()
@@ -46,6 +58,8 @@ export function EmoteDisplay() {
     }, DISPLAY_DURATION_MS)
 
     return () => {
+      clearTimeout(idleTimer)
+      clearTimeout(exitTimer)
       clearTimeout(hideTimer)
       clearTimeout(clearTimer)
     }
@@ -54,25 +68,36 @@ export function EmoteDisplay() {
   if (!displayedEmote) return null
 
   return (
-    <div className="fixed top-20 right-4 z-50 pointer-events-none">
+    <div className="fixed inset-0 z-50 pointer-events-none flex items-center justify-center">
       <div
         className={cn(
-          'flex flex-col items-center gap-2 p-3 rounded-xl',
-          'bg-background/95 backdrop-blur-sm shadow-lg border',
-          'transition-all duration-200',
-          visible
-            ? 'opacity-100 scale-100 animate-in fade-in zoom-in-95'
-            : 'opacity-0 scale-95 animate-out fade-out zoom-out-95'
+          'relative p-5 rounded-2xl',
+          // Frosted glass effect (毛玻璃)
+          'bg-white/20 dark:bg-black/20',
+          'backdrop-blur-xl',
+          'border border-white/30 dark:border-white/10',
+          'shadow-2xl shadow-black/10',
+          // Base transition
+          'transition-all duration-300 ease-out',
+          // Animation phases
+          animationPhase === 'enter' && 'animate-emote-enter',
+          animationPhase === 'idle' && 'animate-emote-idle',
+          animationPhase === 'exit' && 'animate-emote-exit',
+          !visible && 'opacity-0 scale-0'
         )}
       >
+        {/* Glow effect behind emote */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent" />
+
         <img
           src={`${import.meta.env.BASE_URL}images/emotes/${displayedEmote}.png`}
           alt={EMOTE_LABELS[displayedEmote]}
-          className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+          className={cn(
+            'relative w-24 h-24 sm:w-28 sm:h-28 object-contain',
+            'drop-shadow-lg',
+            animationPhase === 'idle' && 'animate-emote-bounce'
+          )}
         />
-        <span className="text-xs text-muted-foreground">
-          {EMOTE_LABELS[displayedEmote]}
-        </span>
       </div>
     </div>
   )

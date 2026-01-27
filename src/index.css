@@ -129,3 +129,69 @@
     touch-action: manipulation;
   }
 }
+
+/* Emote popup animations */
+@keyframes emote-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  70% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes emote-idle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes emote-exit {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(-30px);
+  }
+}
+
+@keyframes emote-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+}
+
+.animate-emote-enter {
+  animation: emote-enter 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-emote-idle {
+  animation: emote-idle 2s ease-in-out infinite;
+}
+
+.animate-emote-exit {
+  animation: emote-exit 0.3s ease-in forwards;
+}
+
+.animate-emote-bounce {
+  animation: emote-bounce 0.8s ease-in-out infinite;
+}
