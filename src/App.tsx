@@ -176,17 +176,38 @@ function CharacterSelectPage() {
     requiredCharacterCount,
     setSelectedCharacters,
     startGame,
+    isMultiplayerSetup,
+    setIsMultiplayerSetup,
+    gridSize,
   } = useApp()
+  const { createRoom } = useMultiplayer()
 
   const canStart = selectedCharacters.length === requiredCharacterCount
 
   const handleBack = () => {
     setSelectedCharacters([])
-    setScreen('home')
+    if (isMultiplayerSetup) {
+      setIsMultiplayerSetup(false)
+      setScreen('create-room')
+    } else {
+      setScreen('home')
+    }
   }
 
-  const handleStartGame = () => {
-    if (canStart) {
+  const handleStartGame = async () => {
+    if (!canStart) return
+
+    if (isMultiplayerSetup) {
+      // Create multiplayer room with selected characters
+      try {
+        await createRoom(gridSize, selectedCharacters)
+        setIsMultiplayerSetup(false)
+        setScreen('waiting-room')
+      } catch (err) {
+        console.error('Failed to create room:', err)
+      }
+    } else {
+      // Start single-player game
       startGame()
     }
   }
@@ -194,7 +215,9 @@ function CharacterSelectPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <h1 className="text-3xl font-bold text-center mb-8">选择角色</h1>
+        <h1 className="text-3xl font-bold text-center mb-8">
+          {isMultiplayerSetup ? '选择游戏角色' : '选择角色'}
+        </h1>
 
         <CharacterPicker />
 
@@ -203,7 +226,7 @@ function CharacterSelectPage() {
             返回
           </Button>
           <Button disabled={!canStart} onClick={handleStartGame}>
-            开始游戏
+            {isMultiplayerSetup ? '创建房间' : '开始游戏'}
           </Button>
         </div>
       </div>

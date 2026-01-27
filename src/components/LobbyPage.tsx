@@ -12,6 +12,7 @@ export function LobbyPage() {
     roomState,
     leaveRoom,
     setReady,
+    startGame,
     isHost,
     peerId,
     error,
@@ -84,7 +85,7 @@ export function LobbyPage() {
     }
   }, [allPlayersReady])
 
-  // Navigate to character selection when countdown reaches 0
+  // Start game when countdown reaches 0 (host broadcasts and navigates, guest waits for message)
   useEffect(() => {
     if (countdown === 0) {
       // Clear interval before navigation to prevent memory leak
@@ -92,9 +93,14 @@ export function LobbyPage() {
         clearInterval(countdownRef.current)
         countdownRef.current = null
       }
-      setScreen('character-select')
+      // Host broadcasts game_start message and navigates
+      // Guest will transition via gamePhase effect below (ensures message is processed first)
+      if (isHost) {
+        startGame()
+        setScreen('character-select')
+      }
     }
-  }, [countdown, setScreen])
+  }, [countdown, isHost, startGame, setScreen])
 
   // Navigate to character selection if game phase changes
   useEffect(() => {

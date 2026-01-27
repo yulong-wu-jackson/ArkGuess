@@ -8,7 +8,7 @@ import { useMultiplayer } from '@/contexts/MultiplayerContext'
 import { ArrowLeft, Loader2 } from 'lucide-react'
 
 export function CreateRoomPage() {
-  const { selectedTheme, gameMode, gridSize, setScreen } = useApp()
+  const { selectedTheme, gameMode, gridSize, setScreen, setIsMultiplayerSetup, setSelectedCharacters } = useApp()
   const { createRoom } = useMultiplayer()
   const [isCreating, setIsCreating] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -18,11 +18,32 @@ export function CreateRoomPage() {
   const handleCreate = async () => {
     if (!selectedTheme || !gameMode) return
 
+    // For custom mode, go to character selection first
+    if (gameMode === 'custom') {
+      setSelectedCharacters([])  // Clear any previous selections
+      setIsMultiplayerSetup(true)
+      setScreen('character-select')
+      return
+    }
+
+    // For random mode, shuffle and create room immediately
     setIsCreating(true)
     setError(null)
 
     try {
-      await createRoom(gridSize, selectedTheme.manifest.characters)
+      // Randomly select gridSize * gridSize characters for the game
+      const allCharacters = [...selectedTheme.manifest.characters]
+      const requiredCount = gridSize * gridSize
+      const selectedCharacters: typeof allCharacters = []
+
+      // Fisher-Yates shuffle and take first N
+      for (let i = 0; i < requiredCount && allCharacters.length > 0; i++) {
+        const randomIndex = Math.floor(Math.random() * allCharacters.length)
+        selectedCharacters.push(allCharacters[randomIndex])
+        allCharacters.splice(randomIndex, 1)
+      }
+
+      await createRoom(gridSize, selectedCharacters)
       setScreen('waiting-room')
     } catch (err) {
       setError(err instanceof Error ? err.message : '创建房间失败')

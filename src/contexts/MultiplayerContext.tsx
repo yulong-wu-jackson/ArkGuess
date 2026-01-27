@@ -48,6 +48,7 @@ interface MultiplayerContextValue {
   joinRoom: (roomCode: string) => Promise<void>
   leaveRoom: () => void
   setReady: (isReady: boolean) => void
+  startGame: () => void
   selectSecretCharacter: (character: Character) => void
   toggleCellMarker: (cellIndex: number) => void
   setCurrentView: (view: MarkerView) => void
@@ -480,6 +481,29 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
   )
 
   /**
+   * Starts the game (host only). Broadcasts game_start message to all players.
+   */
+  const startGame = useCallback(() => {
+    if (gameState.myRole !== 'host') return
+
+    const message: MultiplayerMessage = {
+      type: 'game_start',
+      timestamp: Date.now(),
+      payload: {
+        gameCells: [], // Not used currently, but kept for protocol compatibility
+      },
+    }
+    sendMessage(message)
+
+    // Update local state for host
+    setGameState((prev) => ({
+      ...prev,
+      phase: 'character_selection',
+      roomState: prev.roomState ? { ...prev.roomState, gameStarted: true } : null,
+    }))
+  }, [gameState.myRole, sendMessage])
+
+  /**
    * Selects a secret character (does not reveal to opponent).
    */
   const selectSecretCharacter = useCallback(
@@ -715,11 +739,15 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
     if (!gameState.opponentFinalGuess || !gameState.mySecretCharacter) return
     // Don't process if game is already finished
     if (gameState.phase === 'finished') return
-    // Don't process if we're the one who just guessed (waiting for result)
-    if (gameState.phase === 'waiting_for_result' && !gameState.mustCounterGuess) return
+
+    const myPeerId = peer.peerId ?? ''
+    const iAmInitiator = gameState.initiatorId === myPeerId
+
+    // Don't process if we're the counter-guesser waiting for result
+    // (initiator should still process to determine the result)
+    if (gameState.phase === 'waiting_for_result' && !gameState.mustCounterGuess && !iAmInitiator) return
 
     const opponentGuessedCorrectly = gameState.opponentFinalGuess.id === gameState.mySecretCharacter.id
-    const myPeerId = peer.peerId ?? ''
 
     // If opponent was the initiator and hasn't received our counter-guess yet
     if (gameState.mustCounterGuess) {
@@ -811,6 +839,7 @@ export function MultiplayerProvider({ children }: { children: ReactNode }) {
         joinRoom,
         leaveRoom,
         setReady,
+        startGame,
         selectSecretCharacter,
         toggleCellMarker,
         setCurrentView,

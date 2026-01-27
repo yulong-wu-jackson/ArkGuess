@@ -19,6 +19,7 @@ interface AppState {
   selectedRarityFilters: string[]
   selectedFactionFilters: string[]
   selectedClassFilters: string[]
+  isMultiplayerSetup: boolean  // True when selecting characters for multiplayer room creation
 }
 
 interface AppContextValue extends AppState {
@@ -33,6 +34,7 @@ interface AppContextValue extends AppState {
   setSelectedRarityFilters: (rarities: string[]) => void
   setSelectedFactionFilters: (factions: string[]) => void
   setSelectedClassFilters: (classes: string[]) => void
+  setIsMultiplayerSetup: (value: boolean) => void
   toggleCellMarker: (cellIndex: number) => void
   startGame: () => void
   resetGame: () => void
@@ -54,6 +56,7 @@ const initialState: AppState = {
   selectedRarityFilters: [],
   selectedFactionFilters: [],
   selectedClassFilters: [],
+  isMultiplayerSetup: false,
 }
 
 const AppContext = createContext<AppContextValue | null>(null)
@@ -112,6 +115,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const setSelectedClassFilters = useCallback((classes: string[]) => {
     setState((prev) => ({ ...prev, selectedClassFilters: classes }))
+  }, [])
+
+  const setIsMultiplayerSetup = useCallback((value: boolean) => {
+    setState((prev) => ({ ...prev, isMultiplayerSetup: value }))
   }, [])
 
   const toggleCellMarker = useCallback((cellIndex: number) => {
@@ -270,6 +277,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setSelectedRarityFilters,
         setSelectedFactionFilters,
         setSelectedClassFilters,
+        setIsMultiplayerSetup,
         toggleCellMarker,
         startGame,
         resetGame,
