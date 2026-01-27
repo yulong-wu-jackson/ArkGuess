@@ -104,7 +104,7 @@ function CharacterSelectPage() {
 }
 
 function GamePage() {
-  const { selectedTheme, gridSize, gameCells, toggleCellMarker, resetGame } = useApp()
+  const { selectedTheme, gridSize, gameCells, activeMarker, toggleCellMarker, resetGame } = useApp()
 
   if (!selectedTheme || gameCells.length === 0) {
     return (
@@ -144,6 +144,7 @@ function GamePage() {
           cells={gameCells}
           theme={selectedTheme}
           gridSize={gridSize}
+          activeMarker={activeMarker}
           onCellClick={toggleCellMarker}
         />
       </div>

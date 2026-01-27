@@ -1,10 +1,11 @@
 import { CharacterCard } from '@/components/CharacterCard'
-import type { Theme, CellState } from '@/types'
+import type { Theme, CellState, MarkerType } from '@/types'
 
 interface GameBoardProps {
   cells: CellState[]
   theme: Theme
   gridSize: number
+  activeMarker: MarkerType
   onCellClick?: (index: number) => void
 }
 
@@ -12,6 +13,7 @@ export function GameBoard({
   cells,
   theme,
   gridSize,
+  activeMarker,
   onCellClick,
 }: GameBoardProps) {
   return (
@@ -28,6 +30,7 @@ export function GameBoard({
             character={cell.character}
             theme={theme}
             markers={cell.markers}
+            activeMarker={activeMarker}
             onClick={onCellClick ? () => onCellClick(index) : undefined}
           />
         ))}

@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { getCharacterImageUrl, getPlaceholderImageUrl } from '@/lib/theme-loader'
-import type { Character, Theme, CellMarkers } from '@/types'
+import type { Character, Theme, CellMarkers, MarkerType } from '@/types'
 import { cn } from '@/lib/utils'
 
 interface CharacterCardProps {
   character: Character
   theme: Theme
   markers?: CellMarkers
+  activeMarker?: MarkerType
   onClick?: () => void
 }
 
@@ -14,6 +15,7 @@ export function CharacterCard({
   character,
   theme,
   markers,
+  activeMarker,
   onClick,
 }: CharacterCardProps) {
   const [imageError, setImageError] = useState(false)
@@ -22,9 +24,10 @@ export function CharacterCard({
     ? getPlaceholderImageUrl()
     : getCharacterImageUrl(theme, character)
 
-  const hasX = markers?.x ?? false
-  const hasO = markers?.o ?? false
-  const hasAnyMarker = hasX || hasO
+  // Only show the marker for the current active mode
+  const showX = (markers?.x ?? false) && activeMarker === 'x'
+  const showO = (markers?.o ?? false) && activeMarker === 'o'
+  const hasAnyMarker = showX || showO
 
   return (
     <button
@@ -64,12 +67,12 @@ export function CharacterCard({
             'bg-black/30 animate-in fade-in duration-150'
           )}
         >
-          {hasX && (
+          {showX && (
             <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-red-500 animate-in zoom-in-75 duration-150">
               ✕
             </span>
           )}
-          {hasO && (
+          {showO && (
             <span className="text-3xl sm:text-4xl font-bold drop-shadow-lg text-blue-500 animate-in zoom-in-75 duration-150">
               ○
             </span>
