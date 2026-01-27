@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useCallback, useMemo, type ReactNo
 import type { Theme, GameMode, Character, CellState } from '@/types'
 import { selectRandomCharacters } from '@/lib/theme-loader'
 
-type Screen = 'home' | 'character-select' | 'game'
+type Screen = 'home' | 'character-select' | 'game' | 'create-room' | 'waiting-room' | 'join-room' | 'lobby' | 'single-player-setup'
 
 type ActiveMarker = 'x' | 'o'
 
